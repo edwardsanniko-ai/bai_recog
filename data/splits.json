@@ -13,3721 +13,4341 @@
       "index": 0,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹1.jpg"
+      "relative_image": "geometric patterns/几何纹1.jpg",
+      "sha256": "53c59066502fce106d6f2473f4748f3beecc091ffe6dd62c79bd5323ea750a38"
     },
     {
       "index": 1,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹10.jpg"
+      "relative_image": "geometric patterns/几何纹10.jpg",
+      "sha256": "94a9b839f595113f53b01aec7306061fe79e26604243e66c26d64b5021a1eeae"
     },
     {
       "index": 2,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹100.jpg"
+      "relative_image": "geometric patterns/几何纹100.jpg",
+      "sha256": "c398d801fd7ee59184c07335bc3c67376224a998101d1ec5e24841d06b8210a9"
     },
     {
       "index": 3,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹11.jpg"
+      "relative_image": "geometric patterns/几何纹11.jpg",
+      "sha256": "4ab8529357668c285c7c7b02001dc19d9082411c966c341b2f99ce333517dddf"
     },
     {
       "index": 4,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹12.jpg"
+      "relative_image": "geometric patterns/几何纹12.jpg",
+      "sha256": "a80f6a4f5957ae7492dfcef3990b2c39c0ce33c25f9f00d43a0d69e3ffe2a4d8"
     },
     {
       "index": 5,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹13.jpg"
+      "relative_image": "geometric patterns/几何纹13.jpg",
+      "sha256": "3e84bac43d3b57825dd89ab98c48d0cc7132c39249993a81d4eab771161b6b2a"
     },
     {
       "index": 6,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹14.jpg"
+      "relative_image": "geometric patterns/几何纹14.jpg",
+      "sha256": "d271fb996eb790b19174043430bf1147f40d82e80681be05d19c045fcff87884"
     },
     {
       "index": 7,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹15.jpg"
+      "relative_image": "geometric patterns/几何纹15.jpg",
+      "sha256": "630b69bc8b82be121277afd285ff59887682d93764125a623a0402b9c32ee8ad"
     },
     {
       "index": 8,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹16.jpg"
+      "relative_image": "geometric patterns/几何纹16.jpg",
+      "sha256": "0b54f42da63274e785c356ba846f996f66142ad0339ea618896698cbea68e1b6"
     },
     {
       "index": 9,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹17.jpg"
+      "relative_image": "geometric patterns/几何纹17.jpg",
+      "sha256": "668bfab270882ddcfd42c1d0a7b743a5c757a1a34966f0035e79684d1b6a1032"
     },
     {
       "index": 10,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹18.jpg"
+      "relative_image": "geometric patterns/几何纹18.jpg",
+      "sha256": "9abb12d37a964eaa45190a896f27d67050b7a28ad3fbd3c6f9b42e97d400b099"
     },
     {
       "index": 11,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹19.jpg"
+      "relative_image": "geometric patterns/几何纹19.jpg",
+      "sha256": "92769ce0d19036513ef37d160b49d8dac093497b8881ac7eeaa80ed899641109"
     },
     {
       "index": 12,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹2.jpg"
+      "relative_image": "geometric patterns/几何纹2.jpg",
+      "sha256": "aaf3bcba4620634feff1aaeb36112fb58ae9f4ecea47e81f2dcbe18996f9d8c0"
     },
     {
       "index": 13,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹20.jpg"
+      "relative_image": "geometric patterns/几何纹20.jpg",
+      "sha256": "6cd17875e69f602dcbfd9398345e40d817ead8099cf066aab3bcead147835f67"
     },
     {
       "index": 14,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹21.jpg"
+      "relative_image": "geometric patterns/几何纹21.jpg",
+      "sha256": "07e5d38f37a7666fc1bbf123d2ffd193f9da588148c089a91a9b7c959a9cebe4"
     },
     {
       "index": 15,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹22.jpg"
+      "relative_image": "geometric patterns/几何纹22.jpg",
+      "sha256": "6a754661bb38b27ad90dc0e46de806bf1eb8f46cdeed1f387e15f8b392c35c8f"
     },
     {
       "index": 16,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹23.jpg"
+      "relative_image": "geometric patterns/几何纹23.jpg",
+      "sha256": "2544da390d3e431ff6ac7761c410f280e883a802b6c086bc1bc330bbef4872dc"
     },
     {
       "index": 17,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹24.jpg"
+      "relative_image": "geometric patterns/几何纹24.jpg",
+      "sha256": "abd6ea9a079b148b5759c73a1d6f806bc25025be5083b56f69c5ce0ec58afb53"
     },
     {
       "index": 18,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹25.jpg"
+      "relative_image": "geometric patterns/几何纹25.jpg",
+      "sha256": "848ed191e3452e4cf8cab7c2145f5b4bcdcb105d3fd2109bfdf6f39648739a7e"
     },
     {
       "index": 19,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹26.jpg"
+      "relative_image": "geometric patterns/几何纹26.jpg",
+      "sha256": "bfac20f0e8e48372494e6a5a2a865c1dd4e60bbe36660291f0710981b9800d0f"
     },
     {
       "index": 20,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹27.jpg"
+      "relative_image": "geometric patterns/几何纹27.jpg",
+      "sha256": "a2e08b72c840161e80f1921e5e1ca525213221960f675c023c6312966b057323"
     },
     {
       "index": 21,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹28.jpg"
+      "relative_image": "geometric patterns/几何纹28.jpg",
+      "sha256": "59f0f7263d74d1a3efed0f93d9fd809dd4a26d44f60b91e301e06d00b46d0733"
     },
     {
       "index": 22,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹29.jpg"
+      "relative_image": "geometric patterns/几何纹29.jpg",
+      "sha256": "49521783827ad62baabd4450625449aafae8e38e42509507441830db13634d61"
     },
     {
       "index": 23,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹3.jpg"
+      "relative_image": "geometric patterns/几何纹3.jpg",
+      "sha256": "c6fbe2e9bb851d04f0a1cfb25b0be1ffbd711bcb3aa2db7f93aaccd31a98a4b6"
     },
     {
       "index": 24,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹30.jpg"
+      "relative_image": "geometric patterns/几何纹30.jpg",
+      "sha256": "032b7217ebd09187eb5326fc7e935a9ce31ca46e036d13cc82df2db2e771c2df"
     },
     {
       "index": 25,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹31.jpg"
+      "relative_image": "geometric patterns/几何纹31.jpg",
+      "sha256": "fc47182cca18223bcf4a2636c5960a8d6fe1dbdd11a5c5b277dff5e3ef648659"
     },
     {
       "index": 26,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹32.jpg"
+      "relative_image": "geometric patterns/几何纹32.jpg",
+      "sha256": "84bc368009a0cc0b0ade1f4a06df591efe842493602e5d4911971fe2b0ab2000"
     },
     {
       "index": 27,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹33.jpg"
+      "relative_image": "geometric patterns/几何纹33.jpg",
+      "sha256": "2472214c89058fee2ed71a147cc59c7362dde50fc05bfaad56792d673cb88238"
     },
     {
       "index": 28,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹34.jpg"
+      "relative_image": "geometric patterns/几何纹34.jpg",
+      "sha256": "47a261365f714af09d4121e397549a948039a8ba22745f02eb10a6b62067432a"
     },
     {
       "index": 29,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹35.jpg"
+      "relative_image": "geometric patterns/几何纹35.jpg",
+      "sha256": "79562b085a92389d516820604c717620190695bd17f8a09086eb654b935540fc"
     },
     {
       "index": 30,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹36.jpg"
+      "relative_image": "geometric patterns/几何纹36.jpg",
+      "sha256": "255d4decb054655f74e9d796c67519696d33cd9e61d52035dfddbaaeccf22e6d"
     },
     {
       "index": 31,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹37.jpg"
+      "relative_image": "geometric patterns/几何纹37.jpg",
+      "sha256": "acca560f3fa73a96ec2189a0750a0698fa4a3364f59884671cc347b9b5a1bad8"
     },
     {
       "index": 32,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹38.jpg"
+      "relative_image": "geometric patterns/几何纹38.jpg",
+      "sha256": "33dca978de21404b7bee0dd80c7168b38ca8a2f91d5f3742648abb69d5587698"
     },
     {
       "index": 33,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹39.jpg"
+      "relative_image": "geometric patterns/几何纹39.jpg",
+      "sha256": "a3adcc98d5548c3b2ebb7a16f60024961b338b0ec3d9c1969b00df68e49b76ed"
     },
     {
       "index": 34,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹4.jpg"
+      "relative_image": "geometric patterns/几何纹4.jpg",
+      "sha256": "5a16587314290d26bed0d47b2a7da0eb6f855866bfbc3af4c30e29939f81c43f"
     },
     {
       "index": 35,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹40.jpg"
+      "relative_image": "geometric patterns/几何纹40.jpg",
+      "sha256": "4c2998ec458dc624434b71ade587dd5a08d7ac4bff2183e4acac1919c717c4c5"
     },
     {
       "index": 36,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹41.jpg"
+      "relative_image": "geometric patterns/几何纹41.jpg",
+      "sha256": "5af9b45da071dfaa28b66d5ee67d337dde1bc6342bd2853a2ad9068fcb347b60"
     },
     {
       "index": 37,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹42.jpg"
+      "relative_image": "geometric patterns/几何纹42.jpg",
+      "sha256": "ef44a626e1815df7d64f6fb4a92d2d8316a58caca802c04e6a1eaba4dadf06cb"
     },
     {
       "index": 38,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹43.jpg"
+      "relative_image": "geometric patterns/几何纹43.jpg",
+      "sha256": "de4b79e12727586e35dabe13ab35907c1e845b2b6f941200b7b1c996ae44530c"
     },
     {
       "index": 39,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹44.jpg"
+      "relative_image": "geometric patterns/几何纹44.jpg",
+      "sha256": "ead6de09c294105322640245ce9308c8a7f2e14f3ec69af3a0be9cd124d67859"
     },
     {
       "index": 40,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹45.jpg"
+      "relative_image": "geometric patterns/几何纹45.jpg",
+      "sha256": "bfb1cb89a612fb90859b3b2d4d36b3798a05075eb3b8775f55d995ca67319b3e"
     },
     {
       "index": 41,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹46.jpg"
+      "relative_image": "geometric patterns/几何纹46.jpg",
+      "sha256": "c29e366b387162888b12356abf6c88653d7220241ffbdaa0c94ea36985d5adac"
     },
     {
       "index": 42,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹47.jpg"
+      "relative_image": "geometric patterns/几何纹47.jpg",
+      "sha256": "3c1cd8a9437cc0a73a1e2b883203bee92bc3a1be4d1c8d09818611bc1b305857"
     },
     {
       "index": 43,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹48.jpg"
+      "relative_image": "geometric patterns/几何纹48.jpg",
+      "sha256": "78ade73217e6860167d474162c48e579639b3f39e21c79ae6fa99abb65176001"
     },
     {
       "index": 44,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹49.jpg"
+      "relative_image": "geometric patterns/几何纹49.jpg",
+      "sha256": "1a2d90ca60b976164459892038c461912298d4ba8aa50682463d5e089cedf23f"
     },
     {
       "index": 45,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹5.jpg"
+      "relative_image": "geometric patterns/几何纹5.jpg",
+      "sha256": "1cf835439cc031aed3004eba0e2b44f8dcd7d06b18d3959c18de80c4788d720f"
     },
     {
       "index": 46,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹50.jpg"
+      "relative_image": "geometric patterns/几何纹50.jpg",
+      "sha256": "5b20411049a47c7899e46e5c5ce5b374b306046cd8623bca4b0435b24b85a709"
     },
     {
       "index": 47,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹51.jpg"
+      "relative_image": "geometric patterns/几何纹51.jpg",
+      "sha256": "f38ed87d2907a564cd98ed19d2efd75db99f3e3559d0ecb0a55074df0ccdca77"
     },
     {
       "index": 48,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹52.jpg"
+      "relative_image": "geometric patterns/几何纹52.jpg",
+      "sha256": "1c3b705ab8ccb2cc85a3971428bbe2aa5e7da0de307fe01bda172db55f2aa323"
     },
     {
       "index": 49,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹53.jpg"
+      "relative_image": "geometric patterns/几何纹53.jpg",
+      "sha256": "a4907681901440f628d5ea3c6944d47992cdeea3819782c80e0718380364c96c"
     },
     {
       "index": 50,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹54.jpg"
+      "relative_image": "geometric patterns/几何纹54.jpg",
+      "sha256": "6a2cfb2a373f4a56d231d478c03cb51a799d753e281c322d981014c6f64f4f75"
     },
     {
       "index": 51,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹55.jpg"
+      "relative_image": "geometric patterns/几何纹55.jpg",
+      "sha256": "e1f7818a2b0989d908ebcf0542348c6d809557b2e30d9d7ae4aa4f342dc0c982"
     },
     {
       "index": 52,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹56.jpg"
+      "relative_image": "geometric patterns/几何纹56.jpg",
+      "sha256": "bfbbd4c14fcf405cac4ba18ad6c8fb0bc2d9d0ec77a64d5d0735c1fc0594c346"
     },
     {
       "index": 53,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹57.jpg"
+      "relative_image": "geometric patterns/几何纹57.jpg",
+      "sha256": "6d374c5fb959690913b33869e2ff9ab8fcf18f2262f2ddad6bef43d4f49ab271"
     },
     {
       "index": 54,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹58.jpg"
+      "relative_image": "geometric patterns/几何纹58.jpg",
+      "sha256": "3eb5e1cbcc620d8342e7cf1e34ac7c8824fc2cea545f1525e298562721f1e3be"
     },
     {
       "index": 55,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹59.jpg"
+      "relative_image": "geometric patterns/几何纹59.jpg",
+      "sha256": "e281da0a1acda87179c734f79e8562a32d7232426c5281a1fe0e29b0544f202e"
     },
     {
       "index": 56,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹6.jpg"
+      "relative_image": "geometric patterns/几何纹6.jpg",
+      "sha256": "0078ca2b29120868d4f697518749cd9ccab7409323b4929ae178b3966f7b2b8d"
     },
     {
       "index": 57,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹60.jpg"
+      "relative_image": "geometric patterns/几何纹60.jpg",
+      "sha256": "b637ef11e624ed43a71fcbf8c53d4f780a8386b7dc58ccf9e9ffd0d0d2564cf5"
     },
     {
       "index": 58,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹61.jpg"
+      "relative_image": "geometric patterns/几何纹61.jpg",
+      "sha256": "0b1823b0eae61a26fb97d2aa2fea2f5ae812fac822830e18c7fe7b7f2ce62918"
     },
     {
       "index": 59,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹62.jpg"
+      "relative_image": "geometric patterns/几何纹62.jpg",
+      "sha256": "c36c0ba3cd944b2ca380f30b4b66317500fe24a95d01a6364cb725b9ec7a7090"
     },
     {
       "index": 60,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹63.jpg"
+      "relative_image": "geometric patterns/几何纹63.jpg",
+      "sha256": "5046b2dbf3ce14354402e3089525910b528b76f9a7168c918e0f18bdca6e102f"
     },
     {
       "index": 61,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹64.jpg"
+      "relative_image": "geometric patterns/几何纹64.jpg",
+      "sha256": "15a74496c19b04fdbc575d9f78002978419c58b6c53175f5562a451317572c10"
     },
     {
       "index": 62,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹65.jpg"
+      "relative_image": "geometric patterns/几何纹65.jpg",
+      "sha256": "2cb1ec611a6f9d3b4fce5bcbd6e768ee2fb88fad8b06d464656f8ea925e6e774"
     },
     {
       "index": 63,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹66.jpg"
+      "relative_image": "geometric patterns/几何纹66.jpg",
+      "sha256": "2ff804ea7300243b2d525498f3dc28648a47a909248114a61f186dc19668fdc2"
     },
     {
       "index": 64,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹67.jpg"
+      "relative_image": "geometric patterns/几何纹67.jpg",
+      "sha256": "d8aa8bf248dd06609f1d377e98b15cd47a056e33f4db12fb28b8a5bbc3d1895e"
     },
     {
       "index": 65,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹68.jpg"
+      "relative_image": "geometric patterns/几何纹68.jpg",
+      "sha256": "d66a57cfea1985508d21bf9124fae6d52486152f2173b8347ba7984116e5b879"
     },
     {
       "index": 66,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹69.jpg"
+      "relative_image": "geometric patterns/几何纹69.jpg",
+      "sha256": "4f984713d2c15290bb84ab2d558f32066e41c93117f2f4ab71a7c94bf17c9914"
     },
     {
       "index": 67,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹7.jpg"
+      "relative_image": "geometric patterns/几何纹7.jpg",
+      "sha256": "877f3a15b9fd27bc8129c9641bd68541ebc5b05484bc28c7f3317a0d9e6b0998"
     },
     {
       "index": 68,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹70.jpg"
+      "relative_image": "geometric patterns/几何纹70.jpg",
+      "sha256": "b0b5660ccd00f48e74fd6b0bbfc9df90c20a48f84b54386ed4d52f8fa3b16dac"
     },
     {
       "index": 69,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹71.jpg"
+      "relative_image": "geometric patterns/几何纹71.jpg",
+      "sha256": "1bcab1510f219526be2119dc1f67cfb8d3e7a5e58f2d1ef1e150e711da3cd565"
     },
     {
       "index": 70,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹72.jpg"
+      "relative_image": "geometric patterns/几何纹72.jpg",
+      "sha256": "1fb7b1d4ff9ea46131462e2dff783afb5b37beead95b9a63bc79b4f1db2ade1a"
     },
     {
       "index": 71,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹73.jpg"
+      "relative_image": "geometric patterns/几何纹73.jpg",
+      "sha256": "daacd8b442501218b45ce5eaf577f3be080606f13dfeb83234e782189b1c9b0f"
     },
     {
       "index": 72,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹74.jpg"
+      "relative_image": "geometric patterns/几何纹74.jpg",
+      "sha256": "e2fe4fb2857c2c15562b2df8d179af5d9eae8faa134344616554126544dcdaf1"
     },
     {
       "index": 73,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹75.jpg"
+      "relative_image": "geometric patterns/几何纹75.jpg",
+      "sha256": "ea1bfb6876bc48fdf3f63da8c94c9a778c3cf4967968b7a3fc70c272fb1e17fd"
     },
     {
       "index": 74,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹76.jpg"
+      "relative_image": "geometric patterns/几何纹76.jpg",
+      "sha256": "0e18463fa445cbe1129e85c4dbb5aac190d135b674f4b3897240840143b34ae5"
     },
     {
       "index": 75,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹77.jpg"
+      "relative_image": "geometric patterns/几何纹77.jpg",
+      "sha256": "eadd79573d10eb3bba94e35d623b412a94874124a5155c27c0a5025b6b5aa7d2"
     },
     {
       "index": 76,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹78.jpg"
+      "relative_image": "geometric patterns/几何纹78.jpg",
+      "sha256": "d36ab810ece2c24a9118b829a4526958126c16db076c880fec02083566537599"
     },
     {
       "index": 77,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹79.jpg"
+      "relative_image": "geometric patterns/几何纹79.jpg",
+      "sha256": "4ab04e7ae38fd34e18ef027782e7344166221e51252a6a0a1e4ab0677e1c0dad"
     },
     {
       "index": 78,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹8.jpg"
+      "relative_image": "geometric patterns/几何纹8.jpg",
+      "sha256": "7a143ecf279b78d3f4f6c97268616149efcb7282f3f216f2d0abdb65777c737b"
     },
     {
       "index": 79,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹80.jpg"
+      "relative_image": "geometric patterns/几何纹80.jpg",
+      "sha256": "ee21102efe48f6d573c547a2f47e8ccc01c25578d67419408cece100d5795b80"
     },
     {
       "index": 80,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹81.jpg"
+      "relative_image": "geometric patterns/几何纹81.jpg",
+      "sha256": "d215be4867b107643267e0660badae1f41f409a2216f3de736760f579336074d"
     },
     {
       "index": 81,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹82.jpg"
+      "relative_image": "geometric patterns/几何纹82.jpg",
+      "sha256": "3bb791e0a950857cdbbd81e458ea9cb9a7ac4c03eee8f22db224a5121509c3ad"
     },
     {
       "index": 82,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹83.jpg"
+      "relative_image": "geometric patterns/几何纹83.jpg",
+      "sha256": "e4916c0a811759509c832603b48a900cf94cc877d96d3c747b825c800fc04396"
     },
     {
       "index": 83,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹84.jpg"
+      "relative_image": "geometric patterns/几何纹84.jpg",
+      "sha256": "f407cbb1ba1f2810eace696e229c4871c13c6056a10a5d7ab31df8dbedc48801"
     },
     {
       "index": 84,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹85.jpg"
+      "relative_image": "geometric patterns/几何纹85.jpg",
+      "sha256": "ff2e0fbe312f42460091316e8edcd2270912ed098e6690d96a24eed3c76cd4d4"
     },
     {
       "index": 85,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹86.jpg"
+      "relative_image": "geometric patterns/几何纹86.jpg",
+      "sha256": "39f0fdded1cc89ea3dd486f2f4d6342c0a591110da5142a53d1f6f46b6b9424a"
     },
     {
       "index": 86,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹87.jpg"
+      "relative_image": "geometric patterns/几何纹87.jpg",
+      "sha256": "391495ca6e18796292356cbaa41814fde360b5b3dfd168e849b7e9db3f463b6a"
     },
     {
       "index": 87,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹88.jpg"
+      "relative_image": "geometric patterns/几何纹88.jpg",
+      "sha256": "4546a688986e3943a6bf0654771adf775dfb4498a063accc3b38b5933e179f0f"
     },
     {
       "index": 88,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹89.jpg"
+      "relative_image": "geometric patterns/几何纹89.jpg",
+      "sha256": "d0b07c99a4054f951f1a36e7c1e873afda4d16894df5b97a172a04bcc5d06928"
     },
     {
       "index": 89,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹9.jpg"
+      "relative_image": "geometric patterns/几何纹9.jpg",
+      "sha256": "5e4445cbea34c4c42a9e4670481bfb0a8f340ca30e4f94b4f83b5b6d4d5efcc8"
     },
     {
       "index": 90,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹90.jpg"
+      "relative_image": "geometric patterns/几何纹90.jpg",
+      "sha256": "0e9654d257d0e55606588d2eb1685e91753593d09e81412ab75678e759a597a7"
     },
     {
       "index": 91,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹91.jpg"
+      "relative_image": "geometric patterns/几何纹91.jpg",
+      "sha256": "21cbf6d3e2aec36bb5c9c7127beb1907897e8c798c4639e50afe456bb194a4cb"
     },
     {
       "index": 92,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹92.jpg"
+      "relative_image": "geometric patterns/几何纹92.jpg",
+      "sha256": "daffaa816ceb515a8c72ac1c216b5dd39992e6ef95848268191fe1570f3e749a"
     },
     {
       "index": 93,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹93.jpg"
+      "relative_image": "geometric patterns/几何纹93.jpg",
+      "sha256": "082c867bbc5112ec0eda594fe32e54f7e6d57f2746a8d06183a41ec077d02605"
     },
     {
       "index": 94,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹94.jpg"
+      "relative_image": "geometric patterns/几何纹94.jpg",
+      "sha256": "8ee6f59bb12814534e5fdf21c572b5ebc6452142a58bf31c5fd12dd663bb98b8"
     },
     {
       "index": 95,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹95.jpg"
+      "relative_image": "geometric patterns/几何纹95.jpg",
+      "sha256": "8a9859da6158034b4b68a56e6fe803fcceb4c71eb19bdc3fff660614318f2658"
     },
     {
       "index": 96,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹96.jpg"
+      "relative_image": "geometric patterns/几何纹96.jpg",
+      "sha256": "e8a1a933004bbec1316054e8b28191591ee326e241057b2a9747804e7a621f40"
     },
     {
       "index": 97,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹97.jpg"
+      "relative_image": "geometric patterns/几何纹97.jpg",
+      "sha256": "c952fcfbb68c26c7211c0f59b8493feea61db96409f8ec078e772e280227e76a"
     },
     {
       "index": 98,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹98.jpg"
+      "relative_image": "geometric patterns/几何纹98.jpg",
+      "sha256": "7657c2332a1ced03bf01b404dcfcd487965af0e93add2e934757c61d56128832"
     },
     {
       "index": 99,
       "class_id": 0,
       "class_name": "geometric",
-      "relative_image": "geometric patterns\\几何纹99.jpg"
+      "relative_image": "geometric patterns/几何纹99.jpg",
+      "sha256": "7a384c315785eee7c17db9083b307d8693023e40f61ebfc11f4898307c2604b9"
     },
     {
       "index": 100,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹1.jpg"
+      "relative_image": "animal patterns/动物纹1.jpg",
+      "sha256": "16293b2802c5b4631f5a337e11ea0110935367124a53e2358ddef1c2d99e30bf"
     },
     {
       "index": 101,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹10.jpg"
+      "relative_image": "animal patterns/动物纹10.jpg",
+      "sha256": "dd05c3c1ac39f389e649c93fec9157d502101a6758191239200029caa20f7cb7"
     },
     {
       "index": 102,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹100.jpg"
+      "relative_image": "animal patterns/动物纹100.jpg",
+      "sha256": "32ccdbc0262fdd95ee4170a424e33fbdd88561d69886caeef28a103b1161cc47"
     },
     {
       "index": 103,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹101.jpg"
+      "relative_image": "animal patterns/动物纹101.jpg",
+      "sha256": "7d7c0662c9efdec388a5e69ba07a23e8cb28633da5e6652f883bdf3967f4c335"
     },
     {
       "index": 104,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹102.jpg"
+      "relative_image": "animal patterns/动物纹102.jpg",
+      "sha256": "8481272ea3c2c208081a406f121fb92203a3b76cd2ed84857a88acbfe8f2ab9d"
     },
     {
       "index": 105,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹103.jpg"
+      "relative_image": "animal patterns/动物纹103.jpg",
+      "sha256": "3f3f0517e5a92b69a426238ac65fca931ef2981c733b4106de3a8b60c50fb15f"
     },
     {
       "index": 106,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹104.jpg"
+      "relative_image": "animal patterns/动物纹104.jpg",
+      "sha256": "46ccb470ea2df43ec723386b641fe80ab2ec805355af14e268dc30adf79dfb51"
     },
     {
       "index": 107,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹105.jpg"
+      "relative_image": "animal patterns/动物纹105.jpg",
+      "sha256": "9cfc3cdb5dae2ebc0b5933b519a012ffece4e140456788c607ba0b65ff48458f"
     },
     {
       "index": 108,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹106.jpg"
+      "relative_image": "animal patterns/动物纹106.jpg",
+      "sha256": "59424b9729ad5ea54f61245de1ac775195f45b5cc7c50d0007a561073c082e41"
     },
     {
       "index": 109,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹107.jpg"
+      "relative_image": "animal patterns/动物纹107.jpg",
+      "sha256": "69edabde0020c456cdc9514732975b2ddfaedffd9db75710e8b1ffcde5f4fb50"
     },
     {
       "index": 110,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹108.jpg"
+      "relative_image": "animal patterns/动物纹108.jpg",
+      "sha256": "6172c502adea63535aa80c4ec50d1f25e518200a9efa5697ec7ccf6a78e9d23d"
     },
     {
       "index": 111,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹109.jpg"
+      "relative_image": "animal patterns/动物纹109.jpg",
+      "sha256": "6d0017677e02cb856fb86cc5e0738eed7952ca3164f39f75bef4272e1b29eb5e"
     },
     {
       "index": 112,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹11.jpg"
+      "relative_image": "animal patterns/动物纹11.jpg",
+      "sha256": "071e917b341299e7be428e529a1261ab8ef4e5faed0753fe57aee8aba27d0175"
     },
     {
       "index": 113,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹110.jpg"
+      "relative_image": "animal patterns/动物纹110.jpg",
+      "sha256": "59479a3bb1f406b3b0a626e4b70abe733e8d4272e3015d3ff2fb0feafdadb5f4"
     },
     {
       "index": 114,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹111.jpg"
+      "relative_image": "animal patterns/动物纹111.jpg",
+      "sha256": "8b4d63e07219382cc770d225ea9fdfd1f7cd692a53fa38a135e9995f23f8dfa9"
     },
     {
       "index": 115,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹12.jpg"
+      "relative_image": "animal patterns/动物纹12.jpg",
+      "sha256": "fb8c2ead3f10023633f46c53ec02d929749eef1742ff65d18f788d6888f7a083"
     },
     {
       "index": 116,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹13.jpg"
+      "relative_image": "animal patterns/动物纹13.jpg",
+      "sha256": "ff916d482a4a024b3325b556b155007c9024eea52a14fbd8dce08c9bc77971b9"
     },
     {
       "index": 117,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹14.jpg"
+      "relative_image": "animal patterns/动物纹14.jpg",
+      "sha256": "201d1af9c2e983997a656dca152140d38a7f4608570a2d1702ae9b1d732216f0"
     },
     {
       "index": 118,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹15.jpg"
+      "relative_image": "animal patterns/动物纹15.jpg",
+      "sha256": "38ebb13590271745f7413a690c1b29d9d282fce20c9e74131e27d61fa17e2cbb"
     },
     {
       "index": 119,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹16.jpg"
+      "relative_image": "animal patterns/动物纹16.jpg",
+      "sha256": "19d5345980af1c27e82a5312af3c3adaabaf41a50d0d31d6d662bb252252226e"
     },
     {
       "index": 120,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹17.jpg"
+      "relative_image": "animal patterns/动物纹17.jpg",
+      "sha256": "b9a9b3472e22beac3bb412e7c55300308d25459797918145acb91e0771ce8e5a"
     },
     {
       "index": 121,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹18.jpg"
+      "relative_image": "animal patterns/动物纹18.jpg",
+      "sha256": "7c9fb8f30a87ebde195a2a85a28c0e2a2b841ec702372adeaea5cce57d048e86"
     },
     {
       "index": 122,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹19.jpg"
+      "relative_image": "animal patterns/动物纹19.jpg",
+      "sha256": "4428b0fd73a456d152fec68919a7cadfb80779fdb9b150f183e2b0fe0cfe7835"
     },
     {
       "index": 123,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹2.jpg"
+      "relative_image": "animal patterns/动物纹2.jpg",
+      "sha256": "d6d7d89a146962b74cfa57e192b3ec64c958e23d38be11b5737d763cf1e11b7f"
     },
     {
       "index": 124,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹20.jpg"
+      "relative_image": "animal patterns/动物纹20.jpg",
+      "sha256": "7f1dacd9357e135baa1b0acaee38d143d72c07350590b8f2d56836f7ce9846af"
     },
     {
       "index": 125,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹21.jpg"
+      "relative_image": "animal patterns/动物纹21.jpg",
+      "sha256": "cf7313924d5eea69c49d2a0f7f93d19c7fd2e873ff1ae04af59aa399b3b2c06b"
     },
     {
       "index": 126,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹22.jpg"
+      "relative_image": "animal patterns/动物纹22.jpg",
+      "sha256": "82af0e14a6eda4014b6f9ea9be264b3cf9df087ca08de77a052fc8bc712b8f41"
     },
     {
       "index": 127,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹23.jpg"
+      "relative_image": "animal patterns/动物纹23.jpg",
+      "sha256": "602706a53c96f18eb194a853e78521d3db66c20c4f7a91a18920acdf635cc4c7"
     },
     {
       "index": 128,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹24.jpg"
+      "relative_image": "animal patterns/动物纹24.jpg",
+      "sha256": "56550a988c6343dfc0e0e8d8f6f25fab08bcab049f394724bff55e521a55deb2"
     },
     {
       "index": 129,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹25.jpg"
+      "relative_image": "animal patterns/动物纹25.jpg",
+      "sha256": "2a1a3a5b366409f85807a3a49d444c63fd0003dad449a9efd3266ae80156fe0a"
     },
     {
       "index": 130,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹26.jpg"
+      "relative_image": "animal patterns/动物纹26.jpg",
+      "sha256": "ae8febb6714393389ce885887cf3c2b5defeda9e3ee9a2bc92d53e1e592823e1"
     },
     {
       "index": 131,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹27.jpg"
+      "relative_image": "animal patterns/动物纹27.jpg",
+      "sha256": "0f10f024df4021cc06bcc39ceaac8619066bc6209b0c71d3eea6bbf1381743c8"
     },
     {
       "index": 132,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹28.jpg"
+      "relative_image": "animal patterns/动物纹28.jpg",
+      "sha256": "35766f1f40c5f6d57d8bcf98998b93a6247fd9dcc26a2bbe2637131a955a9c9e"
     },
     {
       "index": 133,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹29.jpg"
+      "relative_image": "animal patterns/动物纹29.jpg",
+      "sha256": "c08210a0abec1c82cab498bcb6e5d96d8e4de6194087edf77a43462369322ada"
     },
     {
       "index": 134,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹3.jpg"
+      "relative_image": "animal patterns/动物纹3.jpg",
+      "sha256": "d9e8d3681557be405734de702f416bab97fdd24c49b4e7075919f710d052b05a"
     },
     {
       "index": 135,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹30.jpg"
+      "relative_image": "animal patterns/动物纹30.jpg",
+      "sha256": "a51e35d4ec147860818a5678b53fd4f6c78918e61c5e8106ee36dffae867072f"
     },
     {
       "index": 136,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹31.jpg"
+      "relative_image": "animal patterns/动物纹31.jpg",
+      "sha256": "cbb7745293bb42603f68f8906e8c9a5e8e918629ae266d24891d8197b92f4901"
     },
     {
       "index": 137,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹32.jpg"
+      "relative_image": "animal patterns/动物纹32.jpg",
+      "sha256": "fffea66f2b2f6ac4146b79c4ab8cf45cd91ca68eb2e4d1aaed3708cb8334490a"
     },
     {
       "index": 138,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹33.jpg"
+      "relative_image": "animal patterns/动物纹33.jpg",
+      "sha256": "c2c3bf188a46cf6d9dcbefc4af33ebf60e551d1386777af2a19eca0b90071230"
     },
     {
       "index": 139,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹34.jpg"
+      "relative_image": "animal patterns/动物纹34.jpg",
+      "sha256": "4a0910836e91607a23b0dbd645e20902803513570336265379ee089969cdf55a"
     },
     {
       "index": 140,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹35.jpg"
+      "relative_image": "animal patterns/动物纹35.jpg",
+      "sha256": "7b539df7cc1f2c6ae772d8c4c4e38fbce4ea6a7fd18b4339e0fecbab7f781915"
     },
     {
       "index": 141,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹36.jpg"
+      "relative_image": "animal patterns/动物纹36.jpg",
+      "sha256": "553c1e442f55aa90e7ac91c6ed66ba5a231829529ac946818c97521eb63a92ff"
     },
     {
       "index": 142,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹37.jpg"
+      "relative_image": "animal patterns/动物纹37.jpg",
+      "sha256": "2aa6e7e8706425efcece23f097336551ec352d46a2a8ee50b33e3f031cd5e0b2"
     },
     {
       "index": 143,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹38.jpg"
+      "relative_image": "animal patterns/动物纹38.jpg",
+      "sha256": "bc919f8169fa26716a580178c4cdeda4ea7016a5dcf22ab0aae8329770b21bb3"
     },
     {
       "index": 144,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹39.jpg"
+      "relative_image": "animal patterns/动物纹39.jpg",
+      "sha256": "aefee3b0bee63fda46d0ed338a19a81575c0d2ada984c4b048bd1ae2975cceb9"
     },
     {
       "index": 145,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹4.jpg"
+      "relative_image": "animal patterns/动物纹4.jpg",
+      "sha256": "391ec43e0a34dfa325f3ee77446f6ebee5f5bc0c0801b0257d41d2d766010bae"
     },
     {
       "index": 146,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹40.jpg"
+      "relative_image": "animal patterns/动物纹40.jpg",
+      "sha256": "a0663fa29da995cbc5189ee88969a3999b676291cbb894302deef702e472f946"
     },
     {
       "index": 147,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹41.jpg"
+      "relative_image": "animal patterns/动物纹41.jpg",
+      "sha256": "9de61b37464d87be1dfb3dbb92b8914f3410a289496006a0fb5d1301c68de5a3"
     },
     {
       "index": 148,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹42.jpg"
+      "relative_image": "animal patterns/动物纹42.jpg",
+      "sha256": "aaec120012c9f352f9a233ce9b547b4e5a123b5ab603cccf11f979a85dccd918"
     },
     {
       "index": 149,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹43.jpg"
+      "relative_image": "animal patterns/动物纹43.jpg",
+      "sha256": "e192b2a2dca27867419b6068622ed1076fb90b4a009e481774c4cadecfd7bb37"
     },
     {
       "index": 150,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹44.jpg"
+      "relative_image": "animal patterns/动物纹44.jpg",
+      "sha256": "75286cc6729f0576448a29e40baa77edadeb5d57d6d94311793d9906d4912bf3"
     },
     {
       "index": 151,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹45.jpg"
+      "relative_image": "animal patterns/动物纹45.jpg",
+      "sha256": "d3793ad8870cec5fda1f5ab85963e82c5aa306982135612735c06ddcbd87c6aa"
     },
     {
       "index": 152,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹46.jpg"
+      "relative_image": "animal patterns/动物纹46.jpg",
+      "sha256": "6ed37427de7fa913c098e9e3c3e86fe054b4640233a77ac65edc6794f20493f8"
     },
     {
       "index": 153,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹47.jpg"
+      "relative_image": "animal patterns/动物纹47.jpg",
+      "sha256": "aa138c017626f54316cc4bb2609ee2ab7234290d2ee1964a39fdf52982be4dd1"
     },
     {
       "index": 154,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹48.jpg"
+      "relative_image": "animal patterns/动物纹48.jpg",
+      "sha256": "ac5e3e5ccbd92bfeb5f48d244a9daca5dc92110abd419eef6ed9f9c401d17b9d"
     },
     {
       "index": 155,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹49.jpg"
+      "relative_image": "animal patterns/动物纹49.jpg",
+      "sha256": "b2e644c31741eb3cdd9c8c1321e06482e91b95bd78ca90b0a559949583b360fc"
     },
     {
       "index": 156,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹5.jpg"
+      "relative_image": "animal patterns/动物纹5.jpg",
+      "sha256": "d120e0fe26054fd518ef72e935054cfa33c22f3ebecb93b79f5d4b9659dcb5b3"
     },
     {
       "index": 157,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹50.jpg"
+      "relative_image": "animal patterns/动物纹50.jpg",
+      "sha256": "8989fe012ce429e276c8ccfd8f08fbbd2d98a08362b4557dbae00cc64b42fa5a"
     },
     {
       "index": 158,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹51.jpg"
+      "relative_image": "animal patterns/动物纹51.jpg",
+      "sha256": "f6ba470098bb8044e8d4f5101f8ecb2abb90e9a10ca234c42c5b2516ef1df789"
     },
     {
       "index": 159,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹52.jpg"
+      "relative_image": "animal patterns/动物纹52.jpg",
+      "sha256": "cc424429f048cd85cf1793375fb9ac9b213a74ddf2a5943429cdea46ea0f7d6c"
     },
     {
       "index": 160,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹53.jpg"
+      "relative_image": "animal patterns/动物纹53.jpg",
+      "sha256": "9e517ab95a4e1b79243428eeadfa0374e03f372985610b48f8249142401c0935"
     },
     {
       "index": 161,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹54.jpg"
+      "relative_image": "animal patterns/动物纹54.jpg",
+      "sha256": "df52e260f78e9bd0ce9dc2321fcffeea23068a540aa60924f28baa94ab33efdd"
     },
     {
       "index": 162,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹55.jpg"
+      "relative_image": "animal patterns/动物纹55.jpg",
+      "sha256": "19b6aa21af1fbf1955f70c5ecfc7f45ab96c91719816b986d34e7200c56e317f"
     },
     {
       "index": 163,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹56.jpg"
+      "relative_image": "animal patterns/动物纹56.jpg",
+      "sha256": "098a834bf92e9944734a2a1cef54ef0936936cc1b9f6dd80602ee1070c3f2c21"
     },
     {
       "index": 164,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹57.jpg"
+      "relative_image": "animal patterns/动物纹57.jpg",
+      "sha256": "75aad01c1ea53fdaa1c7a0a3baa33c1891722d9953cc35cd02977ecb9fe2c0ac"
     },
     {
       "index": 165,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹58.jpg"
+      "relative_image": "animal patterns/动物纹58.jpg",
+      "sha256": "f7067eab335b4dd9a050a4ceb7a699b69fb9ead917db83182d80e285839fda1d"
     },
     {
       "index": 166,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹59.jpg"
+      "relative_image": "animal patterns/动物纹59.jpg",
+      "sha256": "26dd29f398a307f64043688ab1b1138b33240503ab0fdf81c01b817c21b90042"
     },
     {
       "index": 167,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹6.jpg"
+      "relative_image": "animal patterns/动物纹6.jpg",
+      "sha256": "f7419ecdc9f027ceda070883c4dbc1d85503239e247dae243cce327192b0bd21"
     },
     {
       "index": 168,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹60.jpg"
+      "relative_image": "animal patterns/动物纹60.jpg",
+      "sha256": "bc094f7041c278a66eb936258affb5f621d710258b03445398e2fd2ddbc86bb6"
     },
     {
       "index": 169,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹61.jpg"
+      "relative_image": "animal patterns/动物纹61.jpg",
+      "sha256": "84eac859226a134a928fa7c8eeaff582bf6ea4fbe5f8e2cc8deaf8e593c36b13"
     },
     {
       "index": 170,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹62.jpg"
+      "relative_image": "animal patterns/动物纹62.jpg",
+      "sha256": "5336e1b39e9322261d4da4f9722a1c5e196e911d3ecfa3c26de10e3e2c8afb8f"
     },
     {
       "index": 171,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹63.jpg"
+      "relative_image": "animal patterns/动物纹63.jpg",
+      "sha256": "12d198badbc55530487cc3b4ae1a2419a0e542f3fc39381a68a7deb364e07321"
     },
     {
       "index": 172,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹64.jpg"
+      "relative_image": "animal patterns/动物纹64.jpg",
+      "sha256": "e126c29ad259c661df9d77649724907302e491853d61c0eae77cce7fda45258d"
     },
     {
       "index": 173,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹65.jpg"
+      "relative_image": "animal patterns/动物纹65.jpg",
+      "sha256": "07127fc17f9d6673600e884e0b4ee5312cd314c28fcf54dc9e0c2d0b7932afeb"
     },
     {
       "index": 174,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹66.jpg"
+      "relative_image": "animal patterns/动物纹66.jpg",
+      "sha256": "bc2d1301553f98cc1fbd8b0b72584cb50a3f64ec229e2d35891794a5491f89a1"
     },
     {
       "index": 175,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹67.jpg"
+      "relative_image": "animal patterns/动物纹67.jpg",
+      "sha256": "4081062cc5f5185e48d9aea2a1398780e5a985d4a4e537fee5e0aab13ab9945d"
     },
     {
       "index": 176,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹68.jpg"
+      "relative_image": "animal patterns/动物纹68.jpg",
+      "sha256": "a3eb2ac085714a3104b043da12980f92cd48c35affa153ab70273beaf7c24c6b"
     },
     {
       "index": 177,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹69.jpg"
+      "relative_image": "animal patterns/动物纹69.jpg",
+      "sha256": "1c82eb6a546a04685e55b4e739979da3b11ef5619913d453a288b74ad0de70ab"
     },
     {
       "index": 178,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹7.jpg"
+      "relative_image": "animal patterns/动物纹7.jpg",
+      "sha256": "51a8afe0a351887542b1d4db1d808eec0e69ad9f8a45856f4bbe7c67a60c644a"
     },
     {
       "index": 179,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹70.jpg"
+      "relative_image": "animal patterns/动物纹70.jpg",
+      "sha256": "c2cde6814c86dcbe416aaa05ce041040bf56a810a205f8f3e2d591450f067191"
     },
     {
       "index": 180,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹71.jpg"
+      "relative_image": "animal patterns/动物纹71.jpg",
+      "sha256": "ed40ae7b72e272b3978d36869f5d1289f19f7e8f2776ed03c0fd129fb0008fd6"
     },
     {
       "index": 181,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹72.jpg"
+      "relative_image": "animal patterns/动物纹72.jpg",
+      "sha256": "4bcc73b054a41f7c6c469e368159c02e346a93495f062076700fb72398639de8"
     },
     {
       "index": 182,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹73.jpg"
+      "relative_image": "animal patterns/动物纹73.jpg",
+      "sha256": "f27e579f1815cc1b10792e0052e157f5df982a1015b659e36e91f1c0c8e383b7"
     },
     {
       "index": 183,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹74.jpg"
+      "relative_image": "animal patterns/动物纹74.jpg",
+      "sha256": "c36bcfbd9de968cbd455eb140d88b2c4bcabae1ec5f1b581c8c0d53688fea9f8"
     },
     {
       "index": 184,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹75.jpg"
+      "relative_image": "animal patterns/动物纹75.jpg",
+      "sha256": "bdcf9af22ce7bdaf27aaaff0462b30b9911c69a7f7b0a70c70e94129f9b90b63"
     },
     {
       "index": 185,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹76.jpg"
+      "relative_image": "animal patterns/动物纹76.jpg",
+      "sha256": "e98b724ba826b270db4c4240183e0966dcf25fcbca4b88c3f3fb2bcdd3515ae6"
     },
     {
       "index": 186,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹77.jpg"
+      "relative_image": "animal patterns/动物纹77.jpg",
+      "sha256": "fa7bcbb5319c604d9ff6094a4dba5150f21c1db6ed258cab7d40676fa68dc506"
     },
     {
       "index": 187,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹78.jpg"
+      "relative_image": "animal patterns/动物纹78.jpg",
+      "sha256": "6fe6016ca9e158b4a0c6df4c64902130c6610aaace51c550929d159ba2d40e0b"
     },
     {
       "index": 188,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹79.jpg"
+      "relative_image": "animal patterns/动物纹79.jpg",
+      "sha256": "d5de7af541f5e650f6611699e5076ca6031a074335b253077c9c374bb153a262"
     },
     {
       "index": 189,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹8.jpg"
+      "relative_image": "animal patterns/动物纹8.jpg",
+      "sha256": "fcc71e52d7dc962dd837a168d93642bb2c3114f67cb8dd9fbfb7bbe6a7acf959"
     },
     {
       "index": 190,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹80.jpg"
+      "relative_image": "animal patterns/动物纹80.jpg",
+      "sha256": "445242108c1e8e4d7f34cfab8798e3e9695ad2fd9ef401c8e1c0427ee1f35789"
     },
     {
       "index": 191,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹81.jpg"
+      "relative_image": "animal patterns/动物纹81.jpg",
+      "sha256": "0605b2c59e0cfb0db2a45ecefa90fa786406323f3668a8e45c69a98830fdac67"
     },
     {
       "index": 192,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹82.jpg"
+      "relative_image": "animal patterns/动物纹82.jpg",
+      "sha256": "672b6d72133aff2fab2f9e5414a16beda1dc5af73f3c13d220f17a3062ef7d3e"
     },
     {
       "index": 193,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹83.jpg"
+      "relative_image": "animal patterns/动物纹83.jpg",
+      "sha256": "8cacb4904204b15046af25dc421e7b791456ba7eae3cb6f3513cb1cf9a8b029a"
     },
     {
       "index": 194,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹84.jpg"
+      "relative_image": "animal patterns/动物纹84.jpg",
+      "sha256": "d7c0b1f4c54539e09358f68ee9a0d939cfec04a9bce54667f2cd4431414547c3"
     },
     {
       "index": 195,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹85.jpg"
+      "relative_image": "animal patterns/动物纹85.jpg",
+      "sha256": "b23126757bf6056da7413f129a2dbab0030d8e999ae36d0eb2b9f8f3b7bd93e0"
     },
     {
       "index": 196,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹86.jpg"
+      "relative_image": "animal patterns/动物纹86.jpg",
+      "sha256": "f14d71a51a2e99cd2599aba326647934b08963fa4c7dee79855ef1a60998902c"
     },
     {
       "index": 197,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹87.jpg"
+      "relative_image": "animal patterns/动物纹87.jpg",
+      "sha256": "1cdabad59ee09899355280f7802d1ff484754db92eac570264d4d6fc5aea2a31"
     },
     {
       "index": 198,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹88.jpg"
+      "relative_image": "animal patterns/动物纹88.jpg",
+      "sha256": "c1602280341b9bcc5a429375c503c8b618675a3bccc8247acc972e863c873aac"
     },
     {
       "index": 199,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹89.jpg"
+      "relative_image": "animal patterns/动物纹89.jpg",
+      "sha256": "a34d3fbda2e42856267d2fae82e3dbc1a29a49624ff6df209592da2158e15ee5"
     },
     {
       "index": 200,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹9.jpg"
+      "relative_image": "animal patterns/动物纹9.jpg",
+      "sha256": "8adcfd6154cdd60a5e0d765a624715226ebeae32f40ea45ffa9862de171cf483"
     },
     {
       "index": 201,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹90.jpg"
+      "relative_image": "animal patterns/动物纹90.jpg",
+      "sha256": "28a91afd05c3e56dee582ff9b2a2290ef64003711a7b468b23c5b3b3840cbeca"
     },
     {
       "index": 202,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹91.jpg"
+      "relative_image": "animal patterns/动物纹91.jpg",
+      "sha256": "69da4676f2e68f1c23253912f5d6184bf610c2e4b201ec3ef81ca9c06e1f92ef"
     },
     {
       "index": 203,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹92.jpg"
+      "relative_image": "animal patterns/动物纹92.jpg",
+      "sha256": "2fad9fa781009e5f54a9039ce7b203bce6339c5308378e9865b5d5dec2fc721b"
     },
     {
       "index": 204,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹93.jpg"
+      "relative_image": "animal patterns/动物纹93.jpg",
+      "sha256": "e0a4cdc05d842a68e7b79bfa1595d367152ffd364dbf475c6457cba9a31c7224"
     },
     {
       "index": 205,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹94.jpg"
+      "relative_image": "animal patterns/动物纹94.jpg",
+      "sha256": "b13232d92200673d71368a88f53fbe8057a1fe2d1cc7f3f118a90580c402e561"
     },
     {
       "index": 206,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹95.jpg"
+      "relative_image": "animal patterns/动物纹95.jpg",
+      "sha256": "0c697981b5bee826b77918734e30df8c2d5c4c154689128023fed18043b2e9d8"
     },
     {
       "index": 207,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹96.jpg"
+      "relative_image": "animal patterns/动物纹96.jpg",
+      "sha256": "9d66b9959e2dbd7eeac8cae5cb4b3a91b0f337fb48cf34a88a0916330c8bed67"
     },
     {
       "index": 208,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹97.jpg"
+      "relative_image": "animal patterns/动物纹97.jpg",
+      "sha256": "ba1ca8cb27c9ba098d45e2bfb3e71dd55709874ad9f39ff2a9b10df0c8160c03"
     },
     {
       "index": 209,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹98.jpg"
+      "relative_image": "animal patterns/动物纹98.jpg",
+      "sha256": "a6ba1cabf74467c086e2d18466eb5c3cb8a02ab6e379d3439b89e9f0716849e2"
     },
     {
       "index": 210,
       "class_id": 1,
       "class_name": "animal",
-      "relative_image": "animal patterns\\动物纹99.jpg"
+      "relative_image": "animal patterns/动物纹99.jpg",
+      "sha256": "f6712a06a42d347f49f3a3a58ca74a5f12086d3e8cef8b4ee49cec9d8a8479c9"
     },
     {
       "index": 211,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹1.jpg"
+      "relative_image": "antique-object patterns/博古纹1.jpg",
+      "sha256": "9bd4d254127f7f344f9ea0f879ad230a7cf3b6f00e1240248912a2c8270a3c53"
     },
     {
       "index": 212,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹10.png"
+      "relative_image": "antique-object patterns/博古纹10.png",
+      "sha256": "2f2a2a93a34274c06cd75886b9f008aa8ab2abc83a32a7b5512ed3c83bd1c99b"
     },
     {
       "index": 213,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹100.jpg"
+      "relative_image": "antique-object patterns/博古纹100.jpg",
+      "sha256": "da58537774e7dee40b4319c6a9ddef59041c999c9dd6767d3355ee964a27cec1"
     },
     {
       "index": 214,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹101.jpg"
+      "relative_image": "antique-object patterns/博古纹101.jpg",
+      "sha256": "4da8e57f65fb42126dd83557d41133d39ceb23356a9fc6e695417c533ae29426"
     },
     {
       "index": 215,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹102.jpg"
+      "relative_image": "antique-object patterns/博古纹102.jpg",
+      "sha256": "6e3311602791ba5513d4a7df204e806d24ea4b68f4fc97fa2db571ea9bcb7544"
     },
     {
       "index": 216,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹103.jpg"
+      "relative_image": "antique-object patterns/博古纹103.jpg",
+      "sha256": "e0fb3b11ff45b7ef6c0a9d6d8590e03f7a00a1288aef00dee2f7d73acc8ceaf1"
     },
     {
       "index": 217,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹104.jpg"
+      "relative_image": "antique-object patterns/博古纹104.jpg",
+      "sha256": "3800eee957a0b835f2b1febc09541d7e512109649d3544f8b46ec137e503cf6c"
     },
     {
       "index": 218,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹11.png"
+      "relative_image": "antique-object patterns/博古纹11.png",
+      "sha256": "4d2f55a33cc26c8009a3defab7007e24e64aeb3e9bccf5f750cbaf6335252b97"
     },
     {
       "index": 219,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹12.png"
+      "relative_image": "antique-object patterns/博古纹12.png",
+      "sha256": "a3fbbe96a50b582c885e3d8e8e3dab2cbf3c8c34a9028b89c7eeb05df9c4acf1"
     },
     {
       "index": 220,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹13.png"
+      "relative_image": "antique-object patterns/博古纹13.png",
+      "sha256": "76076e50042583882e59e51ac0a2b00d56e73696c5a7d90174dfa03e543de103"
     },
     {
       "index": 221,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹14.png"
+      "relative_image": "antique-object patterns/博古纹14.png",
+      "sha256": "cebfbaeaa7d7f855722521284b2dcacb017f941fc91dc5df17c67584dd72ab60"
     },
     {
       "index": 222,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹15.png"
+      "relative_image": "antique-object patterns/博古纹15.png",
+      "sha256": "8184bd2bc5b69c28792b463e69a80bac3e1c2e1bc34e8c0ba57d902f7a75a546"
     },
     {
       "index": 223,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹16.png"
+      "relative_image": "antique-object patterns/博古纹16.png",
+      "sha256": "b162202f86ce05ffe705f704a61519c6d2d24d61dccb80e30a7601750b4d0de7"
     },
     {
       "index": 224,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹17.png"
+      "relative_image": "antique-object patterns/博古纹17.png",
+      "sha256": "0c900d074bd1583fe44d004d21e7df7e4c79a7cbe4e39f78375e227492d48305"
     },
     {
       "index": 225,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹18.png"
+      "relative_image": "antique-object patterns/博古纹18.png",
+      "sha256": "5fcf6f7b0888faaaabf1d1a29e29d36213c60a25d961f6a845b5b803c1216416"
     },
     {
       "index": 226,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹19.png"
+      "relative_image": "antique-object patterns/博古纹19.png",
+      "sha256": "06077bcac4e1c1628c3ee1a9f99dc5545da70f84a16169d538b13e5016792af1"
     },
     {
       "index": 227,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹2.jpg"
+      "relative_image": "antique-object patterns/博古纹2.jpg",
+      "sha256": "541c12f25ca29165ad1a0a16b70566d0f45edc761149e3ec6ef1a356a762ee90"
     },
     {
       "index": 228,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹20.png"
+      "relative_image": "antique-object patterns/博古纹20.png",
+      "sha256": "3c0df5ec68806c30b5d739e31d8258a3c65aade17def14ac87e84620365ba9db"
     },
     {
       "index": 229,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹21.png"
+      "relative_image": "antique-object patterns/博古纹21.png",
+      "sha256": "7ace75187f88079c2c8547785e05ec5362bec3ee8122ba291294274cfe07c8e1"
     },
     {
       "index": 230,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹22.png"
+      "relative_image": "antique-object patterns/博古纹22.png",
+      "sha256": "46562acb0c258399769148c4a98a25199a96420bbd686575311a64d2701da673"
     },
     {
       "index": 231,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹23.png"
+      "relative_image": "antique-object patterns/博古纹23.png",
+      "sha256": "9f5266a058968d6c4974dbc23a5f50a875451ba8a04cff99dac636d52a42b756"
     },
     {
       "index": 232,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹24.png"
+      "relative_image": "antique-object patterns/博古纹24.png",
+      "sha256": "20fe2bdaff3795a3567da7cce230ccb59f20753613ec0dea4bb76bcdc1daca40"
     },
     {
       "index": 233,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹25.png"
+      "relative_image": "antique-object patterns/博古纹25.png",
+      "sha256": "90e523a67d9f0c591847987c5db7c3622be968e354713a1ec93a8e6a0e55ee26"
     },
     {
       "index": 234,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹26.png"
+      "relative_image": "antique-object patterns/博古纹26.png",
+      "sha256": "86cdfb692760db345eba4f5793f1674e622f9bbf649f535f06e38840b6f95121"
     },
     {
       "index": 235,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹27.png"
+      "relative_image": "antique-object patterns/博古纹27.png",
+      "sha256": "6c7abe9aaef754c260ff71acf6972c29a0e380f13cab44561aa00a07bd9a6965"
     },
     {
       "index": 236,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹28.png"
+      "relative_image": "antique-object patterns/博古纹28.png",
+      "sha256": "7ecfee355e4cdb2c5c538d064c4edd1f02bf5be0f9ae8dfc861a1fed501b297d"
     },
     {
       "index": 237,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹29.png"
+      "relative_image": "antique-object patterns/博古纹29.png",
+      "sha256": "e44349b9440fc2c536b395934c30482206331ef32008021dcb5032a5d3e1227d"
     },
     {
       "index": 238,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹3.jpg"
+      "relative_image": "antique-object patterns/博古纹3.jpg",
+      "sha256": "b440ceda9945bd8e62c96ff6af73249e2e183ccc06a3c9657b457b79720a7c1f"
     },
     {
       "index": 239,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹30.png"
+      "relative_image": "antique-object patterns/博古纹30.png",
+      "sha256": "1041713ed40ae5245c691de648ad8e249ae24956983bf0a8cbe8603577654ef5"
     },
     {
       "index": 240,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹31.png"
+      "relative_image": "antique-object patterns/博古纹31.png",
+      "sha256": "54af9acf6ef255095d2b80b5d60e4e8a516f6cf56f233f034bd39395b9011e1c"
     },
     {
       "index": 241,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹32.png"
+      "relative_image": "antique-object patterns/博古纹32.png",
+      "sha256": "67c55eeb9b48cdad3c0031e1d690edd0ec53f9ea054f12ccde86ad51e3d44626"
     },
     {
       "index": 242,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹33.jpg"
+      "relative_image": "antique-object patterns/博古纹33.jpg",
+      "sha256": "a907fe714d4238c96582c2b16c24c05beeb1fe637a0814aad915e9886c0c8fa5"
     },
     {
       "index": 243,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹34.jpg"
+      "relative_image": "antique-object patterns/博古纹34.jpg",
+      "sha256": "569f9e1a02bf1277824c1708a4586004d1283ccb4ce371ca9d2612723d2822a5"
     },
     {
       "index": 244,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹35.jpg"
+      "relative_image": "antique-object patterns/博古纹35.jpg",
+      "sha256": "2c2b5a778588e65388831273df0a7035975686de935b4f47ba1568d2b3790960"
     },
     {
       "index": 245,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹36.jpg"
+      "relative_image": "antique-object patterns/博古纹36.jpg",
+      "sha256": "11ba1d043024c2c8b607c9db1b35d007e1ae555168871dd7cd5598f2a24321b5"
     },
     {
       "index": 246,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹37.jpg"
+      "relative_image": "antique-object patterns/博古纹37.jpg",
+      "sha256": "09a17cd10e3ce0ae528783a2bdeeccd29147496ed9a353704187602f1bc24e43"
     },
     {
       "index": 247,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹38.jpg"
+      "relative_image": "antique-object patterns/博古纹38.jpg",
+      "sha256": "df0b66f7a9f80096e9b4fb52a5a0ac5d1d78383ebdb0551c4bed310b5d35318e"
     },
     {
       "index": 248,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹39.jpg"
+      "relative_image": "antique-object patterns/博古纹39.jpg",
+      "sha256": "735785957ddc288bf02404e85df8c87420af33695328733e143d61f5be9fcb14"
     },
     {
       "index": 249,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹4.jpg"
+      "relative_image": "antique-object patterns/博古纹4.jpg",
+      "sha256": "f0a9b1188ea9b8785c40f56b764d3001b8492dd1498ee0b936c6d0331921d686"
     },
     {
       "index": 250,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹40.jpg"
+      "relative_image": "antique-object patterns/博古纹40.jpg",
+      "sha256": "76c2982033cf3fc994a55c5c7168c8eab3d4d8cc872666bcddc87164427a60ff"
     },
     {
       "index": 251,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹41.jpg"
+      "relative_image": "antique-object patterns/博古纹41.jpg",
+      "sha256": "22c8ffe2f1b51b14228b39b425f5a419a00f51a154419d42b55f38ff0035c0ad"
     },
     {
       "index": 252,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹42.jpg"
+      "relative_image": "antique-object patterns/博古纹42.jpg",
+      "sha256": "8b3e1270a02b5d3c9cc047a1fd3c1ef7a588f00c41e7c3f13a997785211bdf83"
     },
     {
       "index": 253,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹43.jpg"
+      "relative_image": "antique-object patterns/博古纹43.jpg",
+      "sha256": "2a65d9ea88b81a2515ef76d944125d9affb05c49cc9898c34bacd33deb9bf7a8"
     },
     {
       "index": 254,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹44.jpg"
+      "relative_image": "antique-object patterns/博古纹44.jpg",
+      "sha256": "5f11f753e358125c336746c07d025b2aa389ede8956dcd94e62133e66444ea47"
     },
     {
       "index": 255,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹45.jpg"
+      "relative_image": "antique-object patterns/博古纹45.jpg",
+      "sha256": "bbcde21df0d1defe071a4d88acc053645de178b9001bbbc7e6362ef631c568c0"
     },
     {
       "index": 256,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹46.jpg"
+      "relative_image": "antique-object patterns/博古纹46.jpg",
+      "sha256": "4dcedf598934652252a616a18126a32705557d3995d3f436944d017c51e77f1c"
     },
     {
       "index": 257,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹47.jpg"
+      "relative_image": "antique-object patterns/博古纹47.jpg",
+      "sha256": "6389f40dfcd7eb0bc84716f7a67f2f6dc3234926385da9bd4d40940752e30d78"
     },
     {
       "index": 258,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹48.jpg"
+      "relative_image": "antique-object patterns/博古纹48.jpg",
+      "sha256": "4189f9d05bee5de0453802db790bd2bfeed59945f3f0587f52ff573d8a39e2d0"
     },
     {
       "index": 259,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹49.jpg"
+      "relative_image": "antique-object patterns/博古纹49.jpg",
+      "sha256": "883297e3dc990a5a6301c0d7b4d17e3be34f023d465af318fb7ab23f98abc406"
     },
     {
       "index": 260,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹5.jpg"
+      "relative_image": "antique-object patterns/博古纹5.jpg",
+      "sha256": "e3737f8bf6e0f0fc56a004ce9c8c7384e4174c3993703222ed2ae872aaeeec1e"
     },
     {
       "index": 261,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹50.jpg"
+      "relative_image": "antique-object patterns/博古纹50.jpg",
+      "sha256": "70403665a2eb9b27cd8237d981b354c0b60a10e78bcbfde798b4867429b0733b"
     },
     {
       "index": 262,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹51.jpg"
+      "relative_image": "antique-object patterns/博古纹51.jpg",
+      "sha256": "97127068157d560775185b6ba1a06d69f4b904ede151b7a88cd8ff246f52d57f"
     },
     {
       "index": 263,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹52.jpg"
+      "relative_image": "antique-object patterns/博古纹52.jpg",
+      "sha256": "ece6a3d8291bddb1d2daf0642aad160230c426ff372669c3e5b6cd860bf51500"
     },
     {
       "index": 264,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹53.jpg"
+      "relative_image": "antique-object patterns/博古纹53.jpg",
+      "sha256": "71ca4906231407465a14f40ca3a37f29cf6d04bd772c3eb240ad2d62bf8d6518"
     },
     {
       "index": 265,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹54.jpg"
+      "relative_image": "antique-object patterns/博古纹54.jpg",
+      "sha256": "65f68577f06b86cd26a97e5692b6ff0810f0a081c9fef7abf6da7cf14d59a4d9"
     },
     {
       "index": 266,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹55.jpg"
+      "relative_image": "antique-object patterns/博古纹55.jpg",
+      "sha256": "65ad5891b2fd5ed480c00287cefdb63ecd758fd2fcc55c444d75f9c63de0e77c"
     },
     {
       "index": 267,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹56.jpg"
+      "relative_image": "antique-object patterns/博古纹56.jpg",
+      "sha256": "2ae18ebc51f74afc70b8b70141d67b2d692acb07e860c157cbc94c65cc6eb441"
     },
     {
       "index": 268,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹57.jpg"
+      "relative_image": "antique-object patterns/博古纹57.jpg",
+      "sha256": "1e6991b5f4b7a0e77d8275d78f9fa736079163cdfd4da188c6c09202a44f15ea"
     },
     {
       "index": 269,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹58.jpg"
+      "relative_image": "antique-object patterns/博古纹58.jpg",
+      "sha256": "4abada0f024c4fc5baea44eb1fdd203311208013fd9784bbfa0786f4d024aa1c"
     },
     {
       "index": 270,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹59.jpg"
+      "relative_image": "antique-object patterns/博古纹59.jpg",
+      "sha256": "d8ac59184661fee8fbf6cc953c8a4beb819efe0c5e87911268f8f60b3cef3154"
     },
     {
       "index": 271,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹6.jpg"
+      "relative_image": "antique-object patterns/博古纹6.jpg",
+      "sha256": "93866a0426498e5bdf6f10bdb7f2787836df55b986659503c9cd8de5565daa1f"
     },
     {
       "index": 272,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹60.jpg"
+      "relative_image": "antique-object patterns/博古纹60.jpg",
+      "sha256": "35365db66540b302d3f9a1259b1278d3cbddbc0c625470124ea34594a165f9b5"
     },
     {
       "index": 273,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹61.jpg"
+      "relative_image": "antique-object patterns/博古纹61.jpg",
+      "sha256": "1612bb4a2aaed0f2d4287642e3bfa9901933d7f63b1b512152130f6df81a229c"
     },
     {
       "index": 274,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹62.jpg"
+      "relative_image": "antique-object patterns/博古纹62.jpg",
+      "sha256": "b8d752fb8b13a0cf67bd640cca7598d2ed97331077654f979414945a9814596a"
     },
     {
       "index": 275,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹63.jpg"
+      "relative_image": "antique-object patterns/博古纹63.jpg",
+      "sha256": "3aca290ffacf3a3458efd866b799c173ef28dbe300bfb7150ab11827ef408cfd"
     },
     {
       "index": 276,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹64.jpg"
+      "relative_image": "antique-object patterns/博古纹64.jpg",
+      "sha256": "43dbaf04d789a01b0c39a049b30d29f99f1233fdc159371df9d5b9a349c3669e"
     },
     {
       "index": 277,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹65.jpg"
+      "relative_image": "antique-object patterns/博古纹65.jpg",
+      "sha256": "37e47cf72ec0ecbf2fbe21b6b6565c3ece86a5fc1abe1f4ea1f25ab48ba36d7a"
     },
     {
       "index": 278,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹66.jpg"
+      "relative_image": "antique-object patterns/博古纹66.jpg",
+      "sha256": "454a15876203c1614517708bc690df38b88fb2c5d798f5b3fdf52e747eb86f23"
     },
     {
       "index": 279,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹67.jpg"
+      "relative_image": "antique-object patterns/博古纹67.jpg",
+      "sha256": "49c9a9994c0c60c5536993e1630956b2836da9b5cbb31e9d53e7eb9bdc5bf447"
     },
     {
       "index": 280,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹68.jpg"
+      "relative_image": "antique-object patterns/博古纹68.jpg",
+      "sha256": "1c50a317a996a2ff57bb0633c1e253d06c58c4ab7eef70d037c79cdf9713f421"
     },
     {
       "index": 281,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹69.jpg"
+      "relative_image": "antique-object patterns/博古纹69.jpg",
+      "sha256": "aa7f950c2f67271a6c1c8f0eece325514f0b787aae2f776c03eceb62f91c1e67"
     },
     {
       "index": 282,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹7.png"
+      "relative_image": "antique-object patterns/博古纹7.png",
+      "sha256": "d3368a30b1adf5bf52ae49a3606879e0398760907bd0f34a94125d9a817f670c"
     },
     {
       "index": 283,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹70.jpg"
+      "relative_image": "antique-object patterns/博古纹70.jpg",
+      "sha256": "c673ba063cd5983da4cfe016b61d3558860259b45c6dd5a2e58db9b43278c16f"
     },
     {
       "index": 284,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹71.jpg"
+      "relative_image": "antique-object patterns/博古纹71.jpg",
+      "sha256": "43ca90f650cb976307a894f1314882337f088e3b5cbbd26d567f80c45b3fc27a"
     },
     {
       "index": 285,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹72.jpg"
+      "relative_image": "antique-object patterns/博古纹72.jpg",
+      "sha256": "0247c2beb68dd221d79dc4bf601dda04f213043a4108c40b150adf9809379559"
     },
     {
       "index": 286,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹73.jpg"
+      "relative_image": "antique-object patterns/博古纹73.jpg",
+      "sha256": "b4ac5baa47c5e79512afd6e1b02ada7f4de177c1e617b0ba78a4c6552200f7e6"
     },
     {
       "index": 287,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹74.jpg"
+      "relative_image": "antique-object patterns/博古纹74.jpg",
+      "sha256": "ad56c754016a36d010b3ee988c04473aa1cd42783260badee8a7f76906642a0e"
     },
     {
       "index": 288,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹75.jpg"
+      "relative_image": "antique-object patterns/博古纹75.jpg",
+      "sha256": "47c77a0ab8849557da38a91384ab2ad4e81513b26d012977c6197fafbbc3dfdc"
     },
     {
       "index": 289,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹76.jpg"
+      "relative_image": "antique-object patterns/博古纹76.jpg",
+      "sha256": "dd03b82fbf3ce98a7bf167f794561ce4561c862d012192cd955d171478a83219"
     },
     {
       "index": 290,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹77.jpg"
+      "relative_image": "antique-object patterns/博古纹77.jpg",
+      "sha256": "39a89bd7fae1d2677c35d3b4d9ef47fab3bb95c4b7f6f5c96e0182ef9c16bc65"
     },
     {
       "index": 291,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹78.jpg"
+      "relative_image": "antique-object patterns/博古纹78.jpg",
+      "sha256": "136047525ee8484aea59ae512e4d8c190fbf62d65bba3e3ab74ecb77764d1f2d"
     },
     {
       "index": 292,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹79.jpg"
+      "relative_image": "antique-object patterns/博古纹79.jpg",
+      "sha256": "9d8e67c05bad69b385a85854335f70b8af45197098ae793b0c143bd7ab4be28c"
     },
     {
       "index": 293,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹8.png"
+      "relative_image": "antique-object patterns/博古纹8.png",
+      "sha256": "2a522a3dc1dafbc08d41fa99584989bb8416a49099169d1832bcd8a2c957161c"
     },
     {
       "index": 294,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹80.jpg"
+      "relative_image": "antique-object patterns/博古纹80.jpg",
+      "sha256": "4fe858e505f278b57a76c84844ae5b67ff78247cd3a1cea3fc5ba9ad19128b77"
     },
     {
       "index": 295,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹81.jpg"
+      "relative_image": "antique-object patterns/博古纹81.jpg",
+      "sha256": "1bdf4546f160469a7f550a487ec9260fbf2b5ddd30668629b74ad4f0790a9df3"
     },
     {
       "index": 296,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹82.jpg"
+      "relative_image": "antique-object patterns/博古纹82.jpg",
+      "sha256": "9828ec304d9eab33878809c642e591087beaeacf3ef6d8f46ee657d414f257c7"
     },
     {
       "index": 297,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹83.jpg"
+      "relative_image": "antique-object patterns/博古纹83.jpg",
+      "sha256": "4ddc51a0eeffe2d9af4562f360e6274ff95aa97ff33ce5ab31b7a13853c0a9b8"
     },
     {
       "index": 298,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹84.jpg"
+      "relative_image": "antique-object patterns/博古纹84.jpg",
+      "sha256": "9231df04d9b0d58a22a3b0fb3383cece187d83ba9752c6761193e16f1202145d"
     },
     {
       "index": 299,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹85.jpg"
+      "relative_image": "antique-object patterns/博古纹85.jpg",
+      "sha256": "f025ce28e7b4916d952a18b413896bea049bbfc7c1702f774e467d7cbc2c28de"
     },
     {
       "index": 300,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹86.jpg"
+      "relative_image": "antique-object patterns/博古纹86.jpg",
+      "sha256": "b5572e895b68773ce4aabf0c1beebbfeaa713056944139ee52089fa836ea999c"
     },
     {
       "index": 301,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹87.jpg"
+      "relative_image": "antique-object patterns/博古纹87.jpg",
+      "sha256": "7b2f9bfbb11df1ebf812178f3a34d3f239b2662c385caf95a3a401abcd9dfe6a"
     },
     {
       "index": 302,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹88.jpg"
+      "relative_image": "antique-object patterns/博古纹88.jpg",
+      "sha256": "5d20a6104d71acb8ee307545f40a7310e9980d5a20fb04b8c0422b67e7296d8e"
     },
     {
       "index": 303,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹89.jpg"
+      "relative_image": "antique-object patterns/博古纹89.jpg",
+      "sha256": "1865b3589147cd5d1e99f617fccc6bc20b460f459c76daaa48f5ba2fe862993a"
     },
     {
       "index": 304,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹9.png"
+      "relative_image": "antique-object patterns/博古纹9.png",
+      "sha256": "7fec329b663255c85e93c7191e761cbb01e3c7c3f4026acc39a13cd56aac1c76"
     },
     {
       "index": 305,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹90.jpg"
+      "relative_image": "antique-object patterns/博古纹90.jpg",
+      "sha256": "9703d3c10974d3303466fcf41b3ee0a54ad348fe6b14ef811c4f4949e90a4010"
     },
     {
       "index": 306,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹91.jpg"
+      "relative_image": "antique-object patterns/博古纹91.jpg",
+      "sha256": "300d6eedf297213ddb5eaeb59c268f0035ecb41a17ec1ca474fdabffad90503d"
     },
     {
       "index": 307,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹92.jpg"
+      "relative_image": "antique-object patterns/博古纹92.jpg",
+      "sha256": "40f4bee932776ad4ef74b089811b3e33b60943375361e00382ed93f5423c0f6f"
     },
     {
       "index": 308,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹93.jpg"
+      "relative_image": "antique-object patterns/博古纹93.jpg",
+      "sha256": "9e313e58b95aa3fe13b02f586564164a2ed4528764a52ffdc849703dd546f400"
     },
     {
       "index": 309,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹94.jpg"
+      "relative_image": "antique-object patterns/博古纹94.jpg",
+      "sha256": "c0c685e022c00d065cf5d238a834f161202aff54a0f5b512be0665d62060a9a3"
     },
     {
       "index": 310,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹95.jpg"
+      "relative_image": "antique-object patterns/博古纹95.jpg",
+      "sha256": "609900553ff215a8236e4325b71a9c10963612b282b29259e924e9853bf61785"
     },
     {
       "index": 311,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹96.jpg"
+      "relative_image": "antique-object patterns/博古纹96.jpg",
+      "sha256": "a9fd9d8131b62da41a7c901091bc3c91164e78840d1392797b52d801fd766a9d"
     },
     {
       "index": 312,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹97.jpg"
+      "relative_image": "antique-object patterns/博古纹97.jpg",
+      "sha256": "39b00675232264d3c7f0675feab7a352f7243fcb0e3f7a232d4f5494369caca0"
     },
     {
       "index": 313,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹98.jpg"
+      "relative_image": "antique-object patterns/博古纹98.jpg",
+      "sha256": "c9cff815400ef8924785c51f8a6fa3768392d785576d209606ba65338663d73b"
     },
     {
       "index": 314,
       "class_id": 2,
       "class_name": "antique object",
-      "relative_image": "antique-object patterns\\博古纹99.jpg"
+      "relative_image": "antique-object patterns/博古纹99.jpg",
+      "sha256": "b7d1cde9cf79cd64de808355baabf8c84be4ab2cd21f9e6c2aaa9b53f10978f9"
     },
     {
       "index": 315,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹1.jpg"
+      "relative_image": "plant patterns/植物纹1.jpg",
+      "sha256": "430fc72999fa6300207c11f489c7515c8e100b0463b6e5009012102efe80a2d1"
     },
     {
       "index": 316,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹10.jpg"
+      "relative_image": "plant patterns/植物纹10.jpg",
+      "sha256": "5e034ce43bb6834a9f39069e1e788508b8ba139def13309b420b230b7427678d"
     },
     {
       "index": 317,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹100.jpg"
+      "relative_image": "plant patterns/植物纹100.jpg",
+      "sha256": "f9d853ec52aece65b814862946a3b2773f312fac45419afc1023881876826571"
     },
     {
       "index": 318,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹11.jpg"
+      "relative_image": "plant patterns/植物纹11.jpg",
+      "sha256": "99189f40dff48181a90d2a07c67fdc51a948dcc6c18bce055b3e145c6b79a551"
     },
     {
       "index": 319,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹12.jpg"
+      "relative_image": "plant patterns/植物纹12.jpg",
+      "sha256": "3e7c04dde26eb2b736c4c1a159a9aa36ac180fd37750d137b1b99b417b96b294"
     },
     {
       "index": 320,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹13.jpg"
+      "relative_image": "plant patterns/植物纹13.jpg",
+      "sha256": "3480eec612da2ee70dcac4ce4ec7904a32edefe50fd5d5438b89688610d1506c"
     },
     {
       "index": 321,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹14.jpg"
+      "relative_image": "plant patterns/植物纹14.jpg",
+      "sha256": "4a128d593666dd354e4612672a88bd0512ecc5a00a10ea5e49557424c80e34dc"
     },
     {
       "index": 322,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹15.jpg"
+      "relative_image": "plant patterns/植物纹15.jpg",
+      "sha256": "ef6402c3a406e7c5e095ce5ce8910bf3406175eecd93cdf7f3c07b3ced354212"
     },
     {
       "index": 323,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹16.jpg"
+      "relative_image": "plant patterns/植物纹16.jpg",
+      "sha256": "dce9370cd64fdd9f9bb3d7036a45886f688373d917f8a36fb2777b3f317a0e31"
     },
     {
       "index": 324,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹17.jpg"
+      "relative_image": "plant patterns/植物纹17.jpg",
+      "sha256": "53ee03d759aea45637461ca1d5de091592745aeb0a62d9dc067dbc1c419c69df"
     },
     {
       "index": 325,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹18.jpg"
+      "relative_image": "plant patterns/植物纹18.jpg",
+      "sha256": "5c7acc0a3c46692fcd706721c16adb37fa186feb3a4d29001458f1108f1b8483"
     },
     {
       "index": 326,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹19.jpg"
+      "relative_image": "plant patterns/植物纹19.jpg",
+      "sha256": "a2980d52b288091d6c8de00d07e7f433c2f51428bcf344e351d553c564e644ad"
     },
     {
       "index": 327,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹2.jpg"
+      "relative_image": "plant patterns/植物纹2.jpg",
+      "sha256": "f739d84bb9907e5779bb303cc5be369c985ca2ff759f93d8d5c59ff6d20d5224"
     },
     {
       "index": 328,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹20.jpg"
+      "relative_image": "plant patterns/植物纹20.jpg",
+      "sha256": "6be9fae8af04dc8d2d56407b192ca1a91c99fe5cc41edd0fd3c6dc3feded2a95"
     },
     {
       "index": 329,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹21.jpg"
+      "relative_image": "plant patterns/植物纹21.jpg",
+      "sha256": "3c187c9ec1d63d83e36922bcd8746fbd63e0d00313bc6af1186c2a402ab4ae14"
     },
     {
       "index": 330,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹22.jpg"
+      "relative_image": "plant patterns/植物纹22.jpg",
+      "sha256": "0c92facc46f36127a31036b2095e5174124cb6ddd2edcb44f9c3e2df6a81825d"
     },
     {
       "index": 331,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹23.jpg"
+      "relative_image": "plant patterns/植物纹23.jpg",
+      "sha256": "d9834630a415804b9e397ac38777696cbfda2cc2c17db7f9802b01d3cea17e41"
     },
     {
       "index": 332,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹24.jpg"
+      "relative_image": "plant patterns/植物纹24.jpg",
+      "sha256": "b0d109b73dc9e17bc96b46a6dfecffbc7608329e6af3f21da59724353044aa98"
     },
     {
       "index": 333,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹25.jpg"
+      "relative_image": "plant patterns/植物纹25.jpg",
+      "sha256": "0e3d6580aada8415197cf09ee49cff9aaf90314fb3f5c0266c1979ea3b584e00"
     },
     {
       "index": 334,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹26.jpg"
+      "relative_image": "plant patterns/植物纹26.jpg",
+      "sha256": "754ad68acae8df9c1a913024bda728eaf909db11572c7bc3f16448ecdad85fa5"
     },
     {
       "index": 335,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹27.jpg"
+      "relative_image": "plant patterns/植物纹27.jpg",
+      "sha256": "8450fbcf5309e9b7951f2b9504c5324947bc9db3448f29c5211e01491191a52f"
     },
     {
       "index": 336,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹28.jpg"
+      "relative_image": "plant patterns/植物纹28.jpg",
+      "sha256": "930d2d73f123f23de42cbbf0cd64bce5bd21654d44105ed800e0719cc2266376"
     },
     {
       "index": 337,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹29.jpg"
+      "relative_image": "plant patterns/植物纹29.jpg",
+      "sha256": "40da2204ab66cc5d8a6d94921fa88a8fcaaea151827865544f3a1373b19b8c40"
     },
     {
       "index": 338,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹3.jpg"
+      "relative_image": "plant patterns/植物纹3.jpg",
+      "sha256": "b70742f8beb2cdaf674fb37d38893c6b7ec3d7f96cf8e34c4e9cfac2f91930ee"
     },
     {
       "index": 339,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹30.jpg"
+      "relative_image": "plant patterns/植物纹30.jpg",
+      "sha256": "bdb483f55c26bb0798f0ea1c6efa13f7bdb0e97964176feacdf65171bfd357cd"
     },
     {
       "index": 340,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹31.jpg"
+      "relative_image": "plant patterns/植物纹31.jpg",
+      "sha256": "da2efa3525af88ea36386275a63f75f84ca3fbfcd027ac2786314156032065d5"
     },
     {
       "index": 341,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹32.jpg"
+      "relative_image": "plant patterns/植物纹32.jpg",
+      "sha256": "132ee8c57bcf0d1d7ab747afb1f48736a4efa39cb231e30d6aef98c86b60ac38"
     },
     {
       "index": 342,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹33.jpg"
+      "relative_image": "plant patterns/植物纹33.jpg",
+      "sha256": "94fb226c3868dfbf081b2e76f33a9fd7d1690b1bc89b26e333eb4001a3e1c4c0"
     },
     {
       "index": 343,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹34.jpg"
+      "relative_image": "plant patterns/植物纹34.jpg",
+      "sha256": "abeb2a73b3af00399afecf75e56371e83d2d17169733707dd15e6457fee7ccec"
     },
     {
       "index": 344,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹35.jpg"
+      "relative_image": "plant patterns/植物纹35.jpg",
+      "sha256": "e53742817c19bd08e48e51e6154efeed2705c002e22245ae10a786c2f5eafe3c"
     },
     {
       "index": 345,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹36.jpg"
+      "relative_image": "plant patterns/植物纹36.jpg",
+      "sha256": "d7b80b470e32a0bf6f3c6d09cc9633cac2486eb36e707987b87abbcd3622bd9a"
     },
     {
       "index": 346,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹37.jpg"
+      "relative_image": "plant patterns/植物纹37.jpg",
+      "sha256": "d25f627557a83775e0c12998db48babda6ae61141a3f61e1581c61e1453bf539"
     },
     {
       "index": 347,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹38.jpg"
+      "relative_image": "plant patterns/植物纹38.jpg",
+      "sha256": "afe79410b70848d3d2d4a7b13b7711711b69e1b2695e67170869550b0d2f5e6a"
     },
     {
       "index": 348,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹39.jpg"
+      "relative_image": "plant patterns/植物纹39.jpg",
+      "sha256": "03f4d92503059a0b6ad00604f8c83d4b421436c0176d785db8c46258bc97629a"
     },
     {
       "index": 349,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹4.jpg"
+      "relative_image": "plant patterns/植物纹4.jpg",
+      "sha256": "61d868c143e689e21a4c51dffb68dbf973424be65a46eff8e21a9a06095dbae4"
     },
     {
       "index": 350,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹40.jpg"
+      "relative_image": "plant patterns/植物纹40.jpg",
+      "sha256": "c57614436362cf5f68f6a3403150f75984db662b3dcfd951fc53c70f894e07e5"
     },
     {
       "index": 351,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹41.jpg"
+      "relative_image": "plant patterns/植物纹41.jpg",
+      "sha256": "d43e11aa4d36a919ffce328e891522dd5224da1624a60147d8d1bcd84bfc42c4"
     },
     {
       "index": 352,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹42.jpg"
+      "relative_image": "plant patterns/植物纹42.jpg",
+      "sha256": "5e7cf6994903e43eabc8a79f5db1c0463ecbbd8f03a19d27d652c65b8fe846f6"
     },
     {
       "index": 353,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹43.jpg"
+      "relative_image": "plant patterns/植物纹43.jpg",
+      "sha256": "2aa7c9adfcf9a9507bc91055943b5a07955d1a9a66fc734757b46a6c1741963f"
     },
     {
       "index": 354,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹44.jpg"
+      "relative_image": "plant patterns/植物纹44.jpg",
+      "sha256": "e02ebe8772d88b16d5d835605b7423461084d31d64f524b955ae3d1bdaf6e7bb"
     },
     {
       "index": 355,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹45.jpg"
+      "relative_image": "plant patterns/植物纹45.jpg",
+      "sha256": "60f85cba23164895916c3550351dab84def728a26867a9cbf05d56a566558345"
     },
     {
       "index": 356,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹46.jpg"
+      "relative_image": "plant patterns/植物纹46.jpg",
+      "sha256": "0c5f637a4f9570c91e78a7b58816ebdec2d163a348628c0514213bf4f16d3bbd"
     },
     {
       "index": 357,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹47.jpg"
+      "relative_image": "plant patterns/植物纹47.jpg",
+      "sha256": "ce14238cbf04c6eb6245633f875dab0fe47610cf11e6ffa3dab2d4ab3e722266"
     },
     {
       "index": 358,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹48.jpg"
+      "relative_image": "plant patterns/植物纹48.jpg",
+      "sha256": "b115ef6f17dd81ca0ef426699c67fdd1cca265cbc285cead7a75d00648abeebf"
     },
     {
       "index": 359,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹49.jpg"
+      "relative_image": "plant patterns/植物纹49.jpg",
+      "sha256": "d866687ebbde1799c901d0f301688858e63442e118e88deb7ed8e296f9f05e35"
     },
     {
       "index": 360,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹5.jpg"
+      "relative_image": "plant patterns/植物纹5.jpg",
+      "sha256": "e2a60d0ae2bc2c65bc2ea49645d51fb6d3be076c381b6aee0e9a4c008ed55bfd"
     },
     {
       "index": 361,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹50.jpg"
+      "relative_image": "plant patterns/植物纹50.jpg",
+      "sha256": "8851bad29628d42ded547dd2341e3ff3b1f45c22d0e2bd95099cb8c670ca4bd6"
     },
     {
       "index": 362,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹51.jpg"
+      "relative_image": "plant patterns/植物纹51.jpg",
+      "sha256": "ac5ec1f072f69c05b1148e38bcf39cba4b1b3c8d9b7d6079fc09d0f36161ca6d"
     },
     {
       "index": 363,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹52.jpg"
+      "relative_image": "plant patterns/植物纹52.jpg",
+      "sha256": "712c7d36e2f0dd7ac3c777030978a0939a0e4b018c04a08bc7e3f753f9f9dc03"
     },
     {
       "index": 364,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹53.jpg"
+      "relative_image": "plant patterns/植物纹53.jpg",
+      "sha256": "d8914f621cd04d4b095a054016ed6391cf419ddf4c0bee1991507736f8486d67"
     },
     {
       "index": 365,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹54.jpg"
+      "relative_image": "plant patterns/植物纹54.jpg",
+      "sha256": "9d9401e523496a11916bc78f916633f00d79bd4fa4b6f10e1c60d8eb6a5ac31d"
     },
     {
       "index": 366,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹55.jpg"
+      "relative_image": "plant patterns/植物纹55.jpg",
+      "sha256": "c42f87462d19696c0ec21da7641385aa95014e4a746e11a3eb169101c545e00c"
     },
     {
       "index": 367,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹56.jpg"
+      "relative_image": "plant patterns/植物纹56.jpg",
+      "sha256": "724b90b816bd17e548effa9bd16628647a976321485bcc08a7a17ce72d15f82f"
     },
     {
       "index": 368,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹57.jpg"
+      "relative_image": "plant patterns/植物纹57.jpg",
+      "sha256": "797c517412cd031130088d89caa2a717e4996ef91b680e7a05b07a6b2ddb804a"
     },
     {
       "index": 369,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹58.jpg"
+      "relative_image": "plant patterns/植物纹58.jpg",
+      "sha256": "7abe115da4d3afcaf912c71bd4df349427fa6a805714cbdd6551cad846e8a975"
     },
     {
       "index": 370,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹59.jpg"
+      "relative_image": "plant patterns/植物纹59.jpg",
+      "sha256": "ddc0a88ea8e291cdc9294613cd334e0122cd40c84d0e263e0a11361416b0d45b"
     },
     {
       "index": 371,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹6.jpg"
+      "relative_image": "plant patterns/植物纹6.jpg",
+      "sha256": "a51586ec643feca8eddb98764da77a493c96373b55ea91072bcfee6286c05718"
     },
     {
       "index": 372,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹60.jpg"
+      "relative_image": "plant patterns/植物纹60.jpg",
+      "sha256": "0e8fedfea31ef19ac40e490bd113791a033448ae0a52c2364f41c6c9cabf8a59"
     },
     {
       "index": 373,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹61.jpg"
+      "relative_image": "plant patterns/植物纹61.jpg",
+      "sha256": "0eee2a4fe3f70384031ca30e8c9dc697cc19d712fe17ad72c7100c63e0616d35"
     },
     {
       "index": 374,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹62.jpg"
+      "relative_image": "plant patterns/植物纹62.jpg",
+      "sha256": "9af424614288bc4c173e280cd83f5779056ed2f9c1e0ef1b079aed6625e607a2"
     },
     {
       "index": 375,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹63.jpg"
+      "relative_image": "plant patterns/植物纹63.jpg",
+      "sha256": "9869ab931b00d34515a607e89425d1cb1894838c99461a84c2bfab740811abee"
     },
     {
       "index": 376,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹64.jpg"
+      "relative_image": "plant patterns/植物纹64.jpg",
+      "sha256": "f6e9797033eb6d0705c77be55e704eee640f3588fd0a7d3246e6334bee070e71"
     },
     {
       "index": 377,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹65.jpg"
+      "relative_image": "plant patterns/植物纹65.jpg",
+      "sha256": "42d4e7cf12a93a7516e00aab600fd658fa845c3c694d2732aa203f7057368e6f"
     },
     {
       "index": 378,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹66.jpg"
+      "relative_image": "plant patterns/植物纹66.jpg",
+      "sha256": "cbc6bc799aa954b40c7bdc88a9db7cf8abae5da1fa48a6c166a54e4e36043356"
     },
     {
       "index": 379,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹67.jpg"
+      "relative_image": "plant patterns/植物纹67.jpg",
+      "sha256": "0d2c5abe746ccdb3d7990d1a331927628702e1da27563d15a01580b21ce18459"
     },
     {
       "index": 380,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹68.jpg"
+      "relative_image": "plant patterns/植物纹68.jpg",
+      "sha256": "591cc294493679436f8636dda3b5da865ac5df1efe0a5134a6737007379e7260"
     },
     {
       "index": 381,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹69.jpg"
+      "relative_image": "plant patterns/植物纹69.jpg",
+      "sha256": "5eed29a02beb9f11fe0407984f8a1293bd015573c1202442f54d021d5197b96d"
     },
     {
       "index": 382,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹7.jpg"
+      "relative_image": "plant patterns/植物纹7.jpg",
+      "sha256": "abb58c27a7329a109f786e83c2059ef1e804cd22b7f4e4c8ac969f2514153dfc"
     },
     {
       "index": 383,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹70.jpg"
+      "relative_image": "plant patterns/植物纹70.jpg",
+      "sha256": "85cbfd6d7479078df33b6087156f0c3468a9d6b71c87fd45870b658dfdf1de49"
     },
     {
       "index": 384,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹71.jpg"
+      "relative_image": "plant patterns/植物纹71.jpg",
+      "sha256": "662432a85fc296e1afcf6e6a786253c549e3c28e8fe96450c3fbd5af67535d9f"
     },
     {
       "index": 385,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹72.jpg"
+      "relative_image": "plant patterns/植物纹72.jpg",
+      "sha256": "7abe59f0b27a428977c3a51cdbf65bb5a53f8ecc94ed69d4b412ff811293212f"
     },
     {
       "index": 386,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹73.jpg"
+      "relative_image": "plant patterns/植物纹73.jpg",
+      "sha256": "c940bc73882019d1abb1cc1c4ff357ad8a86e5ff76008d47d7f70df3dc5b617f"
     },
     {
       "index": 387,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹74.jpg"
+      "relative_image": "plant patterns/植物纹74.jpg",
+      "sha256": "e891874ab0a59524f40fa6c1f3f9e29aca218c9f42ca26a36ee5cdadb10ed878"
     },
     {
       "index": 388,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹75.jpg"
+      "relative_image": "plant patterns/植物纹75.jpg",
+      "sha256": "45bc59bbd369a843e8178df756f298d2b7552533911df0b68473a75691706771"
     },
     {
       "index": 389,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹76.jpg"
+      "relative_image": "plant patterns/植物纹76.jpg",
+      "sha256": "d1439a12f7a4801b2434fd2a70c7b8818917c017ed159b50c17202ad9678676c"
     },
     {
       "index": 390,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹77.jpg"
+      "relative_image": "plant patterns/植物纹77.jpg",
+      "sha256": "854ef4d44c1e4d206598a723c20901a084a30cefcc1d7f55f187b0687de0ff07"
     },
     {
       "index": 391,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹78.jpg"
+      "relative_image": "plant patterns/植物纹78.jpg",
+      "sha256": "50edb8df68913888f9e8790b60b9944ac087c9c8226c370a66639390f3482781"
     },
     {
       "index": 392,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹79.jpg"
+      "relative_image": "plant patterns/植物纹79.jpg",
+      "sha256": "6614452d08bc9237134061cd5f6067c1a65d9af1bf3d9e73cb5a960ea862da78"
     },
     {
       "index": 393,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹8.jpg"
+      "relative_image": "plant patterns/植物纹8.jpg",
+      "sha256": "0be8a60dee41abf0713fa767ba9208893356a49def05b000e3a00c2e5651655c"
     },
     {
       "index": 394,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹80.jpg"
+      "relative_image": "plant patterns/植物纹80.jpg",
+      "sha256": "1983193c6926b338979bf010e8840b8fd7496e274d4c7d29dfe7dcacdb97b96b"
     },
     {
       "index": 395,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹81.jpg"
+      "relative_image": "plant patterns/植物纹81.jpg",
+      "sha256": "3123099f0275eb5482bcc6c4a2dce28a998989f63785141741a358e312e31ec1"
     },
     {
       "index": 396,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹82.jpg"
+      "relative_image": "plant patterns/植物纹82.jpg",
+      "sha256": "31560977b02cc9bc91e1adec638e0355d8ec70f4b0537aef4869bc996e646ad3"
     },
     {
       "index": 397,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹83.jpg"
+      "relative_image": "plant patterns/植物纹83.jpg",
+      "sha256": "9dea45f72d8181d9a6f17e4412fa2b65cb3be52b009d6514c42a55aa43e2fbf7"
     },
     {
       "index": 398,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹84.jpg"
+      "relative_image": "plant patterns/植物纹84.jpg",
+      "sha256": "b86f82816440d84e69a170165d87788641a3aaf4c205aefb555055a4b0a2e1dc"
     },
     {
       "index": 399,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹85.jpg"
+      "relative_image": "plant patterns/植物纹85.jpg",
+      "sha256": "8cc8f5b2f14753c3be8ea80ec4cd6550007e4896e0abddc98289c382a8fd9905"
     },
     {
       "index": 400,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹86.jpg"
+      "relative_image": "plant patterns/植物纹86.jpg",
+      "sha256": "62e1ab83474db1fd56bc125e8500a540d627c6250a10a7f0bf92fe6516444e37"
     },
     {
       "index": 401,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹87.jpg"
+      "relative_image": "plant patterns/植物纹87.jpg",
+      "sha256": "849ed4f2ca002fe72c4a7440b486866983b9481d7ac3288b6d02f439a47c119b"
     },
     {
       "index": 402,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹88.jpg"
+      "relative_image": "plant patterns/植物纹88.jpg",
+      "sha256": "02451c801da4952e786ff84bd8b17ac5c6f3515b075423f7e8acc4d8ad0b6416"
     },
     {
       "index": 403,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹89.jpg"
+      "relative_image": "plant patterns/植物纹89.jpg",
+      "sha256": "cf87398c747d85e4b0eeae128cb65268181ff5a8deb1db0627efed183ec39015"
     },
     {
       "index": 404,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹9.jpg"
+      "relative_image": "plant patterns/植物纹9.jpg",
+      "sha256": "b7c35c53637142d183513bca990302fdcf7989341cd80488597b6440c6f2b42f"
     },
     {
       "index": 405,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹90.jpg"
+      "relative_image": "plant patterns/植物纹90.jpg",
+      "sha256": "dd3818eb15fc95423b5e2576a345ec0cbcd3af3711cfbbc089659b17c0dd206d"
     },
     {
       "index": 406,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹91.jpg"
+      "relative_image": "plant patterns/植物纹91.jpg",
+      "sha256": "3791fc358d5fd9dbc755f6af1089a52443a40b14ee1c4dd58780eac220e276e4"
     },
     {
       "index": 407,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹92.jpg"
+      "relative_image": "plant patterns/植物纹92.jpg",
+      "sha256": "31dd95ff4c3551e50fd9d6519b3e8c457da9dc6f36e6f01911a21363d95962ab"
     },
     {
       "index": 408,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹93.jpg"
+      "relative_image": "plant patterns/植物纹93.jpg",
+      "sha256": "4146e638def4435fd37ce87c66d19523246137cdd5941e5f6ead9c0ed1b39c7c"
     },
     {
       "index": 409,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹94.jpg"
+      "relative_image": "plant patterns/植物纹94.jpg",
+      "sha256": "1b6158609205cb6d27d0885f6192a8e1b44017c472031a51f4c3df472299dbb8"
     },
     {
       "index": 410,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹95.jpg"
+      "relative_image": "plant patterns/植物纹95.jpg",
+      "sha256": "cb4062a5f64a3ca711b1c07cde758adf781a2a8721a43b48164e10e2f82fcddc"
     },
     {
       "index": 411,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹96.jpg"
+      "relative_image": "plant patterns/植物纹96.jpg",
+      "sha256": "847294a6ea72619375b4293306de75e550d0ec7f08c9590c9091a54ac43e0d1c"
     },
     {
       "index": 412,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹97.jpg"
+      "relative_image": "plant patterns/植物纹97.jpg",
+      "sha256": "964b2cc1d33171b3b965b6a0e0c110586668ddf3df1e9fc632b08566649a5ded"
     },
     {
       "index": 413,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹98.jpg"
+      "relative_image": "plant patterns/植物纹98.jpg",
+      "sha256": "5014304c13c9fcfb189af189df304a89de49bc278a537bc915c9da64737f696b"
     },
     {
       "index": 414,
       "class_id": 3,
       "class_name": "plant",
-      "relative_image": "plant patterns\\植物纹99.jpg"
+      "relative_image": "plant patterns/植物纹99.jpg",
+      "sha256": "295508b1d04e1112aacd8d31cf7bb990de967c4fd24a11ad6190c30372685b63"
     },
     {
       "index": 415,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹1.png"
+      "relative_image": "chinese-character patterns/汉字纹1.png",
+      "sha256": "977c9c91e963aed3929f86bf2bae54368f237e6239419f4087633e3b1e237574"
     },
     {
       "index": 416,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹10.jpg"
+      "relative_image": "chinese-character patterns/汉字纹10.jpg",
+      "sha256": "3f12e1ba773077ccf745211fb201145c6cb3f8306021522e41df13afaf187108"
     },
     {
       "index": 417,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹11.jpg"
+      "relative_image": "chinese-character patterns/汉字纹11.jpg",
+      "sha256": "74a09af88993b94544786e381e7ee72cfcb2b389fc73dcf217dfc78cc5f283a1"
     },
     {
       "index": 418,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹12.jpg"
+      "relative_image": "chinese-character patterns/汉字纹12.jpg",
+      "sha256": "602c85bdd5d5c69cf3318dc4ced1642ddfbd9dace2452cbb59f2bd9e95f5e688"
     },
     {
       "index": 419,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹13.jpg"
+      "relative_image": "chinese-character patterns/汉字纹13.jpg",
+      "sha256": "891d96965ad4a2e58f9271a70f8e0626455daff3fd1cf48ac123430d721f7dce"
     },
     {
       "index": 420,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹14.jpg"
+      "relative_image": "chinese-character patterns/汉字纹14.jpg",
+      "sha256": "c21ed0cddb1515554b1e8fcf27ba9cfc233e5b0aa956dbae91db2e3200f5f34c"
     },
     {
       "index": 421,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹15.jpg"
+      "relative_image": "chinese-character patterns/汉字纹15.jpg",
+      "sha256": "04b331792c2dbfa4eb84bcb7b108fdd83812e930d179b1a7393430d5faf80edc"
     },
     {
       "index": 422,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹16.jpg"
+      "relative_image": "chinese-character patterns/汉字纹16.jpg",
+      "sha256": "ae00a6e335f7bb5e7306869faa20c26bd07cdb6bdc34405607aa0767fe9d5c60"
     },
     {
       "index": 423,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹17.jpg"
+      "relative_image": "chinese-character patterns/汉字纹17.jpg",
+      "sha256": "97149811681d5eabb316013184d59cd3a9d1bc62f0bd94d85c28433e025938f3"
     },
     {
       "index": 424,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹18.jpg"
+      "relative_image": "chinese-character patterns/汉字纹18.jpg",
+      "sha256": "b2475a7b6febd1abaddf885044c78e8ab9188fdc2b244c54832e7c7d1b51f072"
     },
     {
       "index": 425,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹19.jpg"
+      "relative_image": "chinese-character patterns/汉字纹19.jpg",
+      "sha256": "13cf34809d4b9f0e2f3d73ffb6845222228559e4ab80792e1d89a96e25f99bf6"
     },
     {
       "index": 426,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹2.jpg"
+      "relative_image": "chinese-character patterns/汉字纹2.jpg",
+      "sha256": "03ac95ab4cd682b671d8675a1e8026e112c8b877e4320adefe226b141c390df4"
     },
     {
       "index": 427,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹20.jpg"
+      "relative_image": "chinese-character patterns/汉字纹20.jpg",
+      "sha256": "fa9e725aef2143e00f77c5f876a3b80ca97882237f0d24deb6907b81dd28facb"
     },
     {
       "index": 428,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹21.jpg"
+      "relative_image": "chinese-character patterns/汉字纹21.jpg",
+      "sha256": "2a6685bf5ccf237c74a164c618617308b65bb09031bb6a40673a3f7173d0374e"
     },
     {
       "index": 429,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹22.jpg"
+      "relative_image": "chinese-character patterns/汉字纹22.jpg",
+      "sha256": "a8e05ee100d066d3dde81b4728dc17187d6765f89400772d3a939d7132651a01"
     },
     {
       "index": 430,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹23.jpg"
+      "relative_image": "chinese-character patterns/汉字纹23.jpg",
+      "sha256": "89d2a125ff425bcf439ee5ae773b84fa83123a2f876e3c21a5f4165b2440a4c5"
     },
     {
       "index": 431,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹24.jpg"
+      "relative_image": "chinese-character patterns/汉字纹24.jpg",
+      "sha256": "8152c974ab8ce58c5b159c80196e79ea4a8e6f5d19787f61cfb92fa8e89609e2"
     },
     {
       "index": 432,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹25.jpg"
+      "relative_image": "chinese-character patterns/汉字纹25.jpg",
+      "sha256": "fdaf862db2a3b5699dc6a891b4d16c69f9a55501e3ed9db4e645b640421b4e22"
     },
     {
       "index": 433,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹26.jpg"
+      "relative_image": "chinese-character patterns/汉字纹26.jpg",
+      "sha256": "77432775d54f4980eb5377bb2429307789d352b0982e8fdafa217b89f159fc64"
     },
     {
       "index": 434,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹27.jpg"
+      "relative_image": "chinese-character patterns/汉字纹27.jpg",
+      "sha256": "80d89dccebd4c84c33bc06a7330762048e32ef0dbcc38ce6c1954917a24374d8"
     },
     {
       "index": 435,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹28.jpg"
+      "relative_image": "chinese-character patterns/汉字纹28.jpg",
+      "sha256": "0d23a6f58b44cc12538baab2fae59ffaf3b14b623a055216d8ae5763d9db7bed"
     },
     {
       "index": 436,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹29.jpg"
+      "relative_image": "chinese-character patterns/汉字纹29.jpg",
+      "sha256": "07d1408bbe077a13d432247b59fab9cf826cb25ab02b7e26b17695b2193d29da"
     },
     {
       "index": 437,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹3.jpg"
+      "relative_image": "chinese-character patterns/汉字纹3.jpg",
+      "sha256": "bac36910db8b711183086962af255b837154cc45a49e888c97448c38ed89edb4"
     },
     {
       "index": 438,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹30.jpg"
+      "relative_image": "chinese-character patterns/汉字纹30.jpg",
+      "sha256": "3062ed1cf5aa47b92e34e1903dc168927165df690d1afb0a11ae3795ca414501"
     },
     {
       "index": 439,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹31.jpg"
+      "relative_image": "chinese-character patterns/汉字纹31.jpg",
+      "sha256": "eab2e33249b102f8a363db99129caff18013198291053ff4e9eb94b38bb0583b"
     },
     {
       "index": 440,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹32.jpg"
+      "relative_image": "chinese-character patterns/汉字纹32.jpg",
+      "sha256": "d137ee921b6333b7a598009c0f83aa9f2fa1599e366f6adf74c0b46c0b953e8d"
     },
     {
       "index": 441,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹33.jpg"
+      "relative_image": "chinese-character patterns/汉字纹33.jpg",
+      "sha256": "2c4f516bda6697cfe78457c4d7d98bf5143a53c381d12a384ae4a0e81860b615"
     },
     {
       "index": 442,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹34.jpg"
+      "relative_image": "chinese-character patterns/汉字纹34.jpg",
+      "sha256": "800794df9e5870d88fd51c8192f95d68a368f60c75531b078128eaef830ec361"
     },
     {
       "index": 443,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹35.jpg"
+      "relative_image": "chinese-character patterns/汉字纹35.jpg",
+      "sha256": "bfaedf738d16d981280a762b9f14e7ad31e30141429bbdad9c36e6681e07c633"
     },
     {
       "index": 444,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹36.jpg"
+      "relative_image": "chinese-character patterns/汉字纹36.jpg",
+      "sha256": "8170cc161c39f2bd2fc79890d1051bfb1e37086a8cb177032da9b0180bbb7021"
     },
     {
       "index": 445,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹37.jpg"
+      "relative_image": "chinese-character patterns/汉字纹37.jpg",
+      "sha256": "dc7ec670a957da7ef5737dbc6c1383244002e7b8c2c926ccff5960d099642f34"
     },
     {
       "index": 446,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹38.jpg"
+      "relative_image": "chinese-character patterns/汉字纹38.jpg",
+      "sha256": "b7fd6c51b8ffe6579cb165d180f549a8930e21b3bda35f6dd8fa0f8d2d0dfb3c"
     },
     {
       "index": 447,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹39.jpg"
+      "relative_image": "chinese-character patterns/汉字纹39.jpg",
+      "sha256": "4557ef8a09fbe6d14d9eade012f4c030ebbfff5c1d259e9ac69d5abb6e2124da"
     },
     {
       "index": 448,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹4.jpg"
+      "relative_image": "chinese-character patterns/汉字纹4.jpg",
+      "sha256": "d4ef4b64146609c2714ef26ed08bda53cab719dbfa4dad4cd6da1060497b336d"
     },
     {
       "index": 449,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹40.jpg"
+      "relative_image": "chinese-character patterns/汉字纹40.jpg",
+      "sha256": "73d0f2ff52bb7234858ea6def28e6b6a3da11c5a389be6c4f5274f1bac6400b9"
     },
     {
       "index": 450,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹41.jpg"
+      "relative_image": "chinese-character patterns/汉字纹41.jpg",
+      "sha256": "3922f9486e103e2ec9ba613c3bbe47f716a6eea1e4e47ab72b5476cba072fcf3"
     },
     {
       "index": 451,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹42.jpg"
+      "relative_image": "chinese-character patterns/汉字纹42.jpg",
+      "sha256": "c20e76f8a12bb3c0f76d007e1df52bfa19af64950a2e35b6100e6aadbad6df5f"
     },
     {
       "index": 452,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹43.jpg"
+      "relative_image": "chinese-character patterns/汉字纹43.jpg",
+      "sha256": "172fc7f3f22c5d5ce9e01ea589c88086f0f557fcae85cfc72acfe47dcd1895c3"
     },
     {
       "index": 453,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹44.jpg"
+      "relative_image": "chinese-character patterns/汉字纹44.jpg",
+      "sha256": "52efa7f37959d07d17b761a123e10e0d202e54d2d493cc43b50482aa4071968d"
     },
     {
       "index": 454,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹45.jpg"
+      "relative_image": "chinese-character patterns/汉字纹45.jpg",
+      "sha256": "131eadf7a7b633b81e147577dc42ef2ffea0ec710cf07fc698e04d5079ca0f16"
     },
     {
       "index": 455,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹46.jpg"
+      "relative_image": "chinese-character patterns/汉字纹46.jpg",
+      "sha256": "076c735bad8d191260dfe327a88d543310da51df05778844e4e438c3c3f5afe1"
     },
     {
       "index": 456,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹47.jpg"
+      "relative_image": "chinese-character patterns/汉字纹47.jpg",
+      "sha256": "62b4a448bdd2cd5353ba4e0b705f192921b0f654ce6d72ff7fa32fdccaa4755c"
     },
     {
       "index": 457,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹48.jpg"
+      "relative_image": "chinese-character patterns/汉字纹48.jpg",
+      "sha256": "2e160458e64839f688a83673817df32f797e8b3353dc097b4c049ada1201a097"
     },
     {
       "index": 458,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹49.jpg"
+      "relative_image": "chinese-character patterns/汉字纹49.jpg",
+      "sha256": "fbf9bd7d8e11e085393a5e26bb78fe9b9f3b00984bed3e9bcb0ee943da526232"
     },
     {
       "index": 459,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹5.jpg"
+      "relative_image": "chinese-character patterns/汉字纹5.jpg",
+      "sha256": "0c57ab8e0101147559b15a789a2422dbc872e40ad9d631e1fef22e40fbcc13f1"
     },
     {
       "index": 460,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹50.jpg"
+      "relative_image": "chinese-character patterns/汉字纹50.jpg",
+      "sha256": "48679e17a72bdfc1d9874b72cd5c7ba177fb67d7b62dd7a9ba3171c4a83c2529"
     },
     {
       "index": 461,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹51.jpg"
+      "relative_image": "chinese-character patterns/汉字纹51.jpg",
+      "sha256": "81abb2e487f04402a7a984093cd70552b3356289b1e3f5ecbcc3828b9c111bd8"
     },
     {
       "index": 462,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹52.jpg"
+      "relative_image": "chinese-character patterns/汉字纹52.jpg",
+      "sha256": "9b4f4b218cc2609d79b408c94380537a876a07f27b49b4e6ac5491db9fbf9319"
     },
     {
       "index": 463,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹53.jpg"
+      "relative_image": "chinese-character patterns/汉字纹53.jpg",
+      "sha256": "1aa2a6f6991729144a36966df6056c1d44e1e953e7206f438f20f24156219716"
     },
     {
       "index": 464,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹54.jpg"
+      "relative_image": "chinese-character patterns/汉字纹54.jpg",
+      "sha256": "f690900fc2405b53f9735bb49fa8434476499341ddfa9fe9fae5c5d556ad9619"
     },
     {
       "index": 465,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹55.jpg"
+      "relative_image": "chinese-character patterns/汉字纹55.jpg",
+      "sha256": "af55d5db2474feebeed9ef605ec1a92ff05275eede37ef7ce869ab5672a833cd"
     },
     {
       "index": 466,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹56.jpg"
+      "relative_image": "chinese-character patterns/汉字纹56.jpg",
+      "sha256": "677f7faf57d3499517c6d07ec8044116a5ac13a6e8de204509bfedda33b27226"
     },
     {
       "index": 467,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹57.jpg"
+      "relative_image": "chinese-character patterns/汉字纹57.jpg",
+      "sha256": "97df6e521cca7101fac96f2e38c33906aac9caa7bd5e7de4983eccc30338c95d"
     },
     {
       "index": 468,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹58.jpg"
+      "relative_image": "chinese-character patterns/汉字纹58.jpg",
+      "sha256": "a68ee65376da9c7ccb6a86a15a5b856b05f53a63474e83bdfb57c01dc8a38497"
     },
     {
       "index": 469,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹59.jpg"
+      "relative_image": "chinese-character patterns/汉字纹59.jpg",
+      "sha256": "2ea7850e8578ebce98cf50e648a21cb9ac883b60ee76f9fd4eec61cd603aa460"
     },
     {
       "index": 470,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹6.jpg"
+      "relative_image": "chinese-character patterns/汉字纹6.jpg",
+      "sha256": "330f1dd243bef308a7fb9b12fb47a79507eb5ef5baf2b0d993b264414e85c8b9"
     },
     {
       "index": 471,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹60.jpg"
+      "relative_image": "chinese-character patterns/汉字纹60.jpg",
+      "sha256": "380e386223482bda16ae0d9224774de5f00009986eeef91c6519b2552e4a91c3"
     },
     {
       "index": 472,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹61.jpg"
+      "relative_image": "chinese-character patterns/汉字纹61.jpg",
+      "sha256": "94cacf585e6b731c2e031cc6d937624c55b88ea2d0e0c81c8ba989ffe80d426b"
     },
     {
       "index": 473,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹62.jpg"
+      "relative_image": "chinese-character patterns/汉字纹62.jpg",
+      "sha256": "4e57e6d54d94fc02a10d8eac2e205b0b1c3ea34ab3d2e2ab52a3bb90cb75e345"
     },
     {
       "index": 474,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹63.jpg"
+      "relative_image": "chinese-character patterns/汉字纹63.jpg",
+      "sha256": "473efcbb5e83c44e41afb86c03eaec8366d5030d747b71de447b8699bf780baf"
     },
     {
       "index": 475,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹64.jpg"
+      "relative_image": "chinese-character patterns/汉字纹64.jpg",
+      "sha256": "9ac29b898c9fb98566a532f8f09443117a4b2cc122cae515247ebffd7307a142"
     },
     {
       "index": 476,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹65.jpg"
+      "relative_image": "chinese-character patterns/汉字纹65.jpg",
+      "sha256": "4c0b7014a66b45cbd62a3c6768664485d6ec5c796bd3b9d4c32c914e57ac4ef5"
     },
     {
       "index": 477,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹66.jpg"
+      "relative_image": "chinese-character patterns/汉字纹66.jpg",
+      "sha256": "43e41547616d4046f86542e6481c2bf7efb141a9eaec7116fcc5d4c8918a0ba4"
     },
     {
       "index": 478,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹67.jpg"
+      "relative_image": "chinese-character patterns/汉字纹67.jpg",
+      "sha256": "0a94429bfdbf0f214f7946d4d610830f763207eb3f0eb1a20fb6f9a6dab9937e"
     },
     {
       "index": 479,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹68.jpg"
+      "relative_image": "chinese-character patterns/汉字纹68.jpg",
+      "sha256": "0f13fd375b8ff39f2100412b7de1bc94398c3c9369b18850de6ffd4b26075a21"
     },
     {
       "index": 480,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹69.jpg"
+      "relative_image": "chinese-character patterns/汉字纹69.jpg",
+      "sha256": "49a49f07dfe7cbbea152e6b9c7468a4fc7e08f9d4694bd3c0ab733dd6ad23ed6"
     },
     {
       "index": 481,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹7.jpg"
+      "relative_image": "chinese-character patterns/汉字纹7.jpg",
+      "sha256": "6bc87c9948b3f8917e3aa42e4c571c1e1fe5ffb7bbd6a6b0ea26699378064df9"
     },
     {
       "index": 482,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹70.jpg"
+      "relative_image": "chinese-character patterns/汉字纹70.jpg",
+      "sha256": "974b71391bc7b92b9e7d689a99fcc083de6f71a72470815364d483bf8b09912e"
     },
     {
       "index": 483,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹71.jpg"
+      "relative_image": "chinese-character patterns/汉字纹71.jpg",
+      "sha256": "9be6adf4eeaf68301cb89cf5645339aea3e457af5ac54d1cddda7ee0b81dce51"
     },
     {
       "index": 484,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹72.png"
+      "relative_image": "chinese-character patterns/汉字纹72.png",
+      "sha256": "2ef514ecee35e6f5e0a4eac01877003223ae1912c858cfc3ef64e125aef99e93"
     },
     {
       "index": 485,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹73.png"
+      "relative_image": "chinese-character patterns/汉字纹73.png",
+      "sha256": "278b1d1b6d48f82db4080e03293c61a09660f86e28fdd635476606004a2b2bdd"
     },
     {
       "index": 486,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹74.png"
+      "relative_image": "chinese-character patterns/汉字纹74.png",
+      "sha256": "7a6653a135a09ab9ddd4df6c085403d0c07608e5bb20ce82cb8073bfc05ca0c4"
     },
     {
       "index": 487,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹75.png"
+      "relative_image": "chinese-character patterns/汉字纹75.png",
+      "sha256": "9f260416ac3a40e3d72f9891bf0431f6a569c5182685f44fcde61874e28e3725"
     },
     {
       "index": 488,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹76.png"
+      "relative_image": "chinese-character patterns/汉字纹76.png",
+      "sha256": "fca58795a52fbeecf556f8984e92f6d7dd65cd271f814d2d2b625abd40e4963a"
     },
     {
       "index": 489,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹77.png"
+      "relative_image": "chinese-character patterns/汉字纹77.png",
+      "sha256": "1de3e6a3de91662a0fa5679c82818bc8133719181428906f3dd6f82269653392"
     },
     {
       "index": 490,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹78.png"
+      "relative_image": "chinese-character patterns/汉字纹78.png",
+      "sha256": "30dc8e5ce736a891f81728b3ed8afb389824902dc41b1dda5a7013bb5cef4dd8"
     },
     {
       "index": 491,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹79.png"
+      "relative_image": "chinese-character patterns/汉字纹79.png",
+      "sha256": "20eba9925f152e453ea018171773555329ba9c4c128b5550b2938a586e590304"
     },
     {
       "index": 492,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹8.jpg"
+      "relative_image": "chinese-character patterns/汉字纹8.jpg",
+      "sha256": "020266d29e51975eadee1096fcadec7e14462776377d6c0aeef08d906193370b"
     },
     {
       "index": 493,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹80.png"
+      "relative_image": "chinese-character patterns/汉字纹80.png",
+      "sha256": "4acec03f8d7b6ef68df5f44db8166e1ab1d951fab01191d92f5c3981cb2d3974"
     },
     {
       "index": 494,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹81.png"
+      "relative_image": "chinese-character patterns/汉字纹81.png",
+      "sha256": "61133e7ae850605d78b6d54dd3d87b988a7c7b95eb040bc38bb09248c47bd5a9"
     },
     {
       "index": 495,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹82.png"
+      "relative_image": "chinese-character patterns/汉字纹82.png",
+      "sha256": "97481dd9d161d0c5a2f3f3adb88a4b1c9e35f7035a1f95d71a45ae2b7b913d3e"
     },
     {
       "index": 496,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹83.png"
+      "relative_image": "chinese-character patterns/汉字纹83.png",
+      "sha256": "92641582603288c411603041bbac7f3ca02bc8bd09ac5afe8a4928987e8e13ce"
     },
     {
       "index": 497,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹84.png"
+      "relative_image": "chinese-character patterns/汉字纹84.png",
+      "sha256": "986f6f014c3abe53f1a458dfc6b37ba213b3c1529cb493b1525134e6a3a117ba"
     },
     {
       "index": 498,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹85.png"
+      "relative_image": "chinese-character patterns/汉字纹85.png",
+      "sha256": "f31951995ac4f6f12ee156a272a99cff33e288e56aeb6d62cec14a375cacbc44"
     },
     {
       "index": 499,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹86.png"
+      "relative_image": "chinese-character patterns/汉字纹86.png",
+      "sha256": "7050dfc527704b52c16e31a71a3abcbc9b58cb4f621b8303f24f01cd1b3e9f0e"
     },
     {
       "index": 500,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹87.png"
+      "relative_image": "chinese-character patterns/汉字纹87.png",
+      "sha256": "4de23cd9750bf5298b55cd4395723da696e3b3e76581fe0bd9808f1a98fb66ca"
     },
     {
       "index": 501,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹88.png"
+      "relative_image": "chinese-character patterns/汉字纹88.png",
+      "sha256": "8b6a28de6b7f975ff4082ad0ef003ea25101eb8974c2a53320cbeb13def94c9b"
     },
     {
       "index": 502,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹89.png"
+      "relative_image": "chinese-character patterns/汉字纹89.png",
+      "sha256": "8e531afc6050343a445755f6cfc623059e45c983c2bfe3123a69c79e90440e68"
     },
     {
       "index": 503,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹9.jpg"
+      "relative_image": "chinese-character patterns/汉字纹9.jpg",
+      "sha256": "df14c8bd1ec6f31d7820cf74d923b19d80ac0514a7accbc74f0ab7edb164b340"
     },
     {
       "index": 504,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹90.png"
+      "relative_image": "chinese-character patterns/汉字纹90.png",
+      "sha256": "170d54208e4dacd379fc441d75dd374cfbac7712c77e1476ce030601c0f3396e"
     },
     {
       "index": 505,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹91.png"
+      "relative_image": "chinese-character patterns/汉字纹91.png",
+      "sha256": "c93bced964c0dda0f80b0252c87f4780b7c3691ba2097c0df516dcff912e8d50"
     },
     {
       "index": 506,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹92.png"
+      "relative_image": "chinese-character patterns/汉字纹92.png",
+      "sha256": "6dd64614435a1271ecc890081bac64041f00052c735a4f08b6d323487bee2109"
     },
     {
       "index": 507,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹93.jpg"
+      "relative_image": "chinese-character patterns/汉字纹93.jpg",
+      "sha256": "ef76a1c45c255af37b4278e05f6fc0536f81ffb8bfad9db5da5f20e936412202"
     },
     {
       "index": 508,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹94.jpg"
+      "relative_image": "chinese-character patterns/汉字纹94.jpg",
+      "sha256": "25b8d23902ccb7ec195a040679ae0703ca13b1584f7a4415c2fa6f3aca86eb2d"
     },
     {
       "index": 509,
       "class_id": 4,
       "class_name": "Chinese character",
-      "relative_image": "chinese-character patterns\\汉字纹95.jpg"
+      "relative_image": "chinese-character patterns/汉字纹95.jpg",
+      "sha256": "6a6f336a4f428fa0998565a05a8e93983b37b21ec125d89300a1232238c21704"
     },
     {
       "index": 510,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样1.jpg"
+      "relative_image": "combined patterns/组合纹样1.jpg",
+      "sha256": "19b191777ba16709f5bd77297a5672f264e2318ca2b464da6d79ba7f5f0c344b"
     },
     {
       "index": 511,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样10.jpg"
+      "relative_image": "combined patterns/组合纹样10.jpg",
+      "sha256": "539bfd87510efa94adfeaeb67891f51a1fd9c0ba6f7494d50808254810c6a0d6"
     },
     {
       "index": 512,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样100.jpg"
+      "relative_image": "combined patterns/组合纹样100.jpg",
+      "sha256": "285cde290d6f315e5eca10083e1125554eb05b1a52c2b5bf0b61d81c1e683b79"
     },
     {
       "index": 513,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样101.jpg"
+      "relative_image": "combined patterns/组合纹样101.jpg",
+      "sha256": "c33bc0f97d29559a7a49d45943e83cd53bcc5d207c06807cb6ed367367efad52"
     },
     {
       "index": 514,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样102.jpg"
+      "relative_image": "combined patterns/组合纹样102.jpg",
+      "sha256": "e1ee64e52a5666af8aa1a1a7f892bb3319877d5ed580d259d7d8b491328f4721"
     },
     {
       "index": 515,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样103.jpg"
+      "relative_image": "combined patterns/组合纹样103.jpg",
+      "sha256": "e3730817c7f9bb70dbd2fd2d0f27f90bf0e3d57623f3928e872381237ae3bd40"
     },
     {
       "index": 516,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样104.jpg"
+      "relative_image": "combined patterns/组合纹样104.jpg",
+      "sha256": "a25b3d6b763b4075b6ca1ee4fe516ea96590c6b1d5a806f91297996afeab5a0b"
     },
     {
       "index": 517,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样105.jpg"
+      "relative_image": "combined patterns/组合纹样105.jpg",
+      "sha256": "5154828727192bb17f83817bc2f18058eb2e3790977f96d94281336e334bb6b1"
     },
     {
       "index": 518,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样106.jpg"
+      "relative_image": "combined patterns/组合纹样106.jpg",
+      "sha256": "50fb8a5f20c9a4ed5ad498eb569a1d680ac0fc84ad63b39feb03b2190757fc18"
     },
     {
       "index": 519,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样107.jpg"
+      "relative_image": "combined patterns/组合纹样107.jpg",
+      "sha256": "63786ac937d13d8a3cef0a4d0e086559c819dcaca588c0ed8f1d3cfd11cb1216"
     },
     {
       "index": 520,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样108.jpg"
+      "relative_image": "combined patterns/组合纹样108.jpg",
+      "sha256": "6d91ec79dbfcac073e7878ea500e0795f33fe224e8ac54e8168f94f803e95dd7"
     },
     {
       "index": 521,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样109.jpg"
+      "relative_image": "combined patterns/组合纹样109.jpg",
+      "sha256": "6be8f0ffbe480422daf14217b49670ebbf4d3d684c971b65ae0a375d8104df6d"
     },
     {
       "index": 522,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样11.jpg"
+      "relative_image": "combined patterns/组合纹样11.jpg",
+      "sha256": "7866618a4e49fc8a1b2ea3e45df6d12c6f412a63d08731ce86599e3a2ff17d56"
     },
     {
       "index": 523,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样110.jpg"
+      "relative_image": "combined patterns/组合纹样110.jpg",
+      "sha256": "cc97e0b86e961e72942f1c6b4252d661d525b83ddf31fe383f36ad9d2f2a76ba"
     },
     {
       "index": 524,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样12.jpg"
+      "relative_image": "combined patterns/组合纹样12.jpg",
+      "sha256": "9a6a4ac15ef7d401734b0328f8629b3f59401849bf32ec3cddb23b3f0e295a27"
     },
     {
       "index": 525,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样13.jpg"
+      "relative_image": "combined patterns/组合纹样13.jpg",
+      "sha256": "cc0e08b0df2a7d71c357769b003a22ddb193de3ce9987c131569ade97b2c46b5"
     },
     {
       "index": 526,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样14.jpg"
+      "relative_image": "combined patterns/组合纹样14.jpg",
+      "sha256": "ecbca973c6e288ac5985f6309ac5c3d567eeaccea16069af5e5f5f51fa134be2"
     },
     {
       "index": 527,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样15.jpg"
+      "relative_image": "combined patterns/组合纹样15.jpg",
+      "sha256": "c158dbb9cd1ac4d12fef56677354192d98a49c59a8cd6ce89d6633b87ce47c5a"
     },
     {
       "index": 528,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样16.jpg"
+      "relative_image": "combined patterns/组合纹样16.jpg",
+      "sha256": "1ded6287fbcf853b2c7874e1c11c0fe93578aec7223b8fc8933ee8b3c620c629"
     },
     {
       "index": 529,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样17.jpg"
+      "relative_image": "combined patterns/组合纹样17.jpg",
+      "sha256": "738cb412ac0d7154323173a1724674de12a978b38ed6a4458f831473939277fb"
     },
     {
       "index": 530,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样18.jpg"
+      "relative_image": "combined patterns/组合纹样18.jpg",
+      "sha256": "053e7a216dfc67efab737c4dd52eb977a10c20017e8bf1bd6eb7cd8f475325c6"
     },
     {
       "index": 531,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样19.jpg"
+      "relative_image": "combined patterns/组合纹样19.jpg",
+      "sha256": "947815dfcee9005f1c3614a74f0034d2981745d6b6b497756df445321e03bb3b"
     },
     {
       "index": 532,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样2.jpg"
+      "relative_image": "combined patterns/组合纹样2.jpg",
+      "sha256": "37a8c199f60f65ef93bd93388bf4739d5513892835e5ba3344d47d3b1f310880"
     },
     {
       "index": 533,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样20.jpg"
+      "relative_image": "combined patterns/组合纹样20.jpg",
+      "sha256": "45816143eb9b46289e335362ea9de7498f0cfc8ebad9158e0b6f31afef0eabdd"
     },
     {
       "index": 534,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样21.jpg"
+      "relative_image": "combined patterns/组合纹样21.jpg",
+      "sha256": "1658aa7d5773ff4812cb1473eb498ddd1a628b1addf0163133fcfd6263e4a1ae"
     },
     {
       "index": 535,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样22.jpg"
+      "relative_image": "combined patterns/组合纹样22.jpg",
+      "sha256": "7d38d79cb592afa3cf7d382f3179a5415cf065d45b25f940d47d9c9e0257f4f4"
     },
     {
       "index": 536,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样23.jpg"
+      "relative_image": "combined patterns/组合纹样23.jpg",
+      "sha256": "e1651c71e2e7c5ba97ef5c8ce42c647ef94dbc50123b8e2605c569982dee6537"
     },
     {
       "index": 537,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样24.jpg"
+      "relative_image": "combined patterns/组合纹样24.jpg",
+      "sha256": "7a9ab72b05e359ebc8b6462453e80372732b89638a934d4b4a755582770d3398"
     },
     {
       "index": 538,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样25.jpg"
+      "relative_image": "combined patterns/组合纹样25.jpg",
+      "sha256": "45277a7e4c154ff47dff9762ad22a9b0dcf8fcac9ca9e5d78533f96db94064a3"
     },
     {
       "index": 539,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样26.jpg"
+      "relative_image": "combined patterns/组合纹样26.jpg",
+      "sha256": "fec0b1aee98a6e03da7410dee926388c222ed573e388213db4af1441adde9873"
     },
     {
       "index": 540,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样27.jpg"
+      "relative_image": "combined patterns/组合纹样27.jpg",
+      "sha256": "724ab871a78f798b34e5f09898f01864b4fae8138018894be73689bc13c00a9c"
     },
     {
       "index": 541,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样28.jpg"
+      "relative_image": "combined patterns/组合纹样28.jpg",
+      "sha256": "c3d3258268581d016b7495ece96f44d15f4ca76096c9f47b416af4def8b8692b"
     },
     {
       "index": 542,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样29.jpg"
+      "relative_image": "combined patterns/组合纹样29.jpg",
+      "sha256": "ff351623d7eafdf242041299ad2a6720cf3e549b63a671d6fe1951f174b6ae2e"
     },
     {
       "index": 543,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样3.jpg"
+      "relative_image": "combined patterns/组合纹样3.jpg",
+      "sha256": "9a29f5efe6769ac5e928517a0de4ceda681aad8c969aa86ae4c219eede7485be"
     },
     {
       "index": 544,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样30.jpg"
+      "relative_image": "combined patterns/组合纹样30.jpg",
+      "sha256": "775dd8803e0499a0f9d44d4bb9e2cc634e8ac1e00143dcda824d85a7d9843f80"
     },
     {
       "index": 545,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样31.jpg"
+      "relative_image": "combined patterns/组合纹样31.jpg",
+      "sha256": "90666d2f3908e58b780773fdc5ece178d4222554391617f320833fe355f80083"
     },
     {
       "index": 546,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样32.jpg"
+      "relative_image": "combined patterns/组合纹样32.jpg",
+      "sha256": "14fdccf61526685d24f79abc938fdf8908008d7515727dff4c2607e785deeb8e"
     },
     {
       "index": 547,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样33.jpg"
+      "relative_image": "combined patterns/组合纹样33.jpg",
+      "sha256": "548059da61e5600eaf16c7afc9ac9b9ac3c4a8722287748ba545921a2e9c88fb"
     },
     {
       "index": 548,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样34.jpg"
+      "relative_image": "combined patterns/组合纹样34.jpg",
+      "sha256": "4a2bfaf5f4cc36c2184ca7ae324304a933b269dfd1a3f99b9ce1a9b1664c3b54"
     },
     {
       "index": 549,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样35.jpg"
+      "relative_image": "combined patterns/组合纹样35.jpg",
+      "sha256": "e0a988511a23aa5f35ebe835fe34dea3064636a06329c9e93d3c557ce19f3ea4"
     },
     {
       "index": 550,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样36.jpg"
+      "relative_image": "combined patterns/组合纹样36.jpg",
+      "sha256": "f1139d3b70ec8b3f614ff95845d828309d295da20ca5f9ab23bc2ed7b9a8b0f1"
     },
     {
       "index": 551,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样37.jpg"
+      "relative_image": "combined patterns/组合纹样37.jpg",
+      "sha256": "af7a60d62c4630af8b20045ccd20e2e89aacdfb5831621795068db4e3c16b593"
     },
     {
       "index": 552,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样38.jpg"
+      "relative_image": "combined patterns/组合纹样38.jpg",
+      "sha256": "feeb64c965fa7971c40e84b78e31433aaa01bc648469ebdcc9df1a13e25f967a"
     },
     {
       "index": 553,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样39.jpg"
+      "relative_image": "combined patterns/组合纹样39.jpg",
+      "sha256": "0717e146edd2af5e58b037e380a3cf4f4e6c76831644ac28b59508ac1dc5310c"
     },
     {
       "index": 554,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样4.jpg"
+      "relative_image": "combined patterns/组合纹样4.jpg",
+      "sha256": "8c46f07c53d4f15050e6c5d1365f9f736085e0accbf7548fb48f120163f9eebf"
     },
     {
       "index": 555,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样40.jpg"
+      "relative_image": "combined patterns/组合纹样40.jpg",
+      "sha256": "ac2158ffd1b01e11457223a94a8de76e8f69849a4642bd423906a01baa7b717f"
     },
     {
       "index": 556,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样41.jpg"
+      "relative_image": "combined patterns/组合纹样41.jpg",
+      "sha256": "15952878b0a902d8e3a3ba1e82d0ff40a7e8c449728e67905ed7008da26cfd4d"
     },
     {
       "index": 557,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样42.jpg"
+      "relative_image": "combined patterns/组合纹样42.jpg",
+      "sha256": "44fdded655608c9b594584e7658690b54bfb89f61fc5ff857b019feab80f9f06"
     },
     {
       "index": 558,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样43.jpg"
+      "relative_image": "combined patterns/组合纹样43.jpg",
+      "sha256": "a5b8c22ca74d83ac8ca426ce6d8185f69296ea88c9808d8c007de42b973cbe76"
     },
     {
       "index": 559,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样44.jpg"
+      "relative_image": "combined patterns/组合纹样44.jpg",
+      "sha256": "1e5194808bce21a01831b565a5dce2f73d8d6b4af59dd5155fedded7d9a55c5f"
     },
     {
       "index": 560,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样45.jpg"
+      "relative_image": "combined patterns/组合纹样45.jpg",
+      "sha256": "af88f3d56c1dc282ac24822f0aac11395c583b6d3734914ad6661200d26db708"
     },
     {
       "index": 561,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样46.jpg"
+      "relative_image": "combined patterns/组合纹样46.jpg",
+      "sha256": "beb650c015d1c8712eb3696b39687e3557acf7f223ee1bd6904ab5213239c206"
     },
     {
       "index": 562,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样47.jpg"
+      "relative_image": "combined patterns/组合纹样47.jpg",
+      "sha256": "53229f7d0e9eef4b54ce22c71d2c32e51820210f2c3d819cc566cd94ae7b40d8"
     },
     {
       "index": 563,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样48.jpg"
+      "relative_image": "combined patterns/组合纹样48.jpg",
+      "sha256": "e386dcb19e1f7eaeb776594c7c4a79d2c0dd71ebbd509bbffdde52b61982899c"
     },
     {
       "index": 564,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样49.jpg"
+      "relative_image": "combined patterns/组合纹样49.jpg",
+      "sha256": "bc90e15b005a8a0c4907ce876ec59076bc5e5967eca47b9eadfd8b33644f48fb"
     },
     {
       "index": 565,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样5.jpg"
+      "relative_image": "combined patterns/组合纹样5.jpg",
+      "sha256": "99ea6de2359ac98081d7f70f3f0ea75b96b349295cc264c0f8dd6e73735b597b"
     },
     {
       "index": 566,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样50.jpg"
+      "relative_image": "combined patterns/组合纹样50.jpg",
+      "sha256": "233ae24531c5f469c4ac1dd7cecd14709d6e36bc0758d35f347e3d331fff16a1"
     },
     {
       "index": 567,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样51.jpg"
+      "relative_image": "combined patterns/组合纹样51.jpg",
+      "sha256": "25540230ceb67a4fd7c1335c2c707a55032ef54b5859c2a20cb9c4b2b550e6a9"
     },
     {
       "index": 568,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样52.jpg"
+      "relative_image": "combined patterns/组合纹样52.jpg",
+      "sha256": "aec0fe514a4a495e74ac46f8600e8e62a852f2ad67eaa22ff5ce6f768747cc0d"
     },
     {
       "index": 569,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样53.jpg"
+      "relative_image": "combined patterns/组合纹样53.jpg",
+      "sha256": "9b77de99db3e97eeb05c589577dea7c1b952a5c694aa2bf709ac8f596fdbddff"
     },
     {
       "index": 570,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样54.jpg"
+      "relative_image": "combined patterns/组合纹样54.jpg",
+      "sha256": "61355765976bb6d54be559da64c7272e9a8475958771792e0f6d73842650dbc6"
     },
     {
       "index": 571,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样55.jpg"
+      "relative_image": "combined patterns/组合纹样55.jpg",
+      "sha256": "1a02ec00561b328890e2b00d09bde9378eebf3f1fbb489188a505f46128b537e"
     },
     {
       "index": 572,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样56.jpg"
+      "relative_image": "combined patterns/组合纹样56.jpg",
+      "sha256": "478c7cb11f7dcbecbffd82506306ab328be60b25e24fc29529b123c012c8e34b"
     },
     {
       "index": 573,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样57.jpg"
+      "relative_image": "combined patterns/组合纹样57.jpg",
+      "sha256": "7ef23e4e9abfb6517658a57ee87d0ede1ee82dc31d2ed33aa35fd05c02c0b16f"
     },
     {
       "index": 574,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样58.jpg"
+      "relative_image": "combined patterns/组合纹样58.jpg",
+      "sha256": "0ed413651c8a837bd1b9d20c4341f3f87818a4cf5d48965a21e030ff203263c4"
     },
     {
       "index": 575,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样59.jpg"
+      "relative_image": "combined patterns/组合纹样59.jpg",
+      "sha256": "dc26e6b4e510a401ec0b63573cdeb515c2b7ec69af7ac516cc72b608d4d8c2a3"
     },
     {
       "index": 576,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样6.jpg"
+      "relative_image": "combined patterns/组合纹样6.jpg",
+      "sha256": "d29f8afe87be8cd462282f5ec4c6033ec91ad9f4740db28bf9ae092b82592cc6"
     },
     {
       "index": 577,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样60.jpg"
+      "relative_image": "combined patterns/组合纹样60.jpg",
+      "sha256": "057c6e55e45c3404f3b32a9b746c05bacdacaf84080aa26280592f1fd2f8418f"
     },
     {
       "index": 578,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样61.jpg"
+      "relative_image": "combined patterns/组合纹样61.jpg",
+      "sha256": "4a10c235a081402ec276849b8bd9c093479c3cdd06f74c0a0b89097837c91545"
     },
     {
       "index": 579,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样62.jpg"
+      "relative_image": "combined patterns/组合纹样62.jpg",
+      "sha256": "3063663132a6c86af8163e1f5331846ff2a6dfb791f4cadbbf98d86108db81dc"
     },
     {
       "index": 580,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样63.jpg"
+      "relative_image": "combined patterns/组合纹样63.jpg",
+      "sha256": "84ba22bedf3d8471f4a48a15a68d863b22de85ccf593324396916ee957b698d2"
     },
     {
       "index": 581,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样64.jpg"
+      "relative_image": "combined patterns/组合纹样64.jpg",
+      "sha256": "6f9466ba972d36afd0e015fff32a6333b33c7cd5a6311a6d93aad2269d7c9730"
     },
     {
       "index": 582,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样65.jpg"
+      "relative_image": "combined patterns/组合纹样65.jpg",
+      "sha256": "00078fd374f86708447d556fca997c887e1bd26c02b508fd5bfd96112fe49bfc"
     },
     {
       "index": 583,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样66.jpg"
+      "relative_image": "combined patterns/组合纹样66.jpg",
+      "sha256": "5f2c60c07692137f0b21b8b24b942e90a48ce8f30679d53c2aa2d6825df8fb8b"
     },
     {
       "index": 584,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样67.jpg"
+      "relative_image": "combined patterns/组合纹样67.jpg",
+      "sha256": "7e7ec2033a6ba40ee0265fb24ae6d102ed4bcd12ab58965a3e53101d2b693f7a"
     },
     {
       "index": 585,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样68.jpg"
+      "relative_image": "combined patterns/组合纹样68.jpg",
+      "sha256": "928492d8aa6d6655ab2fb93c3ca8b10910e84e73ca23e83a836771ce3d82bce5"
     },
     {
       "index": 586,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样69.jpg"
+      "relative_image": "combined patterns/组合纹样69.jpg",
+      "sha256": "bc24754b54aa2e8f14c3d2bac8819343a2a8afa3709a04b5aea0624abd3b1ae5"
     },
     {
       "index": 587,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样7.jpg"
+      "relative_image": "combined patterns/组合纹样7.jpg",
+      "sha256": "4e28e432b501c366a60fc08e8ad820dbbb87c227766999342a9c0bf58b7afe0e"
     },
     {
       "index": 588,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样70.jpg"
+      "relative_image": "combined patterns/组合纹样70.jpg",
+      "sha256": "af7981488246ceba051505222418857af4167a40b18dc5e9b62a49726e931958"
     },
     {
       "index": 589,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样71.jpg"
+      "relative_image": "combined patterns/组合纹样71.jpg",
+      "sha256": "7046b4d2e8df467b406b886c49a842e412632e1ed005d593fe36c1161d01838a"
     },
     {
       "index": 590,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样72.jpg"
+      "relative_image": "combined patterns/组合纹样72.jpg",
+      "sha256": "e8cee775e9708032e0f1100bf8914b89be3eb770985e77b24db64880c9818969"
     },
     {
       "index": 591,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样73.jpg"
+      "relative_image": "combined patterns/组合纹样73.jpg",
+      "sha256": "3cfe46ffce2a2b8c10cffcee6afc2a49dadc15ce8ccb9c0df46a71d67c91fccc"
     },
     {
       "index": 592,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样74.jpg"
+      "relative_image": "combined patterns/组合纹样74.jpg",
+      "sha256": "8546630680a48007307c4052609c791bb1818a73443dc810a3f084304a2dda3d"
     },
     {
       "index": 593,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样75.jpg"
+      "relative_image": "combined patterns/组合纹样75.jpg",
+      "sha256": "3fc7be332412a63005af327acd79681546ae7369b4278cd55b8deafa0d06435b"
     },
     {
       "index": 594,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样76.jpg"
+      "relative_image": "combined patterns/组合纹样76.jpg",
+      "sha256": "b58e6efbfaa62c6ef09dd4161c03de7aca5761e35857db63a06bcbadff5499a5"
     },
     {
       "index": 595,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样77.jpg"
+      "relative_image": "combined patterns/组合纹样77.jpg",
+      "sha256": "823cfee138d3d60ee18fd49d185f96924fae7367996c0570ad61cd46b1cba66c"
     },
     {
       "index": 596,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样78.jpg"
+      "relative_image": "combined patterns/组合纹样78.jpg",
+      "sha256": "bc854ff11a566674dd63834c59fa2a65e69e39231a0a4ac7628065508524b2a2"
     },
     {
       "index": 597,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样79.jpg"
+      "relative_image": "combined patterns/组合纹样79.jpg",
+      "sha256": "9b582f2afe6b0b1a2b7ef82b3d5438cc1c66e2121f5be9001884c38a3cf4cfa2"
     },
     {
       "index": 598,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样8.jpg"
+      "relative_image": "combined patterns/组合纹样8.jpg",
+      "sha256": "3b503d0edbda09de58d272b34e947927ba12f2e92552a3e7e296c8d005b99630"
     },
     {
       "index": 599,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样80.jpg"
+      "relative_image": "combined patterns/组合纹样80.jpg",
+      "sha256": "2e78919927eabd388331342efd8e50f3c0c04d620d7cb24158cde5da86e1bbbf"
     },
     {
       "index": 600,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样81.jpg"
+      "relative_image": "combined patterns/组合纹样81.jpg",
+      "sha256": "c32c96dc1d8d64c283b308877285d0e6f915b2c5e9e409cb4c6748ac135a7974"
     },
     {
       "index": 601,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样82.jpg"
+      "relative_image": "combined patterns/组合纹样82.jpg",
+      "sha256": "f623d07f2ef61b8092e5a6c34f84641441f19875a396fdda65e114cc9ce9cd87"
     },
     {
       "index": 602,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样83.jpg"
+      "relative_image": "combined patterns/组合纹样83.jpg",
+      "sha256": "ce94554ba1ea29fd1d4af667f694026813602b097ae53e154225352e2b9afe2f"
     },
     {
       "index": 603,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样84.jpg"
+      "relative_image": "combined patterns/组合纹样84.jpg",
+      "sha256": "f37e0fad87d8145ecbe644b3d439ff609137c8a3d4e7b84bc10c1ae4140d8ed6"
     },
     {
       "index": 604,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样85.jpg"
+      "relative_image": "combined patterns/组合纹样85.jpg",
+      "sha256": "fdd7407c3efce09927ab0fec1a4bacb1a9a6f6732d04af3f7374e6d5880787e1"
     },
     {
       "index": 605,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样86.jpg"
+      "relative_image": "combined patterns/组合纹样86.jpg",
+      "sha256": "cf014db710e7c6c3ab0ce8036dec3abccd3bd2fb07b944e7fb41fcc76da29c9a"
     },
     {
       "index": 606,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样87.jpg"
+      "relative_image": "combined patterns/组合纹样87.jpg",
+      "sha256": "3f3ebb8618feb43899b006fb7bb14d730590008a727e1fa8378e51590c4a1b1e"
     },
     {
       "index": 607,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样88.jpg"
+      "relative_image": "combined patterns/组合纹样88.jpg",
+      "sha256": "ca79e85c130ec14738d847c16081afa9f23fd3bf9927b0943a55883231ba2fe2"
     },
     {
       "index": 608,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样89.jpg"
+      "relative_image": "combined patterns/组合纹样89.jpg",
+      "sha256": "97940230dabb86f797e583b2f63fc5489d89751fc0986e889c3c9a364a652893"
     },
     {
       "index": 609,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样9.jpg"
+      "relative_image": "combined patterns/组合纹样9.jpg",
+      "sha256": "2a7b673ae04fb2e784330a2f531eeb876e988b7ddb5d969d9b6d0efa7fcf6864"
     },
     {
       "index": 610,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样90.jpg"
+      "relative_image": "combined patterns/组合纹样90.jpg",
+      "sha256": "4ca53643364389eb8015ffb0fe8cb2b901b4b11a47b702c91257875651591f8f"
     },
     {
       "index": 611,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样91.jpg"
+      "relative_image": "combined patterns/组合纹样91.jpg",
+      "sha256": "6722248e693b4b57dc765b16ae53f778c848a8c4b016fad73dd81c06a611f6a3"
     },
     {
       "index": 612,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样92.jpg"
+      "relative_image": "combined patterns/组合纹样92.jpg",
+      "sha256": "5c39e450700ddbc2ff5773151729cc8a43a0090585edd55be6316a45dfa0fdbd"
     },
     {
       "index": 613,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样93.jpg"
+      "relative_image": "combined patterns/组合纹样93.jpg",
+      "sha256": "6db0b580bcdeaca9a6a5ae39d9357c7dd32e223b4a1a5c79bfe3cde108f3ee67"
     },
     {
       "index": 614,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样94.jpg"
+      "relative_image": "combined patterns/组合纹样94.jpg",
+      "sha256": "5b44b4e2fd100effe70b57795c6d1b33a140c22ae2020d4c05dbbdc03c2a5499"
     },
     {
       "index": 615,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样95.jpg"
+      "relative_image": "combined patterns/组合纹样95.jpg",
+      "sha256": "c6465b94d43b6cacb5aeaba51a90c97807133396ce877eae59e6f1685eee6fd1"
     },
     {
       "index": 616,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样96.jpg"
+      "relative_image": "combined patterns/组合纹样96.jpg",
+      "sha256": "0a767d451c7035664c88ff71af0da840e6364ae1ca0186eca4b6f0ca81436a73"
     },
     {
       "index": 617,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样97.jpg"
+      "relative_image": "combined patterns/组合纹样97.jpg",
+      "sha256": "ea0986fadaf1aa19308279744892d18936404446136599b4e0b2a26a5ee59230"
     },
     {
       "index": 618,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样98.jpg"
+      "relative_image": "combined patterns/组合纹样98.jpg",
+      "sha256": "69835bb7bf8d05ceb7d352ebee39571fe3cb7e6c8b4384013500282515e69927"
     },
     {
       "index": 619,
       "class_id": 5,
       "class_name": "combined",
-      "relative_image": "combined patterns\\组合纹样99.jpg"
+      "relative_image": "combined patterns/组合纹样99.jpg",
+      "sha256": "d8d9fb0bfc526fea23ff431567ea4280d3a6c0a10e15d37ce14fe81c313a6d9d"
     }
   ],
   "split_indices": {
@@ -4358,5 +4978,7 @@
       94
     ]
   },
-  "raw_images_uploaded": false
+  "raw_images_uploaded": false,
+  "image_source": "original bai_data images; old split sample assignments retained",
+  "source_split_sha256": "f3a3500f10fdc5e85e83a64d21c55d66911d1bcce16d4e32f125143605d3e53e"
 }

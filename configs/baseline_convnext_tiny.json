@@ -1,6 +1,8 @@
 {
   "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
   "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+  "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+  "status": "setup_only_not_a_training_run",
   "task": "six_class_whole_image_classification",
   "num_classes": 6,
   "split": {
@@ -10,13 +12,13 @@
   },
   "backbone_frozen": true,
   "classifier": "linear",
-  "image_size": 224,
-  "batch_size": 16,
-  "learning_rate": 0.0003,
-  "weight_decay": 0.001,
-  "max_epochs": 100,
-  "early_stopping_patience": 15,
+  "image_size": null,
+  "batch_size": null,
+  "learning_rate": null,
+  "weight_decay": null,
+  "max_epochs": null,
+  "early_stopping_patience": null,
   "selection_metric": "validation_macro_f1",
-  "seeds": [42, 43, 44, 45, 46],
-  "notes": "Initial baseline only; change one factor at a time after recording it."
+  "seeds": null,
+  "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
 }

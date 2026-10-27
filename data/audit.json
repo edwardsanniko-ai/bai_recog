@@ -1,0 +1,20 @@
+{
+  "sample_count": 620,
+  "class_counts": {
+    "geometric": 100,
+    "animal": 111,
+    "antique object": 104,
+    "plant": 100,
+    "Chinese character": 95,
+    "combined": 110
+  },
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "all_files_exist": true,
+  "all_indices_unique_and_complete": true,
+  "cross_split_byte_identical_groups": [],
+  "limitation": "SHA256 checks identical bytes only, not near duplicates or shared source motifs."
+}
