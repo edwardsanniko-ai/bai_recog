@@ -1,0 +1,44 @@
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Local environments and secrets
+.conda-env/
+.venv/
+.env
+.env.*
+!.env.example
+
+# Local dataset and model files: never upload raw images or gated weights
+data/raw/
+data/images/
+data/originals/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.safetensors
+*.bin
+*.pth
+*.pt
+checkpoints/
+weights/
+hf_cache/
+
+# Generated caches and large local artifacts
+outputs/
+cache/
+*.npy
+*.npz
+
+# Keep small, human-readable experiment records tracked
+!logs/*.md
+!logs/*.json
+!configs/*.json
+!data/*.json
