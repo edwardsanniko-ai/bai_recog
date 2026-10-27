@@ -26,7 +26,7 @@ reproduction remains outside this repository and is not used as a result here.
 
 ## Local setup
 
-当前阶段只完成建档和数据核验，尚未下载权重或训练。
+当前阶段已完成建档、数据核验、权重下载和单图 GPU 前向，尚未训练。
 已验证现有环境：PyTorch 2.8.0+cu128、torchvision 0.23.0+cu128、
 transformers 4.57.3、Pillow 12.3.0、numpy 2.2.5；CUDA 可用，
 显卡 NVIDIA GeForce RTX 4060 Laptop GPU。
@@ -47,6 +47,15 @@ DINOv3 配置和脚本仅作历史留痕，已停止使用，且没有进行过�
 
 The smoke test loads one local image, prints the feature shape, device, and
 whether the output contains finite values. It does not train or upload images.
+
+单图测试通过后，在同一目录运行下一步（全量冻结特征缓存）：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/cache_siglip2_features.py
+```
+
+预期输出为 (620, 768) 特征和 (620,) 标签。缓存保存在本地 cache/，
+核验记录保存在 logs/。全量特征提取不会训练模型或计算分类成绩。
 
 ## 实验记录约定
 

@@ -30,12 +30,14 @@ def main():
     with Image.open(image_path) as original:
         image = original.convert('RGB')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
     print('Model:', config['backbone'], flush=True)
     print('Device:', device, flush=True)
     print('First run downloads the official checkpoint to local hf_cache.', flush=True)
     kwargs = dict(revision=config['revision'], cache_dir=str(root / 'hf_cache'),
                   token=False, trust_remote_code=False)
-    processor = AutoImageProcessor.from_pretrained(config['backbone'], **kwargs)
+    processor = AutoImageProcessor.from_pretrained(config['backbone'], use_fast=False, **kwargs)
     model = SiglipVisionModel.from_pretrained(config['backbone'], **kwargs).eval().to(device)
     model.requires_grad_(False)
     inputs = processor(images=image, return_tensors='pt')
@@ -62,7 +64,7 @@ def main():
         'device': str(device), 'allocated_gpu_gib': memory,
         'torch': torch.__version__, 'transformers': transformers.__version__,
         'input_shape': list(inputs['pixel_values'].shape), 'feature_shape': list(features.shape),
-        'all_finite': True, 'processor': processor.to_dict(),
+        'all_finite': True, 'processor': processor.to_dict(), 'allow_tf32': False,
     }
     destination = root / 'logs' / ('siglip2_smoke_' + now.strftime('%Y%m%d_%H%M%S_%f') + '.json')
     destination.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-10-27T16:38:27.514446+08:00",
+  "status": "single_image_forward_passed_not_trained",
+  "config": {
+    "experiment_name": "siglip2_base_frozen_linear_baseline",
+    "backbone": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "status": "setup_only_not_a_training_run",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "classifier": "linear",
+    "image_size": 224,
+    "preprocessing": "official SiglipImageProcessor with explicit RGB conversion",
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "Training hyperparameters pending step-by-step discussion. Never tune on test scores."
+  },
+  "code_commit": "7ebeef8d48599b9ebef2253fdfc3f4c2abd4e2e7",
+  "script_sha256": "61a4c228f1f69f8d21aa94f4eb7aa698e06933f885e8172bb7fdfbb9f43e4435",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sample_index": 237,
+  "image_relative": "antique-object patterns/博古纹29.png",
+  "image_sha256": "e44349b9440fc2c536b395934c30482206331ef32008021dcb5032a5d3e1227d",
+  "device": "cuda",
+  "allocated_gpu_gib": 0.3545207977294922,
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.3",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "feature_shape": [
+    1,
+    768
+  ],
+  "all_finite": true,
+  "processor": {
+    "_processor_class": "SiglipProcessor",
+    "image_processor_type": "SiglipImageProcessor",
+    "do_resize": true,
+    "size": {
+      "height": 224,
+      "width": 224
+    },
+    "resample": 2,
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "do_convert_rgb": null
+  }
+}
