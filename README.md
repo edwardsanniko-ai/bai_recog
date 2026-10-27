@@ -1,24 +1,24 @@
-# 白族图案识别：DINOv3 ConvNeXt-Tiny
+# 白族图案识别：SigLIP 2 Base
 
 This repository contains a new, separate experiment for classifying the six
-Bai pattern categories with **DINOv3 ConvNeXt-Tiny**. The earlier Qwen3-VL
+Bai pattern categories with **SigLIP 2 Base (224)**. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
 ## Scope of the first baseline
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
-- Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
-- First training protocol: frozen DINOv3 features plus a linear classification
+- Backbone: `google/siglip2-base-patch16-224` (vision encoder only).
+- First training protocol: frozen SigLIP 2 features plus a linear classification
   head. Hyperparameters will be changed only after this baseline is recorded.
-- Raw images and gated model weights are local-only and are excluded by
+- Raw images and model weights are local-only and are excluded by
   `.gitignore`.
 
 ## Reproducibility records
 
 - `data/splits.json`: relative image identifiers, labels and split indices;
   no absolute local paths.
-- `configs/baseline_convnext_tiny.json`: selected model and pinned revision;
+- `configs/baseline_siglip2.json`: active model and pinned revision;
   training hyperparameters remain unset for step-by-step discussion.
 - `data/audit.json`: verified counts and cross-split exact-file duplicate check.
 - `logs/`: short, append-only experiment records.
@@ -29,18 +29,20 @@ reproduction remains outside this repository and is not used as a result here.
 当前阶段只完成建档和数据核验，尚未下载权重或训练。
 已验证现有环境：PyTorch 2.8.0+cu128、torchvision 0.23.0+cu128、
 transformers 4.57.3、Pillow 12.3.0、numpy 2.2.5；CUDA 可用，
-显卡 NVIDIA GeForce RTX 4060 Laptop GPU。DINOv3ConvNextModel 导入成功。
+显卡 NVIDIA GeForce RTX 4060 Laptop GPU。
 无需现在升级已有环境。
 
-下一步先完成 GitHub 登录和首次上传。模型阶段需要在
-https://huggingface.co/facebook/dinov3-convnext-tiny-pretrain-lvd1689m
-申请权重访问权限，并在本地登录。不要把访问令牌发到聊天或提交到仓库。
+GitHub 首次上传已完成。按用户要求改用无需申请权限的 SigLIP 2：
+https://huggingface.co/google/siglip2-base-patch16-224
+已匿名核实官方配置和权重可访问，不需要 Hugging Face 登录。
+DINOv3 配置和脚本仅作历史留痕，已停止使用，且没有进行过训练。
 
-以下命令供获得模型权限后的步骤使用，从本仓库目录执行：
+以下命令从本仓库目录执行。单图测试首次运行会自动下载官方权重；
+虽然只加载视觉编码器，官方权重文件仍包含图文两部分，下载可能需要等待。
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/make_manifest.py
-& '..\.conda-env\python.exe' scripts/smoke_test_dinov3.py
+& '..\.conda-env\python.exe' scripts/smoke_test_siglip2.py
 ```
 
 The smoke test loads one local image, prints the feature shape, device, and

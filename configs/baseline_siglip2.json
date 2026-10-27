@@ -1,0 +1,21 @@
+{
+  "experiment_name": "siglip2_base_frozen_linear_baseline",
+  "backbone": "google/siglip2-base-patch16-224",
+  "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+  "status": "setup_only_not_a_training_run",
+  "task": "six_class_whole_image_classification",
+  "num_classes": 6,
+  "split": {"train": 434, "validation": 93, "test": 93},
+  "backbone_frozen": true,
+  "classifier": "linear",
+  "image_size": 224,
+  "preprocessing": "official SiglipImageProcessor with explicit RGB conversion",
+  "batch_size": null,
+  "learning_rate": null,
+  "weight_decay": null,
+  "max_epochs": null,
+  "early_stopping_patience": null,
+  "selection_metric": "validation_macro_f1",
+  "seeds": null,
+  "notes": "Training hyperparameters pending step-by-step discussion. Never tune on test scores."
+}
