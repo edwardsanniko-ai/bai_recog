@@ -2,7 +2,7 @@
   "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
   "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
   "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
-  "status": "active_setup_hf_access_user_confirmed_pending_local_login",
+  "status": "login_success_user_reported_pending_model_smoke_test",
   "task": "six_class_whole_image_classification",
   "num_classes": 6,
   "split": {
