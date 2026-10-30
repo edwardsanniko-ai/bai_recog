@@ -28,19 +28,20 @@ reproduction remains outside this repository and is not used as a result here.
 
 当前阶段已完成建档、数据核验，以及 SigLIP 2 权重下载和单图 GPU 前向。
 2026-10-30 用户确认获得 Hugging Face DINOv3 访问权限，要求优先回到 DINOv3。
-DINOv3 尚未下载或完成单图测试；两个模型均尚未训练分类器。
+DINOv3 权重已下载，单图 GPU 测试通过：输入 (1, 3, 224, 224)，
+输出 (1, 768)、float32、全部有效。两个模型均尚未训练分类器。
 已验证现有环境：PyTorch 2.8.0+cu128、torchvision 0.23.0+cu128、
 transformers 4.57.3、Pillow 12.3.0、numpy 2.2.5；CUDA 可用，
 显卡 NVIDIA GeForce RTX 4060 Laptop GPU。
 无需现在升级已有环境。
 
-GitHub 首次上传已完成。当前先在自己的终端登录获得授权的 Hugging Face 账号：
+GitHub 首次上传和本机 Hugging Face 登录已完成。新机器首次登录可使用：
 
 ```powershell
-& '..\.conda-env\python.exe' -c "from huggingface_hub import login; login(add_to_git_credential=False)"
+& '..\.conda-env\python.exe' scripts/login_huggingface.py --clipboard
 ```
 
-令牌只在终端提示中输入，不写入代码、日志或聊天。GitHub 登录和 Hugging Face
+脚本提示后复制令牌，回到终端按回车，不写入代码、日志或聊天。GitHub 登录和 Hugging Face
 登录互不替代。模型页面：
 https://huggingface.co/facebook/dinov3-convnext-tiny-pretrain-lvd1689m
 
@@ -55,8 +56,16 @@ SigLIP 2 的代码、权重及成功记录保留，暂停继续提取和训练�
 The smoke test loads one local image, prints the feature shape, device, and
 whether the output contains finite values. It does not train or upload images.
 
-DINOv3 单图通过后再准备相应的批量特征缓存。不要使用 SigLIP 2 的缓存脚本
-处理 DINOv3：两种模型的特征不能混用。
+当前下一步是 DINOv3 全量特征缓存：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/cache_dinov3_features.py
+```
+
+仅加载本地权重；预期特征 (620, 768)、标签 (620,)，并验证保存后读回一致。
+cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕。
+保持官方 224×224 快速预处理、模型冻结和 eval 模式；不计算测试集指标。
+不要使用 SigLIP 2 的缓存脚本处理 DINOv3：两种模型的特征不能混用。
 
 ## 实验记录约定
 

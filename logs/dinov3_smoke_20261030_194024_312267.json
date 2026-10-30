@@ -1,0 +1,86 @@
+{
+  "model": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+  "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+  "timestamp": "2026-10-30T19:40:24.312267+08:00",
+  "status": "single_image_forward_passed_not_trained",
+  "config": {
+    "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
+    "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+    "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+    "status": "login_success_user_reported_pending_model_smoke_test",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "classifier": "linear",
+    "image_size": null,
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
+  },
+  "code_commit": "e74f0a90876ed50270a70bb4a0b7273c1327fac3",
+  "script_sha256": "b578d42fb21ade7152e0066d55d95f85eed755625fab93c5a0653d98b62cda5b",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "image_sha256": "e44349b9440fc2c536b395934c30482206331ef32008021dcb5032a5d3e1227d",
+  "device": "cuda",
+  "image_relative": "antique-object patterns/博古纹29.png",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "feature_shape": [
+    1,
+    768
+  ],
+  "finite": true,
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.57.3",
+  "allow_tf32": false,
+  "use_fast": true,
+  "all_parameters_frozen": true,
+  "processor": {
+    "_processor_class": null,
+    "crop_size": null,
+    "data_format": "channels_first",
+    "default_to_square": true,
+    "device": null,
+    "disable_grouping": null,
+    "do_center_crop": null,
+    "do_convert_rgb": null,
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "DINOv3ViTImageProcessorFast",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input_data_format": null,
+    "resample": 2,
+    "rescale_factor": 0.00392156862745098,
+    "return_tensors": null,
+    "size": {
+      "height": 224,
+      "width": 224
+    },
+    "pad_size": null,
+    "do_pad": null
+  }
+}
