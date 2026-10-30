@@ -2,7 +2,7 @@
   "experiment_name": "siglip2_base_frozen_linear_baseline",
   "backbone": "google/siglip2-base-patch16-224",
   "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
-  "status": "setup_only_not_a_training_run",
+  "status": "paused_after_smoke_test_dinov3_prioritized",
   "task": "six_class_whole_image_classification",
   "num_classes": 6,
   "split": {"train": 434, "validation": 93, "test": 93},
