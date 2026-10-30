@@ -58,7 +58,7 @@ def main() -> None:
     print("首次运行会下载 DINOv3 权重到本地 hf_cache。", flush=True)
     kwargs = {"revision": config["revision"], "cache_dir": str(root / "hf_cache"),
               "token": True, "trust_remote_code": False}
-    processor = AutoImageProcessor.from_pretrained(config["backbone"], use_fast=False, **kwargs)
+    processor = AutoImageProcessor.from_pretrained(config["backbone"], use_fast=True, **kwargs)
     model = AutoModel.from_pretrained(config["backbone"], **kwargs).eval().to(device)
     model.requires_grad_(False)
     inputs = processor(images=image, return_tensors="pt")
@@ -88,7 +88,7 @@ def main() -> None:
               "input_shape": list(inputs["pixel_values"].shape), "feature_shape": list(array.shape),
               "finite": True, "torch_version": torch.__version__,
               "transformers_version": transformers.__version__,
-              "allow_tf32": False, "use_fast": False,
+              "allow_tf32": False, "use_fast": True,
               "all_parameters_frozen": all(not p.requires_grad for p in model.parameters()),
               "processor": processor.to_dict()}
     report_path = root / "logs" / ("dinov3_smoke_" + now.strftime("%Y%m%d_%H%M%S_%f") + ".json")
