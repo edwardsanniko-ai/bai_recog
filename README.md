@@ -1,7 +1,7 @@
 # 白族图案识别：冻结预训练模型对比
 
 This repository contains a new, separate experiment for classifying the six
-Bai pattern categories with **DINOv3 ConvNeXt-Tiny** and **SigLIP 2 Base** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
+Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, and **Qwen3-VL-Embedding-2B** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
 ## 当前阶段：预训练模型横向筛选，不更新参数
@@ -23,11 +23,15 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 模型参数更新 0 次，测试集未评估。详见 [模型对比记录](MODEL_COMPARISON.md)。
 SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.94%。
 两者均未更新模型参数或评估测试集，尚未选定最终 baseline。
+用户已选择加入 Qwen3-VL-Embedding-2B，使用图像输入的官方整图嵌入输出，
+不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型目前只通过单图检查，
+尚未产生本协议的验证成绩。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
 - Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
 - Next candidate: `google/siglip2-base-patch16-224` (vision encoder only).
+- Third candidate: `Qwen/Qwen3-VL-Embedding-2B` (image input, official whole-image embedding).
 - Protocol: frozen pretrained features + cosine 1NN; no parameter updates.
 - Raw images and model weights are local-only and are excluded by
   `.gitignore`.
@@ -43,6 +47,24 @@ SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1
 - `scripts/`: scripts used to create metadata and run smoke tests.
 
 ## Local setup
+
+当前下一小步：Qwen 2B 单图检查。权重沿用工作区原有的固定本地快照，无需重新下载。
+
+```powershell
+& '..\.conda-env\python.exe' scripts/smoke_test_qwen2b.py
+```
+
+预期 Feature shape 为 (1, 2048)，All finite / All parameters frozen 均为 True，
+Optimizer updates 为 0。采用 bf16 + SDPA、batch=1，要求支持 bf16 的 CUDA 显卡。
+官方 helper 已随仓库保留并附带许可，见 [第三方来源](THIRD_PARTY.md)。
+本地模型位置在 configs/baseline_qwen2b.json 配置，仓库不分发权重。
+
+Qwen 使用默认通用系统指令 `Represent the user's input.` 和图片，没有类别名提示；
+完整冻结的嵌入模型（含语言主干）输出最后一个有效 token 的 2048 维向量，
+转 float32 后做 L2 归一化。它不是生成式六分类回答，也不是只截取中间层视觉 token。
+采用官方 helper 默认动态缩放 min_pixels=4096、max_pixels=1843200，
+与前两款的 224×224 及 float32 推理差异会记录；不为追逐成绩调节这些设置。
+后续仍使用相同 434/93/93 划分与余弦 1NN 规则，测试集不参与筛选。
 
 当前阶段已完成建档、数据核验，以及 SigLIP 2 权重下载和单图 GPU 前向。
 2026-10-30 用户确认获得 Hugging Face DINOv3 访问权限，要求优先回到 DINOv3。
