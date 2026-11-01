@@ -31,7 +31,8 @@ def load_verified_cache(root, config):
         if arrays[name].item() != expected:
             raise ValueError(f'Cache metadata mismatch: {name}')
     x, y = arrays['features'], arrays['labels']
-    if x.shape != (620, 768) or x.dtype != np.float32 or not np.isfinite(x).all():
+    feature_dim = config.get('feature_dim', 768)
+    if x.shape != (620, feature_dim) or x.dtype != np.float32 or not np.isfinite(x).all():
         raise ValueError('Invalid features')
     if y.shape != (620,) or y.dtype != np.int64:
         raise ValueError('Invalid label shape or type')

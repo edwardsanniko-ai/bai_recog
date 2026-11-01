@@ -24,7 +24,7 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.94%。
 两者均未更新模型参数或评估测试集，尚未选定最终 baseline。
 用户已选择加入 Qwen3-VL-Embedding-2B，使用图像输入的官方整图嵌入输出，
-不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型目前只通过单图检查，
+不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型已完成全量特征缓存，
 尚未产生本协议的验证成绩。
 
 - Task: six-class whole-image classification.
@@ -66,7 +66,7 @@ Qwen 使用默认通用系统指令 `Represent the user's input.` 和图片，�
 与前两款的 224×224 及 float32 推理差异会记录；不为追逐成绩调节这些设置。
 后续仍使用相同 434/93/93 划分与余弦 1NN 规则，测试集不参与筛选。
 
-当前下一小步：保存 Qwen 2B 全量冻结特征。
+Qwen 2B 全量冻结特征已保存，以下命令仅供重新提取时参考。
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/cache_qwen2b_features.py
@@ -77,6 +77,18 @@ Qwen 使用默认通用系统指令 `Represent the user's input.` 和图片，�
 缓存写入后完整读回核对，另记录权重哈希与每张图的实际输入网格。
 缓存留在本地 cache/，日志放在 logs/。此步骤不运行分类或更新参数。
 如果处理失败，会报告当前样本编号并停止，不静默跳过样本或改变分辨率。
+
+当前下一小步：使用固定缓存评估 Qwen 2B 验证集。
+
+```powershell
+& '..\.conda-env\python.exe' scripts/evaluate_qwen2b_neighbors.py
+```
+
+复用前两款模型的同一评估函数，434 张训练图片作参考，预测 93 张验证图片。
+配置明确指定缓存报告；运行前检查缓存哈希、2048 维形状、模型版本、标签和划分。
+逐图 L2 归一化后使用 float64 余弦 1NN，完全相同的最高相似度取最小参考编号。
+仅在 CPU 读取缓存，无需加载 Qwen 权重；不更新参数，不评估测试集。
+逐图预测保存至 results/，指标、混淆矩阵与溯源信息保存至 logs/。
 
 当前阶段已完成建档、数据核验，以及 SigLIP 2 权重下载和单图 GPU 前向。
 2026-10-30 用户确认获得 Hugging Face DINOv3 访问权限，要求优先回到 DINOv3。
