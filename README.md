@@ -1,7 +1,7 @@
-# 白族图案识别：DINOv3 ConvNeXt-Tiny
+# 白族图案识别：冻结预训练模型对比
 
 This repository contains a new, separate experiment for classifying the six
-Bai pattern categories with **DINOv3 ConvNeXt-Tiny**. The earlier Qwen3-VL
+Bai pattern categories with **DINOv3 ConvNeXt-Tiny** and **SigLIP 2 Base** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
 ## 当前阶段：预训练模型横向筛选，不更新参数
@@ -22,10 +22,12 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 已完成 DINOv3 的固定协议验证评估：77/93 正确，Accuracy 82.80%，Macro-F1 83.45%，
 模型参数更新 0 次，测试集未评估。详见 [模型对比记录](MODEL_COMPARISON.md)。
 当前尚未完成多个模型的横向对比，因此还没有选定最终 baseline。
+用户已选择下一款 SigLIP 2 Base，对它采用相同的冻结特征 + 余弦 1NN 验证规则。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
 - Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
+- Next candidate: `google/siglip2-base-patch16-224` (vision encoder only).
 - Protocol: frozen pretrained features + cosine 1NN; no parameter updates.
 - Raw images and model weights are local-only and are excluded by
   `.gitignore`.
@@ -61,7 +63,19 @@ GitHub 首次上传和本机 Hugging Face 登录已完成。新机器首次登�
 登录互不替代。模型页面：
 https://huggingface.co/facebook/dinov3-convnext-tiny-pretrain-lvd1689m
 
-SigLIP 2 的代码、权重及成功记录保留，暂停继续提取和训练。
+SigLIP 2 已下载的权重和成功记录保留，现恢复全量特征提取，用于无参数更新的横向对比。
+
+当前下一小步（2026-11-01）：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/cache_siglip2_features.py
+```
+
+无需重新下载或登录。预期 (620,768) 特征与 (620,) 标签，
+All finite / Readback identical 均为 True，Optimizer updates 为 0。
+官方 SigLIP 2 预处理 use_fast=false，与 DINOv3 的快速预处理器各自保持官方设置；
+两者均为 224×224。SigLIP 2 的均值/标准差为 0.5，不套用 DINOv3 的归一化参数。
+这一步只准备缓存，完成后再做 93 张验证图的 1NN 评估，不产生测试集成绩。
 
 后续确认本地登录成功后，再从本仓库目录运行 DINOv3 单图测试：
 
@@ -84,7 +98,7 @@ cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕�
 不要使用 SigLIP 2 的缓存脚本处理 DINOv3：两种模型的特征不能混用。
 
 当前选定缓存由 configs/baseline_convnext_tiny.json 的 feature_cache_report 指定，
-不会自动选择其他模型或最新文件。当前下一步是冻结特征的最近邻验证集评估：
+不会自动选择其他模型或最新文件。DINOv3 已完成的最近邻验证命令（供复核）：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/evaluate_dinov3_neighbors.py
