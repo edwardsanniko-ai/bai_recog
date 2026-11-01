@@ -1,8 +1,8 @@
 {
-  "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
+  "experiment_name": "dino_v3_convnext_tiny_pretrained_model_screening",
   "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
   "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
-  "status": "full_feature_cache_created_pending_classifier_training",
+  "status": "frozen_cache_ready_for_validation_nearest_neighbor_evaluation",
   "feature_cache_report": "logs/dinov3_cache_20261101_120305_275623.json",
   "task": "six_class_whole_image_classification",
   "num_classes": 6,
@@ -12,7 +12,19 @@
     "test": 93
   },
   "backbone_frozen": true,
-  "classifier": "linear",
+  "allow_parameter_updates": false,
+  "classifier": "cosine_1nn",
+  "evaluation_protocol": {
+    "decision_rule": "cosine_nearest_neighbor",
+    "neighbors": 1,
+    "feature_normalization": "per_image_l2_no_fitted_statistics",
+    "similarity_compute_dtype": "float64",
+    "exact_tie_break": "smallest_global_reference_index",
+    "reference_split": "train",
+    "model_selection_split": "validation",
+    "test_for_model_selection": false,
+    "teaching_checkpoints_allowed": false
+  },
   "image_size": 224,
   "batch_size": null,
   "learning_rate": null,
@@ -21,5 +33,5 @@
   "early_stopping_patience": null,
   "selection_metric": "validation_macro_f1",
   "seeds": null,
-  "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
+  "notes": "2026-11-01: User requires pretrained model comparison with NO updates to backbone or classifier, and chose nearest neighbor. Use the same fixed cosine 1NN rule and split across comparable feature encoders. No optimizer or training. Previous teaching-head weights are excluded. Test scores must not drive baseline selection."
 }

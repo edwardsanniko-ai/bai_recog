@@ -22,6 +22,8 @@ def main():
         parser.error('--lr must be finite and positive')
     root = Path(__file__).resolve().parents[1]
     config = json.loads((root / 'configs/baseline_convnext_tiny.json').read_text(encoding='utf-8'))
+    if not config.get('allow_parameter_updates', False):
+        parser.error('Parameter updates are disabled for pretrained-model screening. This historical teaching demo is inactive.')
     arrays, cache_report, _ = load_verified_cache(root, config)
     torch.manual_seed(args.seed)
     classifier = nn.Linear(768, 6)

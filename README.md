@@ -4,13 +4,25 @@ This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
-## Scope of the first baseline
+## 当前阶段：预训练模型横向筛选，不更新参数
+
+2026-11-01 用户明确：先比较原生预训练模型，再选定 baseline。
+本轮不更新视觉编码器，也不训练线性分类器；不使用任何教学更新后的权重。
+DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率。
+用户已选择最近邻：每张图像特征独立做 L2 归一化，以余弦相似度最高的一张训练图片
+作为参照（k=1），采用它的类别；完全相同的最高相似度按最小全局样本编号打破平局。
+这类评估使用训练集标签作为参考，是冻结特征的有标签参考分类，不能称为零样本识别。
+
+对可比较的图像编码器采用相同数据划分和判别规则；输入预处理遵循各自官方设置并记录。
+以验证集比较/选择模型，测试集不参与筛选或调参。无须优化器、学习率或早停。
+此前分类器/损失/单步更新都是教学演示，DINOv3 权重未改变，演示结果不计入对比表。
+
+## Data and model
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
 - Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
-- First training protocol: frozen DINOv3 features plus a linear classification
-  head. Hyperparameters will be changed only after this baseline is recorded.
+- Protocol: frozen pretrained features + cosine 1NN; no parameter updates.
 - Raw images and model weights are local-only and are excluded by
   `.gitignore`.
 
@@ -18,8 +30,8 @@ reproduction remains outside this repository and is not used as a result here.
 
 - `data/splits.json`: relative image identifiers, labels and split indices;
   no absolute local paths.
-- `configs/baseline_convnext_tiny.json`: active model and pinned revision;
-  training hyperparameters remain unset for step-by-step discussion.
+- `configs/baseline_convnext_tiny.json`: active model, pinned revision and no-update constraint;
+  training parameters are inapplicable during screening.
 - `data/audit.json`: verified counts and cross-split exact-file duplicate check.
 - `logs/`: short, append-only experiment records.
 - `scripts/`: scripts used to create metadata and run smoke tests.
@@ -29,7 +41,7 @@ reproduction remains outside this repository and is not used as a result here.
 当前阶段已完成建档、数据核验，以及 SigLIP 2 权重下载和单图 GPU 前向。
 2026-10-30 用户确认获得 Hugging Face DINOv3 访问权限，要求优先回到 DINOv3。
 DINOv3 权重已下载，单图 GPU 测试通过：输入 (1, 3, 224, 224)，
-输出 (1, 768)、float32、全部有效。两个模型均尚未训练分类器。
+输出 (1, 768)、float32、全部有效。正式分类器训练未开展；仅曾执行一次单样本教学更新。
 已验证现有环境：PyTorch 2.8.0+cu128、torchvision 0.23.0+cu128、
 transformers 4.57.3、Pillow 12.3.0、numpy 2.2.5；CUDA 可用，
 显卡 NVIDIA GeForce RTX 4060 Laptop GPU。
@@ -68,14 +80,28 @@ cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕�
 不要使用 SigLIP 2 的缓存脚本处理 DINOv3：两种模型的特征不能混用。
 
 当前选定缓存由 configs/baseline_convnext_tiny.json 的 feature_cache_report 指定，
-不会自动选择其他模型或最新文件。下一教学步骤仅建立线性分类器：
+不会自动选择其他模型或最新文件。当前下一步是冻结特征的最近邻验证集评估：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/evaluate_dinov3_neighbors.py
+```
+
+仅使用 434 张训练图片作参考，预测 93 张验证图片；不评估测试集。
+输出 Accuracy、Macro Precision/Recall/F1、Weighted F1 及逐类结果，
+并记录逐图预测、最近邻编号和相似度。相似度不是类别概率。
+CSV 保存至 results/，报告保存至 logs/，都可提交 GitHub；原图和特征不上传。
+
+## 历史教学步骤（不属于当前评估流程）
+
+以下保留学习记录；更新参数的 demo_dinov3_update.py 已由当前配置禁用。
+曾使用下列命令检查未训练线性分类器：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/inspect_dinov3_classifier.py
 ```
 
 脚本先检查缓存哈希、标签和原始划分，再创建 Linear(768, 6)。
-默认 seed=42 只用于此次初始化演示，可用 --seed 修改；训练超参数仍待讨论。
+默认 seed=42 只用于此前初始化演示；当前不设置训练超参数。
 使用一张训练样本检查输出 (1, 6)，不更新参数、不评估验证集或测试集。
 演示在 CPU 上运行，无需重新加载视觉模型，自动生成小型日志。
 
@@ -96,7 +122,7 @@ cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕�
 ```
 
 --lr 为用户指定的学习率，每次启动均从相同 seed=42 初始化，不接续前次演示。
-AdamW 的 weight_decay=0 仅用于这次教学；正式训练参数仍待讨论。
+AdamW 的 weight_decay=0 仅用于此前教学；当前禁止运行参数更新步骤。
 backward 计算梯度，step 更新参数一次。比较同一训练样本的前后损失，
 不能据此推断泛化性能，也不强制要求损失下降。
 初始/更新后权重及优化器状态保存在本地 checkpoints/teaching/，
@@ -111,7 +137,7 @@ backward 计算梯度，step 更新参数一次。比较同一训练样本的前
 将 434 个训练样本打乱后分成 28 批，最后一批保留剩余的 2 个样本。
 脚本核对每个训练样本恰好出现一次，且没有验证或测试样本混入。
 seed=42 控制此次打乱顺序；日志保存实际顺序和每批数量。
-这是数据加载检查，正式训练配置仍待后续设置。
+这是此前的数据加载检查；当前不再继续到整轮训练。
 
 ## 实验记录约定
 
