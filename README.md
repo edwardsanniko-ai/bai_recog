@@ -1,7 +1,7 @@
 # 白族图案识别：冻结预训练模型对比
 
 This repository contains a new, separate experiment for classifying the six
-Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, and **Qwen3-VL-Embedding-2B** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
+Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
 ## 当前阶段：预训练模型横向筛选，不更新参数
@@ -25,13 +25,16 @@ SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1
 两者均未更新模型参数或评估测试集，尚未选定最终 baseline。
 用户已选择加入 Qwen3-VL-Embedding-2B，使用图像输入的官方整图嵌入输出，
 不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型已完成同协议验证：
-73/93 正确，Accuracy 78.49%，Macro-F1 78.77%。三款模型均未更新参数；尚未选定最终 baseline。
+73/93 正确，Accuracy 78.49%，Macro-F1 78.77%。
+EUPE ConvNeXt-Tiny 同协议验证已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.75%。
+四款模型均未更新参数；尚未选定最终 baseline。按预先固定的验证 Macro-F1，DINOv3 暂列第一。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
 - Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
 - Next candidate: `google/siglip2-base-patch16-224` (vision encoder only).
 - Third candidate: `Qwen/Qwen3-VL-Embedding-2B` (image input, official whole-image embedding).
+- Fourth candidate: `facebook/EUPE-ConvNeXt-T` (official whole-image backbone features).
 - Protocol: frozen pretrained features + cosine 1NN; no parameter updates.
 - Raw images and model weights are local-only and are excluded by
   `.gitignore`.
@@ -77,7 +80,7 @@ EUPE 全量冻结特征已提取完成，以下命令保留供重新提取时使
 提取所有图片的特征不等于评估测试集：这一步不作类别预测，也不计算任何分类指标。
 如需减小显存占用，可显式传 `--batch-size 8`，实际批大小会记录到日志，不自动改变设置。
 
-当前下一小步：评估 EUPE 的验证集最近邻识别效果。
+EUPE 验证集最近邻评估已完成，以下命令保留供复核。
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/evaluate_eupe_neighbors.py
@@ -87,7 +90,7 @@ EUPE 全量冻结特征已提取完成，以下命令保留供重新提取时使
 直接复用其他三款模型的评估函数：434 张训练图作参考，93 张验证图作查询，
 逐图 L2 归一化、float64 余弦 1NN、完全相同的最高相似度按最小全局参考编号处理。
 仅用 CPU 读取缓存，无需重新加载模型；不更新参数，不评估测试集。
-预测 CSV 保存至 results/，指标和可追溯报告保存至 logs/，尚待用户运行得到成绩。
+预测 CSV 已保存至 results/，指标和可追溯报告保存至 logs/；四模型对比见 MODEL_COMPARISON.md。
 
 Qwen 2B 单图检查已由用户完成，下面保留检查命令。权重沿用固定本地快照，无需重新下载。
 
