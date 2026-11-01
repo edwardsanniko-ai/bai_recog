@@ -1,0 +1,3 @@
+# Preserve pinned upstream bytes across Windows checkouts for SHA256 verification.
+scripts/vendor/eupe_convnext.py -text
+scripts/vendor/EUPE_LICENSE -text

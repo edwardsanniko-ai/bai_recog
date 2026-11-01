@@ -48,6 +48,23 @@ SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1
 
 ## Local setup
 
+当前新增候选：用户选择 EUPE ConvNeXt-Tiny（`facebook/EUPE-ConvNeXt-T`）。
+官方权重公开，无需申请权限；代码和权重分别固定版本，使用 FAIR 非商业研究许可。
+第一小步只做一张训练图片的加载与特征检查：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/smoke_test_eupe.py
+```
+
+预期输入 `(1,3,256,256)`、输出 `(1,768)`，特征全部有效，全部参数冻结，更新次数为 0。
+使用官方 256×256 双线性缩放与 ImageNet 归一化，取官方 `x_norm_clstoken` 整图向量；
+这和前两款模型的 224×224 输入不同，比较时保留说明。推理采用 float32，关闭 TF32。
+已有 PyTorch/torchvision 环境即可运行，无需安装官方分布式训练环境。
+权重 SHA256 校验后严格加载全部 backbone 参数；官方 checkpoint 中额外的 8 个蒸馏
+projector 张量不参与 backbone 特征提取，与官方 hub 忽略这些额外键的行为一致，日志列出名称。
+脚本只检查训练集首张图片并保存日志，不生成六类预测或验证/测试成绩，不更新任何参数。
+权重仅保存在本地 `hf_cache/`，不上传 GitHub；第三方代码来源见 `THIRD_PARTY.md`。
+
 Qwen 2B 单图检查已由用户完成，下面保留检查命令。权重沿用固定本地快照，无需重新下载。
 
 ```powershell
