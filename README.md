@@ -24,8 +24,8 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.94%。
 两者均未更新模型参数或评估测试集，尚未选定最终 baseline。
 用户已选择加入 Qwen3-VL-Embedding-2B，使用图像输入的官方整图嵌入输出，
-不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型已完成全量特征缓存，
-尚未产生本协议的验证成绩。
+不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型已完成同协议验证：
+73/93 正确，Accuracy 78.49%，Macro-F1 78.77%。三款模型均未更新参数；尚未选定最终 baseline。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
@@ -78,7 +78,7 @@ Qwen 2B 全量冻结特征已保存，以下命令仅供重新提取时参考。
 缓存留在本地 cache/，日志放在 logs/。此步骤不运行分类或更新参数。
 如果处理失败，会报告当前样本编号并停止，不静默跳过样本或改变分辨率。
 
-当前下一小步：使用固定缓存评估 Qwen 2B 验证集。
+Qwen 2B 验证集评估已完成，以下命令保留供复核。
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/evaluate_qwen2b_neighbors.py
