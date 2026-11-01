@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-01T12:08:59.563094+08:00",
+  "status": "untrained_single_training_sample_loss_demo",
+  "code_commit": "44819c839af505b4f804ee33dc6ebdf673f0c2db",
+  "script_sha256": "febe9f6dd88d3bb798f5ffb96bb81b6284f29fbb397821ba4f20a72def0478df",
+  "helper_sha256": "400af69bf18cb81761c5ff082aae1c1443a29db1d88aa1ba4e583ba4b4e1691e",
+  "config": {
+    "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
+    "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+    "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+    "status": "full_feature_cache_created_pending_classifier_training",
+    "feature_cache_report": "logs/dinov3_cache_20261101_120305_275623.json",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "classifier": "linear",
+    "image_size": 224,
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
+  },
+  "cache_sha256": "88f96fb86c9b9adf9606d0b99cf4570ba3437732b5107f89a44d744e93d5fda1",
+  "seed": 42,
+  "sample_index": 237,
+  "categories": [
+    "geometric",
+    "animal",
+    "antique object",
+    "plant",
+    "Chinese character",
+    "combined"
+  ],
+  "scores": [
+    0.10098287463188171,
+    0.5253626108169556,
+    -0.8356270790100098,
+    0.6914953589439392,
+    -0.5075270533561707,
+    -0.3858357071876526
+  ],
+  "probabilities": [
+    0.16994521021842957,
+    0.25978541374206543,
+    0.06661076098680496,
+    0.30673637986183167,
+    0.09247758984565735,
+    0.10444469004869461
+  ],
+  "true_category": "antique object",
+  "predicted_category": "plant",
+  "true_probability": 0.06661076098680496,
+  "cross_entropy": 2.7088890075683594,
+  "negative_log_probability": 2.708889087979578,
+  "loss_formula_matches": true,
+  "training_performed": false,
+  "torch_version": "2.8.0+cu128",
+  "device": "cpu"
+}
