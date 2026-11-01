@@ -19,6 +19,10 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 
 ## Data and model
 
+已完成 DINOv3 的固定协议验证评估：77/93 正确，Accuracy 82.80%，Macro-F1 83.45%，
+模型参数更新 0 次，测试集未评估。详见 [模型对比记录](MODEL_COMPARISON.md)。
+当前尚未完成多个模型的横向对比，因此还没有选定最终 baseline。
+
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
 - Backbone: `facebook/dinov3-convnext-tiny-pretrain-lvd1689m`.
