@@ -56,7 +56,7 @@ SigLIP 2 的代码、权重及成功记录保留，暂停继续提取和训练�
 The smoke test loads one local image, prints the feature shape, device, and
 whether the output contains finite values. It does not train or upload images.
 
-当前下一步是 DINOv3 全量特征缓存：
+DINOv3 全量特征缓存已完成（2026-11-01），如需重新提取可运行：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/cache_dinov3_features.py
@@ -66,6 +66,18 @@ whether the output contains finite values. It does not train or upload images.
 cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕。
 保持官方 224×224 快速预处理、模型冻结和 eval 模式；不计算测试集指标。
 不要使用 SigLIP 2 的缓存脚本处理 DINOv3：两种模型的特征不能混用。
+
+当前选定缓存由 configs/baseline_convnext_tiny.json 的 feature_cache_report 指定，
+不会自动选择其他模型或最新文件。下一教学步骤仅建立线性分类器：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/inspect_dinov3_classifier.py
+```
+
+脚本先检查缓存哈希、标签和原始划分，再创建 Linear(768, 6)。
+默认 seed=42 只用于此次初始化演示，可用 --seed 修改；训练超参数仍待讨论。
+使用一张训练样本检查输出 (1, 6)，不更新参数、不评估验证集或测试集。
+演示在 CPU 上运行，无需重新加载视觉模型，自动生成小型日志。
 
 ## 实验记录约定
 

@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-11-01T12:04:57.013757+08:00",
+  "status": "untrained_linear_head_demonstration",
+  "code_commit": "5f6e554a1303e188643111397803272181ae5cc7",
+  "script_sha256": "400af69bf18cb81761c5ff082aae1c1443a29db1d88aa1ba4e583ba4b4e1691e",
+  "config": {
+    "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
+    "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+    "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+    "status": "full_feature_cache_created_pending_classifier_training",
+    "feature_cache_report": "logs/dinov3_cache_20261101_120305_275623.json",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "classifier": "linear",
+    "image_size": 224,
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
+  },
+  "cache_sha256": "88f96fb86c9b9adf9606d0b99cf4570ba3437732b5107f89a44d744e93d5fda1",
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "seed": 42,
+  "classifier": "Linear(in_features=768, out_features=6, bias=True)",
+  "parameter_count": 4614,
+  "sample_index": 237,
+  "input_shape": [
+    1,
+    768
+  ],
+  "output_shape": [
+    1,
+    6
+  ],
+  "torch_version": "2.8.0+cu128",
+  "device": "cpu",
+  "training_performed": false
+}

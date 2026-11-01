@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-11-01T12:03:05.275623+08:00",
+  "status": "features_cached_no_training_or_metrics",
+  "config": {
+    "experiment_name": "dino_v3_convnext_tiny_frozen_linear_baseline",
+    "backbone": "facebook/dinov3-convnext-tiny-pretrain-lvd1689m",
+    "revision": "10d30274b4d445111e2d5bf75ac93bbd94db274b",
+    "status": "single_image_smoke_passed_pending_full_feature_cache",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "classifier": "linear",
+    "image_size": 224,
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "Training hyperparameters pending step-by-step discussion with the user. Old test scores were already inspected: keep test data out of tuning and disclose this history."
+  },
+  "code_commit": "5f6e554a1303e188643111397803272181ae5cc7",
+  "script_sha256": "0de243dabb908adafcf4ef08d9a784635cddf71a195084c078c34978fe418e91",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "bd30a9459d6149564ef53af6e8a1999980953b009b94cde836ac1bac4d339cb2",
+  "cache_relative": "cache/dinov3_features_20261101_120305_275623.npz",
+  "cache_sha256": "88f96fb86c9b9adf9606d0b99cf4570ba3437732b5107f89a44d744e93d5fda1",
+  "feature_shape": [
+    620,
+    768
+  ],
+  "label_shape": [
+    620
+  ],
+  "dtype": "float32",
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "all_parameters_frozen": true,
+  "processor": {
+    "_processor_class": null,
+    "crop_size": null,
+    "data_format": "channels_first",
+    "default_to_square": true,
+    "device": null,
+    "disable_grouping": null,
+    "do_center_crop": null,
+    "do_convert_rgb": null,
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "image_processor_type": "DINOv3ViTImageProcessorFast",
+    "image_std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "input_data_format": null,
+    "resample": 2,
+    "rescale_factor": 0.00392156862745098,
+    "return_tensors": null,
+    "size": {
+      "height": 224,
+      "width": 224
+    },
+    "pad_size": null,
+    "do_pad": null
+  },
+  "use_fast": true,
+  "allow_tf32": false,
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.3",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "feature_normalization": "none; raw pooler_output"
+}
