@@ -1,4 +1,4 @@
-"""Validation-only cosine 1NN evaluation of frozen pretrained DINOv3 features."""
+"""Shared validation-only cosine 1NN evaluation, with a DINOv3 entry point."""
 
 from datetime import datetime, timezone, timedelta
 import csv
@@ -31,16 +31,34 @@ def cosine_nearest_neighbor(features, reference_indices, query_indices, labels):
     return labels[nearest_indices], nearest_indices, nearest_scores
 
 
-def main():
+def evaluate_validation(config_filename, model_name, output_prefix, entry_script):
     root = Path(__file__).resolve().parents[1]
-    config = json.loads((root / 'configs/baseline_convnext_tiny.json').read_text(encoding='utf-8'))
+    config = json.loads((root / 'configs' / config_filename).read_text(encoding='utf-8'))
     protocol = config['evaluation_protocol']
-    if config['allow_parameter_updates'] or config['classifier'] != 'cosine_1nn':
+    if config['allow_parameter_updates'] is not False or not config['backbone_frozen'] or config['classifier'] != 'cosine_1nn':
         raise ValueError('This script requires frozen cosine 1NN evaluation')
-    if protocol['decision_rule'] != 'cosine_nearest_neighbor' or protocol['neighbors'] != 1:
+    expected_protocol = dict(decision_rule='cosine_nearest_neighbor', neighbors=1,
+                             feature_normalization='per_image_l2_no_fitted_statistics',
+                             similarity_compute_dtype='float64', exact_tie_break='smallest_global_reference_index',
+                             reference_split='train', model_selection_split='validation',
+                             test_for_model_selection=False, teaching_checkpoints_allowed=False)
+    if protocol != expected_protocol:
         raise ValueError('Unsupported decision rule')
     arrays, cache_report, _ = load_verified_cache(root, config)
     references, queries = arrays['train_idx'], arrays['val_idx']
+    # Pin a new model's comparison to the actual earlier evaluation, not just today's config.
+    reference_report_name = config.get('comparison_reference_report')
+    if reference_report_name:
+        previous = json.loads((root / reference_report_name).read_text(encoding='utf-8'))
+        if previous['config']['evaluation_protocol'] != protocol:
+            raise ValueError('Comparison protocol differs from the earlier model evaluation')
+        if previous['reference_indices'] != references.tolist() or previous['query_indices'] != queries.tolist():
+            raise ValueError('Comparison uses different reference/query sample assignments')
+        if previous['categories'] != arrays['categories'].tolist():
+            raise ValueError('Comparison uses different categories')
+        previous_cache = json.loads((root / previous['config']['feature_cache_report']).read_text(encoding='utf-8'))
+        if previous_cache['manifest_sha256'] != cache_report['manifest_sha256']:
+            raise ValueError('Comparison uses a different audited dataset manifest')
     predictions, nearest, similarities = cosine_nearest_neighbor(
         arrays['features'], references, queries, arrays['labels'])
     truth = arrays['labels'][queries]
@@ -58,7 +76,7 @@ def main():
         raise RuntimeError('Invalid validation metrics')
     now = datetime.now(timezone(timedelta(hours=8)))
     run_id = now.strftime('%Y%m%d_%H%M%S_%f')
-    csv_path = root / 'results' / ('dinov3_1nn_validation_' + run_id + '.csv')
+    csv_path = root / 'results' / (output_prefix + '_1nn_validation_' + run_id + '.csv')
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open('x', encoding='utf-8', newline='') as stream:
         writer = csv.writer(stream)
@@ -69,11 +87,12 @@ def main():
                              categories[predicted], int(reference), float(similarity), bool(actual == predicted)])
     git = subprocess.run(['git', '-C', str(root), 'rev-parse', 'HEAD'], capture_output=True, text=True, check=False)
     report = dict(timestamp=now.isoformat(), status='frozen_cosine_1nn_validation_evaluated',
-                  model_description='DINOv3 ConvNeXt-Tiny frozen pretrained features + cosine 1NN',
+                  model_description=model_name + ' frozen pretrained features + cosine 1NN',
                   code_commit=git.stdout.strip() if git.returncode == 0 else None,
-                  script_sha256=file_hash(Path(__file__)),
+                  script_sha256=file_hash(Path(entry_script)), evaluator_sha256=file_hash(Path(__file__)),
                   helper_sha256=file_hash(root / 'scripts/inspect_dinov3_classifier.py'),
                   config=config, cache_sha256=cache_report['cache_sha256'],
+                  comparison_reference_report_sha256=file_hash(root / reference_report_name) if reference_report_name else None,
                   reference_split='train', reference_count=len(references), reference_indices=references.tolist(),
                   evaluation_split='validation', evaluation_count=len(queries), query_indices=queries.tolist(),
                   optimizer_updates=0, classifier_trained=False, teaching_weights_used=False,
@@ -82,9 +101,9 @@ def main():
                   confusion_matrix=matrix.tolist(), confusion_matrix_rows='true', confusion_matrix_columns='predicted',
                   predictions_relative=csv_path.relative_to(root).as_posix(), predictions_sha256=file_hash(csv_path),
                   numpy_version=np.__version__, sklearn_version=sklearn.__version__, device='cpu')
-    report_path = root / 'logs' / ('dinov3_1nn_validation_' + run_id + '.json')
+    report_path = root / 'logs' / (output_prefix + '_1nn_validation_' + run_id + '.json')
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print('Method: frozen DINOv3 + cosine nearest neighbor (k=1)')
+    print(f'Method: frozen {model_name} + cosine nearest neighbor (k=1)')
     print('Reference images:', len(references))
     print('Validation images:', len(queries))
     for name, value in metrics.items():
@@ -93,6 +112,10 @@ def main():
     print('Test evaluated:', False)
     print('Saved predictions:', csv_path)
     print('Saved report:', report_path)
+
+
+def main():
+    evaluate_validation('baseline_convnext_tiny.json', 'DINOv3 ConvNeXt-Tiny', 'dinov3', Path(__file__))
 
 
 if __name__ == '__main__':

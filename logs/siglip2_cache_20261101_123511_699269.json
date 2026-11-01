@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-11-01T12:35:11.699269+08:00",
+  "status": "features_cached_no_training_or_metrics",
+  "config": {
+    "experiment_name": "siglip2_base_pretrained_model_screening",
+    "backbone": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "status": "smoke_passed_pending_full_feature_cache_for_cosine_1nn",
+    "task": "six_class_whole_image_classification",
+    "num_classes": 6,
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93
+    },
+    "backbone_frozen": true,
+    "allow_parameter_updates": false,
+    "classifier": "cosine_1nn",
+    "evaluation_protocol": {
+      "decision_rule": "cosine_nearest_neighbor",
+      "neighbors": 1,
+      "feature_normalization": "per_image_l2_no_fitted_statistics",
+      "similarity_compute_dtype": "float64",
+      "exact_tie_break": "smallest_global_reference_index",
+      "reference_split": "train",
+      "model_selection_split": "validation",
+      "test_for_model_selection": false,
+      "teaching_checkpoints_allowed": false
+    },
+    "image_size": 224,
+    "preprocessing": "official SiglipImageProcessor with explicit RGB conversion",
+    "batch_size": null,
+    "learning_rate": null,
+    "weight_decay": null,
+    "max_epochs": null,
+    "early_stopping_patience": null,
+    "selection_metric": "validation_macro_f1",
+    "seeds": null,
+    "notes": "User selected comparison against DINOv3 using the SAME fixed cosine 1NN rule and split. Frozen pretrained SigLIP 2 vision encoder only; no text prompts, trained classification head, optimizer or parameter updates. Preserve official model-specific preprocessing. Test scores must not drive model selection."
+  },
+  "code_commit": "39d140d4513e28746eca1c721433fda64af5ebe4",
+  "script_sha256": "0ae7fb1a8b2e1f3af3a49cf5edbf37beaa0fa845d6af6bd11d06f3f9471a3d93",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+  "cache_relative": "cache/siglip2_features_20261101_123511_699269.npz",
+  "cache_sha256": "942ddc77bdcafba9b55da88e1cf4c9ff130a2f9bf85eb3cab10065f320092e83",
+  "feature_shape": [
+    620,
+    768
+  ],
+  "label_shape": [
+    620
+  ],
+  "dtype": "float32",
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "backbone_frozen": true,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "test_evaluated": false,
+  "processor": {
+    "_processor_class": "SiglipProcessor",
+    "image_processor_type": "SiglipImageProcessor",
+    "do_resize": true,
+    "size": {
+      "height": 224,
+      "width": 224
+    },
+    "resample": 2,
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true,
+    "image_mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "image_std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "do_convert_rgb": null
+  },
+  "use_fast": false,
+  "allow_tf32": false,
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.3",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "feature_normalization": "none; raw pooler_output"
+}

@@ -65,7 +65,7 @@ https://huggingface.co/facebook/dinov3-convnext-tiny-pretrain-lvd1689m
 
 SigLIP 2 已下载的权重和成功记录保留，现恢复全量特征提取，用于无参数更新的横向对比。
 
-当前下一小步（2026-11-01）：
+SigLIP 2 全量缓存已于 2026-11-01 完成，以下保留提取命令：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/cache_siglip2_features.py
@@ -76,6 +76,16 @@ All finite / Readback identical 均为 True，Optimizer updates 为 0。
 官方 SigLIP 2 预处理 use_fast=false，与 DINOv3 的快速预处理器各自保持官方设置；
 两者均为 224×224。SigLIP 2 的均值/标准差为 0.5，不套用 DINOv3 的归一化参数。
 这一步只准备缓存，完成后再做 93 张验证图的 1NN 评估，不产生测试集成绩。
+
+当前下一步：SigLIP 2 验证集最近邻评估（不更新参数）：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/evaluate_siglip2_neighbors.py
+```
+
+两个入口调用同一评估函数，固定 k=1 和余弦相似度；SigLIP 2 运行前还会核对
+DINOv3 已保存报告的类别顺序、参考/验证编号、数据清单哈希和判别协议。
+只使用各模型自己的特征和官方预处理，不混用模型特征。结果分别保存，原结果不覆盖。
 
 后续确认本地登录成功后，再从本仓库目录运行 DINOv3 单图测试：
 
