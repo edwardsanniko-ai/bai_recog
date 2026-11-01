@@ -21,8 +21,8 @@ DINOv3 没有白族六分类输出头，不能直接对六个类别输出概率�
 
 已完成 DINOv3 的固定协议验证评估：77/93 正确，Accuracy 82.80%，Macro-F1 83.45%，
 模型参数更新 0 次，测试集未评估。详见 [模型对比记录](MODEL_COMPARISON.md)。
-当前尚未完成多个模型的横向对比，因此还没有选定最终 baseline。
-用户已选择下一款 SigLIP 2 Base，对它采用相同的冻结特征 + 余弦 1NN 验证规则。
+SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.94%。
+两者均未更新模型参数或评估测试集，尚未选定最终 baseline。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
@@ -77,7 +77,7 @@ All finite / Readback identical 均为 True，Optimizer updates 为 0。
 两者均为 224×224。SigLIP 2 的均值/标准差为 0.5，不套用 DINOv3 的归一化参数。
 这一步只准备缓存，完成后再做 93 张验证图的 1NN 评估，不产生测试集成绩。
 
-当前下一步：SigLIP 2 验证集最近邻评估（不更新参数）：
+SigLIP 2 已完成的验证集最近邻评估命令（复核用，不更新参数）：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/evaluate_siglip2_neighbors.py
