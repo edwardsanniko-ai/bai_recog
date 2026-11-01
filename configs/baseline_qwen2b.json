@@ -3,7 +3,7 @@
   "backbone": "Qwen/Qwen3-VL-Embedding-2B",
   "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
   "local_model_path": "../bai_code/models/hf_cache/models--Qwen--Qwen3-VL-Embedding-2B/snapshots/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
-  "status": "development_smoke_passed_pending_user_single_image_check",
+  "status": "single_image_smoke_passed_pending_full_feature_cache",
   "task": "six_class_whole_image_classification",
   "num_classes": 6,
   "feature_dim": 2048,

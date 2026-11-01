@@ -48,7 +48,7 @@ SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1
 
 ## Local setup
 
-当前下一小步：Qwen 2B 单图检查。权重沿用工作区原有的固定本地快照，无需重新下载。
+Qwen 2B 单图检查已由用户完成，下面保留检查命令。权重沿用固定本地快照，无需重新下载。
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/smoke_test_qwen2b.py
@@ -65,6 +65,18 @@ Qwen 使用默认通用系统指令 `Represent the user's input.` 和图片，�
 采用官方 helper 默认动态缩放 min_pixels=4096、max_pixels=1843200，
 与前两款的 224×224 及 float32 推理差异会记录；不为追逐成绩调节这些设置。
 后续仍使用相同 434/93/93 划分与余弦 1NN 规则，测试集不参与筛选。
+
+当前下一小步：保存 Qwen 2B 全量冻结特征。
+
+```powershell
+& '..\.conda-env\python.exe' scripts/cache_qwen2b_features.py
+```
+
+逐张处理原图，使用与成功单图检查相同的模型和预处理，预期 (620,2048) 特征。
+保留模型身份、原始标签、类别顺序和固定划分，逐张核对图像 SHA256；
+缓存写入后完整读回核对，另记录权重哈希与每张图的实际输入网格。
+缓存留在本地 cache/，日志放在 logs/。此步骤不运行分类或更新参数。
+如果处理失败，会报告当前样本编号并停止，不静默跳过样本或改变分辨率。
 
 当前阶段已完成建档、数据核验，以及 SigLIP 2 权重下载和单图 GPU 前向。
 2026-10-30 用户确认获得 Hugging Face DINOv3 访问权限，要求优先回到 DINOv3。
