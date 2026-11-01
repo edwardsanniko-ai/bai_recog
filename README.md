@@ -89,6 +89,19 @@ cache/ 中的特征留在本地，logs/ 中的小型记录用于 GitHub 留痕�
 与 PyTorch CrossEntropyLoss 核对一致。交叉熵接收原始类别分数，
 不要先对其输入做 softmax；softmax 仅用于展示概率。本步骤不更新参数。
 
+交叉熵检查后，单张训练图片的一次参数更新演示：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/demo_dinov3_update.py --lr 0.001
+```
+
+--lr 为用户指定的学习率，每次启动均从相同 seed=42 初始化，不接续前次演示。
+AdamW 的 weight_decay=0 仅用于这次教学；正式训练参数仍待讨论。
+backward 计算梯度，step 更新参数一次。比较同一训练样本的前后损失，
+不能据此推断泛化性能，也不强制要求损失下降。
+初始/更新后权重及优化器状态保存在本地 checkpoints/teaching/，
+哈希和结果保存至 logs/；教学权重不上传、不用于正式基线初始化。
+
 ## 实验记录约定
 
 每次实验保存：配置、随机种子、模型版本、代码提交号、环境版本、
