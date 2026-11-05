@@ -6,6 +6,8 @@
 已完成 DINOv3 ConvNeXt-Tiny、SigLIP 2 Base、Qwen3-VL-Embedding-2B 与 EUPE ConvNeXt-Tiny 的冻结特征最近邻评估，并核验结果。
 434 张训练图片作为带标签参考，93 张验证图片用于模型比较，93 张测试图片不参与筛选。
 不训练分类器，不使用教学线性头权重。当前四款模型完成评估，尚未选定最终 baseline。
+2026-11-05 新增 torchvision ResNet50 与 ConvNeXt-Tiny 监督预训练控制组；目前仅准备单图检查，
+尚无验证结果，不计入下表。控制组沿用完全相同的冻结特征与余弦 1NN 判别规则。
 EUPE 使用官方 256×256 预处理、768 维整图向量及 float32 推理；其输入尺寸与 DINOv3 / SigLIP 2 不同。
 Qwen3-VL-Embedding-2B 采用官方图片输入流程及默认通用指令，不附加手工特征。
 它使用完整冻结嵌入模型的 2048 维输出、动态分辨率和 bf16 推理，

@@ -51,6 +51,34 @@ EUPE ConvNeXt-Tiny 同协议验证已完成：77/93 正确，Accuracy 82.80%，M
 
 ## Local setup
 
+## ImageNet 监督预训练控制组
+
+新增两个经典控制组：torchvision ResNet50（ImageNet-1K V2）与
+torchvision ConvNeXt-Tiny（ImageNet-1K V1）。它们不是新的主候选，而是用来回答：
+相比普通 ImageNet 监督预训练，同规模的新型通用表征模型是否真的更适合白族纹样。
+
+两者均先严格加载官方 1000 类权重，再移除最后的 ImageNet 分类线性层，
+分别取 2048 维和 768 维整图向量。原来的 ImageNet 类别分数不参与白族六分类；
+所有参数冻结，后续仍使用相同的 434 张训练图、93 张验证图和余弦 1NN。
+第一小步只运行一张真实训练图片：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/smoke_test_torchvision_controls.py
+```
+
+脚本一次检查两个控制组。预期输入均为 `(1,3,224,224)`；ResNet50 特征为
+`(1,2048)`，ConvNeXt-Tiny 特征为 `(1,768)`，并显示 `All parameters frozen: True`、
+`Optimizer updates: 0`、`Test evaluated: False`。权重已在本地缓存并校验 SHA256，
+不会重新下载；本步不预测类别、不计算验证或测试指标。
+
+官方预处理并不完全相同：ResNet50 将短边缩放到 232 后中心裁剪 224，
+ConvNeXt-Tiny 将短边缩放到 236 后中心裁剪 224，均采用双线性插值、
+ImageNet 均值/标准差和 float32。这个差异属于各自官方权重流程，会保留在报告中。
+
+当前 Conda 环境直接调用 `python.exe` 时可能遗漏 `Library\\bin` 的 DLL 搜索路径；
+脚本会在导入 Pillow/torchvision 前注册该目录，因此无需重装 Pillow 或 torchvision。
+原图和官方权重仍由 `.gitignore` 排除，不上传 GitHub。
+
 当前新增候选：用户选择 EUPE ConvNeXt-Tiny（`facebook/EUPE-ConvNeXt-T`）。
 官方权重公开，无需申请权限；代码和权重分别固定版本，使用 FAIR 非商业研究许可。
 单张训练图片检查已通过，以下命令保留供复核：
