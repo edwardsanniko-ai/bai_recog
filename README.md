@@ -79,6 +79,18 @@ ImageNet 均值/标准差和 float32。这个差异属于各自官方权重流�
 脚本会在导入 Pillow/torchvision 前注册该目录，因此无需重装 Pillow 或 torchvision。
 原图和官方权重仍由 `.gitignore` 排除，不上传 GitHub。
 
+单图检查通过后，下一步一次提取两个控制组的全量特征：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/cache_torchvision_control_features.py
+```
+
+脚本先完成 ResNet50 的 620 张图片，再完成 ConvNeXt-Tiny。为了使每张图片的特征不受
+同一批中其他图片影响，提取批大小固定为 1；开发检查发现当前 CUDA/cuDNN 环境中，
+ResNet50 单张与 batch=16 的原始特征最大差约 0.004。固定逐张推理后，每次都使用相同
+计算路径，代价只是稍慢。预期两组输出分别为 `(620,2048)` 和 `(620,768)`，并各自保存
+本地缓存和小型报告。此步骤不计算分类指标，不评估测试集，不更新参数。
+
 当前新增候选：用户选择 EUPE ConvNeXt-Tiny（`facebook/EUPE-ConvNeXt-T`）。
 官方权重公开，无需申请权限；代码和权重分别固定版本，使用 FAIR 非商业研究许可。
 单张训练图片检查已通过，以下命令保留供复核：
