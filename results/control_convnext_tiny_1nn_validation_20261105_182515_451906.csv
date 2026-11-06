@@ -1,0 +1,94 @@
+sample_index,true_class_id,true_class,predicted_class_id,predicted_class,reference_index,cosine_similarity,correct
+74,0,geometric,0,geometric,77,0.8152382088699663,True
+262,2,antique object,2,antique object,263,0.997541989407351,True
+491,4,Chinese character,4,Chinese character,485,0.6484682431232605,True
+29,0,geometric,0,geometric,66,0.8694865893902841,True
+338,3,plant,3,plant,327,0.9390030282887895,True
+87,0,geometric,0,geometric,81,0.6893063030307716,True
+265,2,antique object,2,antique object,253,0.7378830475434229,True
+290,2,antique object,2,antique object,299,0.615410766651808,True
+136,1,animal,1,animal,135,0.9310204935772899,True
+444,4,Chinese character,4,Chinese character,443,0.8976167617759274,True
+164,1,animal,1,animal,170,0.7701182554158172,True
+477,4,Chinese character,4,Chinese character,479,0.9046226077042295,True
+538,5,combined,5,combined,537,0.8670966415329187,True
+521,5,combined,5,combined,520,0.9046368483630354,True
+466,4,Chinese character,4,Chinese character,419,0.753251465809784,True
+333,3,plant,3,plant,339,0.8767708549769032,True
+296,2,antique object,2,antique object,291,0.3206333236266063,True
+84,0,geometric,0,geometric,16,0.7834750183525341,True
+113,1,animal,1,animal,114,0.8238992066778257,True
+213,2,antique object,2,antique object,215,0.6859030080273179,True
+360,3,plant,3,plant,393,0.83111786132131,True
+100,1,animal,5,combined,510,0.8184108811773183,False
+134,1,animal,3,plant,409,0.8581057086276581,False
+462,4,Chinese character,4,Chinese character,463,0.902945463237483,True
+92,0,geometric,0,geometric,11,0.6609701276618005,True
+493,4,Chinese character,4,Chinese character,486,0.7612651510549606,True
+289,2,antique object,1,animal,154,0.4510127185215976,False
+161,1,animal,1,animal,160,0.9242938090503361,True
+91,0,geometric,0,geometric,90,0.9280233641109285,True
+545,5,combined,5,combined,587,0.8772189967978712,True
+266,2,antique object,2,antique object,268,0.970685705350681,True
+102,1,animal,1,animal,114,0.8195195113747522,True
+602,5,combined,5,combined,601,0.8713628214887732,True
+503,4,Chinese character,0,geometric,72,0.8070544837270535,False
+430,4,Chinese character,4,Chinese character,428,0.8298202033645431,True
+301,2,antique object,2,antique object,291,0.5252936122309714,True
+147,1,animal,0,geometric,26,0.8179750572647999,False
+478,4,Chinese character,4,Chinese character,482,0.8828928952590591,True
+205,1,animal,1,animal,174,0.8423361488564907,True
+363,3,plant,5,combined,542,0.7286543475751226,False
+285,2,antique object,2,antique object,291,0.5475513654017173,True
+584,5,combined,1,animal,131,0.8377994603282584,False
+280,2,antique object,2,antique object,253,0.7153880809488435,True
+206,1,animal,1,animal,204,0.6927522696863038,True
+318,3,plant,3,plant,393,0.911423986148928,True
+127,1,animal,3,plant,397,0.7656815234131721,False
+381,3,plant,3,plant,385,0.8461723311258845,True
+226,2,antique object,2,antique object,231,0.9018266283562184,True
+23,0,geometric,0,geometric,90,0.7203973147726884,True
+516,5,combined,2,antique object,306,0.8784244020328102,False
+279,2,antique object,2,antique object,267,0.8428524620023297,True
+187,1,animal,1,animal,184,0.9233264378625781,True
+57,0,geometric,3,plant,386,0.8368537304181872,False
+41,0,geometric,0,geometric,39,0.9294357873977892,True
+349,3,plant,3,plant,393,0.9140667382500848,True
+415,4,Chinese character,4,Chinese character,486,0.6342372979243109,True
+51,0,geometric,0,geometric,55,0.6715700481607249,True
+583,5,combined,5,combined,601,0.8783223757222534,True
+177,1,animal,1,animal,176,0.8917445148666386,True
+573,5,combined,5,combined,566,0.9279587713913531,True
+412,3,plant,1,animal,145,0.8750864741748929,False
+469,4,Chinese character,4,Chinese character,471,0.6934263234067009,True
+600,5,combined,5,combined,601,0.8296686706524712,True
+178,1,animal,5,combined,619,0.6510159434217969,False
+82,0,geometric,0,geometric,81,0.7488849891081578,True
+367,3,plant,3,plant,366,0.8626676753491893,True
+501,4,Chinese character,4,Chinese character,505,0.39035093427616907,True
+590,5,combined,1,animal,141,0.7955217672456861,False
+544,5,combined,5,combined,541,0.8622315400121109,True
+410,3,plant,5,combined,565,0.8524198750781398,False
+532,5,combined,3,plant,409,0.8840983658164194,False
+21,0,geometric,0,geometric,24,0.8955678188658485,True
+248,2,antique object,2,antique object,251,0.9317705896777309,True
+75,0,geometric,0,geometric,77,0.7374928239692422,True
+555,5,combined,5,combined,559,0.8832207577719855,True
+332,3,plant,3,plant,329,0.8619147466365442,True
+571,5,combined,5,combined,566,0.9115830808218347,True
+374,3,plant,3,plant,345,0.8625475788223429,True
+292,2,antique object,2,antique object,286,0.5743707770903987,True
+362,3,plant,3,plant,387,0.8257325766456015,True
+519,5,combined,3,plant,326,0.7179895552439309,False
+208,1,animal,1,animal,179,0.8663165564957762,True
+312,2,antique object,2,antique object,215,0.6232406274406399,True
+320,3,plant,3,plant,322,0.7943985556462303,True
+277,2,antique object,2,antique object,273,0.806321340732971,True
+582,5,combined,5,combined,580,0.9262790702569849,True
+14,0,geometric,0,geometric,11,0.8662328110633806,True
+133,1,animal,1,animal,131,0.8972452141784217,True
+433,4,Chinese character,4,Chinese character,435,0.9089656814742741,True
+499,4,Chinese character,4,Chinese character,495,0.762516270186526,True
+60,0,geometric,0,geometric,66,0.8961367138469691,True
+517,5,combined,5,combined,591,0.8178493357298665,True
+344,3,plant,3,plant,330,0.9221704959223016,True

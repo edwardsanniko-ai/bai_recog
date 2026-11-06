@@ -1,7 +1,7 @@
 # 白族图案识别：冻结预训练模型对比
 
 This repository contains a new, separate experiment for classifying the six
-Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny** under a fixed cosine 1NN protocol. The earlier Qwen3-VL
+Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
 
 ## 当前阶段：预训练模型横向筛选，不更新参数
@@ -27,7 +27,8 @@ SigLIP 2 同协议评估也已完成：77/93 正确，Accuracy 82.80%，Macro-F1
 不加入手工特征，不使用旧 Qwen 教学分类器或中间层融合缓存。该模型已完成同协议验证：
 73/93 正确，Accuracy 78.49%，Macro-F1 78.77%。
 EUPE ConvNeXt-Tiny 同协议验证已完成：77/93 正确，Accuracy 82.80%，Macro-F1 82.75%。
-四款模型均未更新参数；尚未选定最终 baseline。按预先固定的验证 Macro-F1，DINOv3 暂列第一。
+ResNet50 与 ConvNeXt-Tiny ImageNet 控制组也均为 77/93，Macro-F1 分别为 83.26% 和 83.18%。
+六款模型均未更新参数；尚未选定最终 baseline。DINOv3 暂列第一，但只比最佳控制组高 0.19 个百分点。
 
 - Task: six-class whole-image classification.
 - Dataset: 620 images, fixed split 434 train / 93 validation / 93 test.
@@ -91,7 +92,7 @@ ResNet50 单张与 batch=16 的原始特征最大差约 0.004。固定逐张推�
 计算路径，代价只是稍慢。预期两组输出分别为 `(620,2048)` 和 `(620,768)`，并各自保存
 本地缓存和小型报告。此步骤不计算分类指标，不评估测试集，不更新参数。
 
-两组全量缓存现已完成并核验。下一步用一个命令依次评估两个控制组的验证集：
+两组全量缓存及验证集评估现已完成。以下命令保留供复核：
 
 ```powershell
 & '..\.conda-env\python.exe' scripts/evaluate_torchvision_controls.py
@@ -100,7 +101,8 @@ ResNet50 单张与 batch=16 的原始特征最大差约 0.004。固定逐张推�
 它直接复用前四款模型的共享评估函数：434 张训练图片作带标签参考，93 张验证图片作查询，
 逐图 L2 归一化后用 float64 计算余弦 1NN，精确平局取最小全局参考编号。
 脚本先输出 ResNet50 指标，再输出 ConvNeXt-Tiny 指标；两者都只读取本地缓存，
-不加载 GPU 模型、不训练参数、不评估测试集。每组分别保存预测 CSV 和 JSON 报告。
+不加载 GPU 模型、不训练参数、不评估测试集。验证 Macro-F1 分别为 83.26% 和 83.18%，
+与 DINOv3 的 83.45% 非常接近。完整六模型对比及逐类结果见 MODEL_COMPARISON.md。
 
 当前新增候选：用户选择 EUPE ConvNeXt-Tiny（`facebook/EUPE-ConvNeXt-T`）。
 官方权重公开，无需申请权限；代码和权重分别固定版本，使用 FAIR 非商业研究许可。
