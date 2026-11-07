@@ -15,6 +15,25 @@
 该检查不会创建优化器或更新参数；正式训练脚本将在检查通过后加入。此前冻结特征 + 余弦
 1NN 仍作为无训练对照，不与可训练分类器混称为同一实验。
 
+训练循环支持保存完整随机状态并从上一轮继续。第一次只运行第 1 轮：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/train_convnext_linear_probe.py --stop-after-epoch 1
+```
+
+确认第 1 轮记录后，从第 2 轮继续到早停或最多 50 轮：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/train_convnext_linear_probe.py `
+  --resume checkpoints/cnn_convnext_linear_probe_seed42/last.pt
+```
+
+checkpoint、原图和权重只保留在本地；逐轮小型 JSON 日志和验证集逐图预测可上传 GitHub。
+
+seed 42 第 1 轮检查已完成：训练损失 1.7063，验证 Accuracy 51.61%，验证 Macro-F1
+50.37%，分类头已更新、冻结 backbone 未变化、测试集未评估。该数值只是可恢复训练的中间结果，
+不是最终 baseline 成绩；详见 `logs/0035_cnn_convnext_linear_probe_seed42_epoch1.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
