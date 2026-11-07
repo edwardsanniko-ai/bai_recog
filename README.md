@@ -1,5 +1,20 @@
 # 白族图案识别：冻结预训练模型对比
 
+## 新阶段：可训练 CNN baseline
+
+2026-11-07 开始建立可训练的 ConvNeXt-Tiny CNN baseline。第一阶段只训练
+`LayerNorm + Dropout(0.2) + Linear(768,6)` 分类头，ImageNet-1K V1 预训练 backbone
+保持冻结；固定 434/93/93 划分，验证 Macro-F1 用于选择 checkpoint，测试集在协议锁定前
+不评估。输入采用等比例缩放与白色补边，训练增强保持轻量并禁用水平翻转和随机裁切。
+协议见 `configs/cnn_convnext_tiny_linear_probe.json`，训练前检查命令为：
+
+```powershell
+& '..\.conda-env\python.exe' scripts/inspect_convnext_linear_probe.py
+```
+
+该检查不会创建优化器或更新参数；正式训练脚本将在检查通过后加入。此前冻结特征 + 余弦
+1NN 仍作为无训练对照，不与可训练分类器混称为同一实验。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.

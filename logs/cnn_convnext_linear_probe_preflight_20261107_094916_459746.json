@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-11-07T09:49:16.459746-05:00",
+  "status": "head_only_preflight_passed_no_updates",
+  "config_relative": "configs/cnn_convnext_tiny_linear_probe.json",
+  "config": {
+    "experiment_name": "cnn_convnext_tiny_imagenet1k_v1_head_only_probe",
+    "status": "head_only_preflight_passed_no_updates",
+    "task": "six_class_whole_image_classification",
+    "backbone": "torchvision/convnext_tiny",
+    "revision": "torchvision-0.23.0+cu128:ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "weight_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "weights_filename": "convnext_tiny-983f1562.pth",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "torchvision_version": "0.23.0+cu128",
+    "num_classes": 6,
+    "class_order": [
+      "geometric",
+      "animal",
+      "antique object",
+      "plant",
+      "Chinese character",
+      "combined"
+    ],
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93,
+      "manifest": "data/splits.json",
+      "reuse_existing_fixed_split": true
+    },
+    "phase": "A_head_only",
+    "backbone_frozen": true,
+    "trainable_head": "ConvNeXt classifier LayerNorm + Dropout(0.2) + Linear(768,6)",
+    "image_size": 224,
+    "resize_policy": "preserve_aspect_ratio_then_center_pad_white",
+    "train_augmentation": {
+      "random_affine_degrees": 5.0,
+      "random_affine_translate": [
+        0.05,
+        0.05
+      ],
+      "random_affine_scale": [
+        0.95,
+        1.05
+      ],
+      "affine_fill_rgb": [
+        255,
+        255,
+        255
+      ],
+      "brightness_jitter": 0.1,
+      "contrast_jitter": 0.1,
+      "horizontal_flip": false,
+      "random_resized_crop": false
+    },
+    "normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "optimizer": "AdamW",
+    "head_learning_rate": 0.0003,
+    "weight_decay": 0.001,
+    "scheduler": "CosineAnnealingLR",
+    "batch_size": 16,
+    "max_epochs": 50,
+    "early_stopping_patience": 10,
+    "selection_metric": "validation_macro_f1",
+    "development_seed": 42,
+    "confirmatory_seeds_after_protocol_lock": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "test_policy": "locked_until_model_and_hyperparameters_are_selected_on_validation",
+    "allow_test_during_training": false,
+    "allow_parameter_updates_in_smoke_test": false,
+    "allow_tf32": false,
+    "notes": "Phase A trains only the six-class head. The fixed validation split selects checkpoints and settings; the test split remains untouched. Five-seed confirmation starts only after the protocol is locked. Aspect-ratio-preserving white padding is intentional for sparse line patterns and differs from the official center-crop transform used in the earlier frozen 1NN control."
+  },
+  "code_commit_before_run": "fefd51e20cb11dd03eaa127ec21118b10eb25585",
+  "script_sha256": "9ae4ed1920447aa6889c99b5bd8e38241a1d2f20dcc9dcfca79c17b75d7860ba",
+  "helper_sha256": "b2ab6d4626cc5f81ccaa202b469207525ec5c92828479f4d49955f63831740cf",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "train_class_counts": {
+    "antique object": 73,
+    "plant": 70,
+    "Chinese character": 66,
+    "geometric": 70,
+    "combined": 77,
+    "animal": 78
+  },
+  "validation_class_counts": {
+    "geometric": 15,
+    "antique object": 16,
+    "Chinese character": 14,
+    "plant": 15,
+    "animal": 16,
+    "combined": 17
+  },
+  "first_batch_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "first_batch_label_shape": [
+    16
+  ],
+  "first_batch_indices": [
+    194,
+    39,
+    568,
+    77,
+    492,
+    303,
+    286,
+    243,
+    17,
+    220,
+    591,
+    496,
+    307,
+    525,
+    324,
+    291
+  ],
+  "class_score_shape": [
+    16,
+    6
+  ],
+  "all_finite": true,
+  "trainable_parameter_names": [
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ],
+  "trainable_parameter_count": 6150,
+  "frozen_parameter_count": 27818592,
+  "backbone_frozen": true,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "validation_metrics_computed": false,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "train_transform": "Compose(\n    ColorJitter(brightness=(0.9, 1.1), contrast=(0.9, 1.1), saturation=None, hue=None)\n    ResizePadWhite(size=224, fill=(255,255,255))\n    RandomAffine(degrees=[-5.0, 5.0], translate=(0.05, 0.05), scale=(0.95, 1.05), interpolation=bilinear, fill=(255, 255, 255))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+  "validation_transform": "Compose(\n    ResizePadWhite(size=224, fill=(255,255,255))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+}

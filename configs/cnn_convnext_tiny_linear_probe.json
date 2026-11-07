@@ -1,0 +1,61 @@
+{
+  "experiment_name": "cnn_convnext_tiny_imagenet1k_v1_head_only_probe",
+  "status": "head_only_preflight_passed_no_updates",
+  "task": "six_class_whole_image_classification",
+  "backbone": "torchvision/convnext_tiny",
+  "revision": "torchvision-0.23.0+cu128:ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "weight_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "weights_filename": "convnext_tiny-983f1562.pth",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "torchvision_version": "0.23.0+cu128",
+  "num_classes": 6,
+  "class_order": [
+    "geometric",
+    "animal",
+    "antique object",
+    "plant",
+    "Chinese character",
+    "combined"
+  ],
+  "split": {
+    "train": 434,
+    "validation": 93,
+    "test": 93,
+    "manifest": "data/splits.json",
+    "reuse_existing_fixed_split": true
+  },
+  "phase": "A_head_only",
+  "backbone_frozen": true,
+  "trainable_head": "ConvNeXt classifier LayerNorm + Dropout(0.2) + Linear(768,6)",
+  "image_size": 224,
+  "resize_policy": "preserve_aspect_ratio_then_center_pad_white",
+  "train_augmentation": {
+    "random_affine_degrees": 5.0,
+    "random_affine_translate": [0.05, 0.05],
+    "random_affine_scale": [0.95, 1.05],
+    "affine_fill_rgb": [255, 255, 255],
+    "brightness_jitter": 0.1,
+    "contrast_jitter": 0.1,
+    "horizontal_flip": false,
+    "random_resized_crop": false
+  },
+  "normalization": {
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "optimizer": "AdamW",
+  "head_learning_rate": 0.0003,
+  "weight_decay": 0.001,
+  "scheduler": "CosineAnnealingLR",
+  "batch_size": 16,
+  "max_epochs": 50,
+  "early_stopping_patience": 10,
+  "selection_metric": "validation_macro_f1",
+  "development_seed": 42,
+  "confirmatory_seeds_after_protocol_lock": [42, 43, 44, 45, 46],
+  "test_policy": "locked_until_model_and_hyperparameters_are_selected_on_validation",
+  "allow_test_during_training": false,
+  "allow_parameter_updates_in_smoke_test": false,
+  "allow_tf32": false,
+  "notes": "Phase A trains only the six-class head. The fixed validation split selects checkpoints and settings; the test split remains untouched. Five-seed confirmation starts only after the protocol is locked. Aspect-ratio-preserving white padding is intentional for sparse line patterns and differs from the official center-crop transform used in the earlier frozen 1NN control."
+}
