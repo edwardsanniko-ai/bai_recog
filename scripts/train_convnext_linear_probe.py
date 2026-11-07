@@ -54,10 +54,18 @@ def rng_state(generator: torch.Generator) -> dict:
 def restore_rng_state(state: dict, generator: torch.Generator) -> None:
     random.setstate(state["python"])
     np.random.set_state(state["numpy"])
-    torch.set_rng_state(state["torch_cpu"])
+    # The checkpoint is loaded with map_location=device so model/optimizer
+    # tensors are ready for CUDA. RNG states are an exception: PyTorch's CPU
+    # generator and DataLoader generator require CPU uint8 tensors, while
+    # torch.cuda.set_rng_state_all also expects the states in their canonical
+    # CPU ByteTensor representation.
+    torch_cpu_state = state["torch_cpu"].detach().to(device="cpu", dtype=torch.uint8)
+    torch.set_rng_state(torch_cpu_state)
     if torch.cuda.is_available() and state["torch_cuda"] is not None:
-        torch.cuda.set_rng_state_all(state["torch_cuda"])
-    generator.set_state(state["loader_generator"])
+        cuda_states = [value.detach().to(device="cpu", dtype=torch.uint8) for value in state["torch_cuda"]]
+        torch.cuda.set_rng_state_all(cuda_states)
+    loader_state = state["loader_generator"].detach().to(device="cpu", dtype=torch.uint8)
+    generator.set_state(loader_state)
 
 
 def train_one_epoch(model, loader, criterion, optimizer, device, frozen_hash: str):
