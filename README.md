@@ -76,6 +76,10 @@ seed 42 第 1 轮检查已完成：训练损失 1.7063，验证 Accuracy 51.61%�
 `configs/cnn_convnext_multiseed_confirmation.json` 和
 `logs/0042_cnn_multiseed_confirmation_protocol.md`。
 
+确认运行 seed 43 的阶段 A 第 1 轮已通过：训练损失 1.6981，验证 Accuracy 47.31%、
+Macro-F1 41.44%；分类头更新、backbone 保持冻结、测试集未评估，且 checkpoint 与 seed 42
+完全隔离。详见 `logs/0043_cnn_seed43_phase_a_epoch1.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
