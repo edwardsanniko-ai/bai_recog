@@ -1,0 +1,49 @@
+{
+  "experiment_name": "cnn_convnext_stage_b_label_smoothing_005_screen",
+  "status": "locked_before_training",
+  "research_phase": "post_locked_test_exploratory_development",
+  "model": "torchvision ConvNeXt-Tiny ImageNet-1K V1",
+  "control": "B0 original stage-B: 224 input, global average pooling, cross entropy without smoothing",
+  "candidate_id": "L1",
+  "candidate_change_only": "CrossEntropyLoss label_smoothing 0.0 -> 0.05",
+  "source_checkpoint": "checkpoints/cnn_convnext_linear_probe_seed42/best.pt",
+  "source_checkpoint_sha256": "2feb6d42281a0f3368dfc3fadd42eabcc7ce04538c72cfd90ff936547a05db3a",
+  "development_seed": 42,
+  "image_size": 224,
+  "pooling": "global_average",
+  "trainable_backbone_module": "features.7",
+  "trainable_head": true,
+  "optimizer": "AdamW",
+  "last_stage_learning_rate": 0.00001,
+  "head_learning_rate": 0.0003,
+  "weight_decay": 0.001,
+  "batch_size": 16,
+  "max_epochs": 50,
+  "early_stopping_patience": 10,
+  "scheduler": "CosineAnnealingLR",
+  "loss": "cross_entropy",
+  "label_smoothing": 0.05,
+  "selection": {
+    "primary_metric": "validation_macro_f1",
+    "B0_validation_macro_f1_seed42": 0.8732394845298072,
+    "minimum_absolute_gain_for_confirmation": 0.005,
+    "confirmation_seeds_if_selected": [43, 44, 45, 46],
+    "confirmation_required_before_claiming_improvement": true
+  },
+  "data": {
+    "manifest": "data/splits.json",
+    "train_count": 434,
+    "validation_count": 93,
+    "test_count": 93,
+    "test_split_allowed": false
+  },
+  "prohibitions": {
+    "class_weighting": true,
+    "focal_loss": true,
+    "resolution_change": true,
+    "pooling_change": true,
+    "full_backbone_finetuning": true,
+    "test_evaluation": true
+  },
+  "disclosure": "The original B0 test was already viewed. This loss screen is validation-only and cannot produce a new blind-test claim."
+}

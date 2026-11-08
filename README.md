@@ -25,6 +25,11 @@ combined 类平均 F1 提高约 `0.0305`，但 Chinese-character 和 antique-obj
 分别下降约 `0.0276` 和 `0.0174`，总体收益不稳定。因此 B1 不替代 B0，也不评估测试集；
 详见 `logs/0055_cnn_b1_confirmation_failed.md`。
 
+下一项单变量筛选已锁定：恢复 B0 的 224 输入与全局平均池化，只把交叉熵的
+`label_smoothing` 从 `0` 改为 `0.05`，候选记为 L1。seed 42 至少需比 B0 提升 `0.005`
+才进入多种子确认；测试集继续禁用。协议见 `configs/cnn_label_smoothing_screen.json` 和
+`logs/0056_cnn_label_smoothing_protocol.md`。
+
 ## 新阶段：可训练 CNN baseline
 
 2026-11-07 开始建立可训练的 ConvNeXt-Tiny CNN baseline。第一阶段只训练
