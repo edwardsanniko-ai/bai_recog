@@ -77,7 +77,7 @@ def train_one_epoch(model, loader, criterion, optimizer, device, frozen_hash: st
 
 
 def checkpoint_payload(
-    config, variant, completed_epoch, model, optimizer, scheduler, best_f1, best_epoch,
+    config, variant, seed, completed_epoch, model, optimizer, scheduler, best_f1, best_epoch,
     patience_counter, total_updates, history, generator, config_sha256, manifest_sha256,
     frozen_hash, code_commit,
 ):
@@ -85,7 +85,7 @@ def checkpoint_payload(
         "format_version": 1,
         "experiment_name": config["experiment_name"],
         "variant": variant,
-        "seed": config["source_seed"],
+        "seed": seed,
         "completed_epoch": completed_epoch,
         "model_state_dict": model.state_dict(),
         "optimizer_state_dict": optimizer.state_dict(),
@@ -108,13 +108,30 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--variant", required=True, choices=["B1", "B2", "B3"])
+    parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--data-root", type=Path, default=root.parent / "bai_data")
     parser.add_argument("--resume", type=Path, default=None)
     parser.add_argument("--stop-after-epoch", type=int, default=None)
     args = parser.parse_args()
     config = load_screen_config(root)
     variant = variant_config(config, args.variant)
-    seed = int(config["source_seed"])
+    seed = int(config["source_seed"] if args.seed is None else args.seed)
+    if seed not in {42, 43, 44, 45, 46}:
+        raise ValueError("Seed is outside the locked development/confirmation set")
+    if seed != int(config["source_seed"]):
+        if args.variant != "B1":
+            raise ValueError("Only the selected B1 variant may use confirmation seeds")
+        confirmation_path = root / "configs" / "cnn_b1_multiseed_confirmation.json"
+        confirmation = json.loads(confirmation_path.read_text(encoding="utf-8"))
+        if (
+            confirmation["status"] != "locked_before_confirmation_training"
+            or seed not in confirmation["confirmation_seeds"]
+            or file_hash(root / confirmation["selection_summary"]) != confirmation["selection_summary_sha256"]
+            or file_hash(root / confirmation["feature_screen_config"]) != confirmation["feature_screen_config_sha256"]
+            or confirmation["test_split_allowed"]
+            or confirmation["test_evaluation_allowed"]
+        ):
+            raise ValueError("B1 confirmation protocol identity differs")
     max_epochs = int(config["max_epochs"])
     if args.stop_after_epoch is not None and not 1 <= args.stop_after_epoch <= max_epochs:
         raise ValueError("--stop-after-epoch is outside the configured range")
@@ -151,7 +168,9 @@ def main() -> None:
         drop_last=False, pin_memory=torch.cuda.is_available(),
     )
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model, weight_path, initialization_path, _ = build_screen_model(root, config, args.variant, device)
+    model, weight_path, initialization_path, _ = build_screen_model(
+        root, config, args.variant, device, source_seed=seed
+    )
     stage, head = parameter_groups(model)
     optimizer = torch.optim.AdamW(
         [
@@ -176,6 +195,8 @@ def main() -> None:
         checkpoint = torch.load(args.resume, map_location=device, weights_only=False)
         if checkpoint["config_sha256"] != config_sha256 or checkpoint["variant"]["id"] != args.variant:
             raise ValueError("Resume checkpoint protocol differs")
+        if int(checkpoint["seed"]) != seed:
+            raise ValueError("Resume checkpoint seed differs")
         model.load_state_dict(checkpoint["model_state_dict"], strict=True)
         optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
         scheduler.load_state_dict(checkpoint["scheduler_state_dict"])
@@ -205,7 +226,7 @@ def main() -> None:
         initial_predictions = root / "results" / f"cnn_feature_screen_{args.variant}_seed{seed}_validation_epoch000.csv"
         save_predictions(initial_predictions, manifest["categories"], indices, truth, predictions, probabilities)
         initial = checkpoint_payload(
-            config, variant, 0, model, optimizer, scheduler, best_f1, 0, 0, 0, [], generator,
+            config, variant, seed, 0, model, optimizer, scheduler, best_f1, 0, 0, 0, [], generator,
             config_sha256, file_hash(root / config["data"]["manifest"]), frozen_hash, code_commit,
         )
         torch.save(initial, best_checkpoint)
@@ -243,7 +264,7 @@ def main() -> None:
         prediction_path = root / "results" / f"cnn_feature_screen_{args.variant}_seed{seed}_validation_epoch{epoch:03d}.csv"
         save_predictions(prediction_path, manifest["categories"], indices, truth, predictions, probabilities)
         payload = checkpoint_payload(
-            config, variant, epoch, model, optimizer, scheduler, best_f1, best_epoch,
+            config, variant, seed, epoch, model, optimizer, scheduler, best_f1, best_epoch,
             patience_counter, total_updates, history, generator, config_sha256,
             file_hash(root / config["data"]["manifest"]), frozen_hash, code_commit,
         )

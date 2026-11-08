@@ -12,6 +12,13 @@
 
 本轮不得使用旧测试集选择方案；未来在同一测试集上的成绩只能标为已暴露旧测试集的探索性结果。
 
+单 seed `2×2` 筛选现已完成：B0/B1/B2/B3 的验证 Macro-F1 分别为
+`0.873239 / 0.883023 / 0.865603 / 0.873972`。按预先规则选中 B1（320 输入、全局平均
+池化）进入 seed 43–46 配对确认。独立 CSV 复算显示，B1 相对 B0 多认对 1 张验证图片且
+没有新增错误；因此还不能宣称稳定提升。确认成功条件已预先锁定为平均配对提升至少 `0.005`
+且至少 3/4 个 seed 为正，详见 `configs/cnn_b1_multiseed_confirmation.json` 和
+`logs/0054_cnn_feature_screen_complete_and_b1_confirmation_lock.md`。
+
 ## 新阶段：可训练 CNN baseline
 
 2026-11-07 开始建立可训练的 ConvNeXt-Tiny CNN baseline。第一阶段只训练

@@ -57,18 +57,23 @@ def variant_config(config: dict, variant_id: str) -> dict:
     return matches[0]
 
 
-def build_screen_model(root: Path, config: dict, variant_id: str, device: torch.device):
+def build_screen_model(
+    root: Path, config: dict, variant_id: str, device: torch.device, source_seed: int | None = None
+):
     variant = variant_config(config, variant_id)
     if variant["action"] != "train":
         raise ValueError(f"Variant {variant_id} is a historical control and must not be retrained")
     stage_b_config = load_last_stage_config(root)
+    if source_seed is None:
+        source_seed = int(config["source_seed"])
     model, weight_path, initialization_path, initialization_checkpoint = load_last_stage_model(
-        root, stage_b_config, device, source_seed=int(config["source_seed"])
+        root, stage_b_config, device, source_seed=int(source_seed)
     )
-    if initialization_path.relative_to(root).as_posix() != config["source_checkpoint"]:
-        raise ValueError("Phase-A initialization path differs")
-    if file_hash(initialization_path) != config["source_checkpoint_sha256"]:
-        raise ValueError("Phase-A initialization SHA256 differs")
+    if int(source_seed) == int(config["source_seed"]):
+        if initialization_path.relative_to(root).as_posix() != config["source_checkpoint"]:
+            raise ValueError("Phase-A initialization path differs")
+        if file_hash(initialization_path) != config["source_checkpoint_sha256"]:
+            raise ValueError("Phase-A initialization SHA256 differs")
     if variant["pooling"] == "spatial_pyramid_1x1_plus_2x2":
         source_classifier = model.classifier
         if len(source_classifier) != 4 or not isinstance(source_classifier[3], nn.Linear):

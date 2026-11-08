@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-11-08T07:36:04.361394-05:00",
+  "status": "cnn_feature_screen_epoch_complete_validation_only",
+  "variant": {
+    "id": "B1",
+    "image_size": 320,
+    "pooling": "global_average",
+    "action": "train"
+  },
+  "seed": 42,
+  "epoch": 7,
+  "train_loss": 0.4413643221151994,
+  "validation_metrics": {
+    "accuracy": 0.8172043010752689,
+    "macro_precision": 0.8267231994012181,
+    "macro_recall": 0.8200455182072829,
+    "macro_f1": 0.8183239699368733,
+    "weighted_f1": 0.8151638395134753
+  },
+  "per_class": {
+    "geometric": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 15.0
+    },
+    "animal": {
+      "precision": 0.7368421052631579,
+      "recall": 0.875,
+      "f1-score": 0.8,
+      "support": 16.0
+    },
+    "antique object": {
+      "precision": 0.7647058823529411,
+      "recall": 0.8125,
+      "f1-score": 0.7878787878787878,
+      "support": 16.0
+    },
+    "plant": {
+      "precision": 0.9230769230769231,
+      "recall": 0.8,
+      "f1-score": 0.8571428571428571,
+      "support": 15.0
+    },
+    "Chinese character": {
+      "precision": 0.9166666666666666,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.8461538461538461,
+      "support": 14.0
+    },
+    "combined": {
+      "precision": 0.7857142857142857,
+      "recall": 0.6470588235294118,
+      "f1-score": 0.7096774193548387,
+      "support": 17.0
+    },
+    "accuracy": 0.8172043010752689,
+    "macro avg": {
+      "precision": 0.8267231994012181,
+      "recall": 0.8200455182072829,
+      "f1-score": 0.8183239699368733,
+      "support": 93.0
+    },
+    "weighted avg": {
+      "precision": 0.8232408369729852,
+      "recall": 0.8172043010752689,
+      "f1-score": 0.8151638395134753,
+      "support": 93.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      13,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      12,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      11,
+      0
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      0,
+      11
+    ]
+  ],
+  "best_epoch_so_far": 4,
+  "best_validation_macro_f1_so_far": 0.8291479353979354,
+  "patience_counter": 3,
+  "epoch_optimizer_updates": 28,
+  "total_optimizer_updates": 196,
+  "frozen_parameters_unchanged": true,
+  "config_sha256": "246d24227290f226a46bf7b0be8c13df417684f8e87d0880f8b1c81d8e683b1a",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "initialization_checkpoint_sha256": "2feb6d42281a0f3368dfc3fadd42eabcc7ce04538c72cfd90ff936547a05db3a",
+  "prediction_relative": "results/cnn_feature_screen_B1_seed42_validation_epoch007.csv",
+  "prediction_sha256": "334a3ba37e03a2d73083aa5dd38877ebbb1af6ea8ed36b49e1d0b571cb8624d5",
+  "test_dataset_instantiated": false,
+  "test_evaluated": false
+}

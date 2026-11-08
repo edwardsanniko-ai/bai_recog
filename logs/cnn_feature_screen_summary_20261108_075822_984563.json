@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-11-08T07:58:22.984563-05:00",
+  "status": "cnn_feature_screen_complete_validation_only_pending_confirmation",
+  "config_relative": "configs/cnn_feature_screen_2x2.json",
+  "config_sha256": "246d24227290f226a46bf7b0be8c13df417684f8e87d0880f8b1c81d8e683b1a",
+  "development_seed": 42,
+  "results": [
+    {
+      "variant": "B0",
+      "image_size": 224,
+      "pooling": "global_average",
+      "stopped_epoch": 24,
+      "best_epoch": 14,
+      "best_validation_macro_f1": 0.8732394845298072,
+      "best_checkpoint_relative": "checkpoints/cnn_convnext_last_stage_seed42/best.pt",
+      "best_checkpoint_sha256": "afcf0545740752202646f2b7edecbadcf31c9e6daa972920fc85e47e9b5acd7a",
+      "test_evaluated": false,
+      "historical_control_reused_without_retraining": true
+    },
+    {
+      "variant": "B1",
+      "image_size": 320,
+      "pooling": "global_average",
+      "stopped_epoch": 33,
+      "best_epoch": 23,
+      "best_validation_macro_f1": 0.8830232465194513,
+      "best_checkpoint_relative": "checkpoints/cnn_feature_screen_B1_seed42/best.pt",
+      "best_checkpoint_sha256": "2f7f24d44e8a12eb7c8992b0b76bbf6c97800aba2a3f23a798e6d6c2609407b5",
+      "test_evaluated": false
+    },
+    {
+      "variant": "B2",
+      "image_size": 224,
+      "pooling": "spatial_pyramid_1x1_plus_2x2",
+      "stopped_epoch": 15,
+      "best_epoch": 5,
+      "best_validation_macro_f1": 0.8656030910341256,
+      "best_checkpoint_relative": "checkpoints/cnn_feature_screen_B2_seed42/best.pt",
+      "best_checkpoint_sha256": "60f13deed5dfe4c80c246062825a5fc61f465a3dc9301fa02dc92d40e53783ea",
+      "test_evaluated": false
+    },
+    {
+      "variant": "B3",
+      "image_size": 320,
+      "pooling": "spatial_pyramid_1x1_plus_2x2",
+      "stopped_epoch": 23,
+      "best_epoch": 13,
+      "best_validation_macro_f1": 0.8739717540120765,
+      "best_checkpoint_relative": "checkpoints/cnn_feature_screen_B3_seed42/best.pt",
+      "best_checkpoint_sha256": "d5f9ff2a777f36b50d0cb241159da5d3b165b228f929034e9cdfc6b3942deb54",
+      "test_evaluated": false
+    }
+  ],
+  "factor_effects_on_validation_macro_f1": {
+    "resolution_effect_with_global_average_B1_minus_B0": 0.009783761989644146,
+    "resolution_effect_with_spatial_pyramid_B3_minus_B2": 0.008368662977950914,
+    "pooling_effect_at_224_B2_minus_B0": -0.0076363934956815704,
+    "pooling_effect_at_320_B3_minus_B1": -0.009051492507374803,
+    "factor_interaction": -0.0014150990116932327
+  },
+  "selected_for_multiseed_confirmation": "B1",
+  "selection_reason": "Selected by validation Macro-F1 with locked near-tie simplicity rule",
+  "selection_is_exploratory_single_seed": true,
+  "confirmation_required": true,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "post_test_disclosure": "The prior B0 final test has already been viewed. This screen is exploratory and may use only train and validation data. No future evaluation on the same 93 test images may be described as a new blind test."
+}
