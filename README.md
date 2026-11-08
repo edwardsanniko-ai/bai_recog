@@ -65,6 +65,11 @@ seed 42 第 1 轮检查已完成：训练损失 1.7063，验证 Accuracy 51.61%�
 77.08%，未超过阶段 A 起点 79.42%，所以最佳轮次仍为 epoch 0；两个可训练参数组均变化，
 冻结参数未变化，测试集未评估。详见 `logs/0040_cnn_convnext_last_stage_seed42_epoch1.md`。
 
+阶段 B seed 42 已于第 24 轮正常早停，最佳为第 14 轮：验证 Accuracy 87.10%、Macro-F1
+87.32%。独立加载 `best.pt` 复算结果完全一致；第 14 轮后训练损失继续下降但验证成绩未提高，
+因此不再恢复该 checkpoint。测试集仍未评估，详见
+`logs/0041_cnn_convnext_last_stage_seed42_complete.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
