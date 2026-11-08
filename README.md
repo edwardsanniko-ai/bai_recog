@@ -84,6 +84,10 @@ seed 43 阶段 A 已于第 18 轮早停，最佳第 8 轮验证 Macro-F1 78.25%�
 阶段 B 无更新检查也已通过，确认加载 seed 43 自己的阶段 A 最佳 checkpoint，测试集仍未评估。
 详见 `logs/0044_cnn_seed43_phase_a_complete_and_phase_b_preflight.md`。
 
+seed 43 阶段 B 第 1 轮已通过：验证 Macro-F1 78.13%，略低于本 seed 的阶段 A 起点
+78.25%，所以最佳仍为 epoch 0；最后 stage 与分类头均更新，冻结参数未变化，测试集未评估。
+详见 `logs/0045_cnn_seed43_phase_b_epoch1.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
