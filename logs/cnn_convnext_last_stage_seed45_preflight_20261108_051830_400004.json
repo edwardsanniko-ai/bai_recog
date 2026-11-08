@@ -1,0 +1,225 @@
+{
+  "timestamp": "2026-11-08T05:18:30.400004-05:00",
+  "status": "phase_b_last_stage_preflight_passed_no_updates",
+  "source_seed": 45,
+  "run_role": "confirmatory",
+  "config_relative": "configs/cnn_convnext_tiny_last_stage.json",
+  "config": {
+    "experiment_name": "cnn_convnext_tiny_imagenet1k_v1_last_stage_finetune",
+    "status": "phase_b_last_stage_preflight_passed_no_updates",
+    "task": "six_class_whole_image_classification",
+    "backbone": "torchvision/convnext_tiny",
+    "revision": "torchvision-0.23.0+cu128:ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "weight_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "weights_filename": "convnext_tiny-983f1562.pth",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "torchvision_version": "0.23.0+cu128",
+    "num_classes": 6,
+    "class_order": [
+      "geometric",
+      "animal",
+      "antique object",
+      "plant",
+      "Chinese character",
+      "combined"
+    ],
+    "split": {
+      "train": 434,
+      "validation": 93,
+      "test": 93,
+      "manifest": "data/splits.json",
+      "reuse_existing_fixed_split": true
+    },
+    "phase": "B_last_stage_finetune",
+    "initialization": {
+      "official_backbone": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+      "head_checkpoint": "checkpoints/cnn_convnext_linear_probe_seed42/best.pt",
+      "head_checkpoint_sha256": "2feb6d42281a0f3368dfc3fadd42eabcc7ce04538c72cfd90ff936547a05db3a",
+      "source_phase": "A_head_only",
+      "source_seed": 42,
+      "source_best_epoch": 7,
+      "source_validation_macro_f1": 0.7941857298474946,
+      "source_report": "logs/cnn_convnext_linear_probe_seed42_epoch007.json"
+    },
+    "trainable_backbone_module": "features.7",
+    "frozen_backbone_modules": "features.0 through features.6",
+    "trainable_head_modules": [
+      "classifier.0",
+      "classifier.3"
+    ],
+    "image_size": 224,
+    "resize_policy": "preserve_aspect_ratio_then_center_pad_white",
+    "train_augmentation": {
+      "random_affine_degrees": 5.0,
+      "random_affine_translate": [
+        0.05,
+        0.05
+      ],
+      "random_affine_scale": [
+        0.95,
+        1.05
+      ],
+      "affine_fill_rgb": [
+        255,
+        255,
+        255
+      ],
+      "brightness_jitter": 0.1,
+      "contrast_jitter": 0.1,
+      "horizontal_flip": false,
+      "random_resized_crop": false
+    },
+    "normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "optimizer": "AdamW",
+    "head_learning_rate": 0.0003,
+    "last_stage_learning_rate": 1e-05,
+    "weight_decay": 0.001,
+    "class_weighting": "none",
+    "label_smoothing": 0.0,
+    "gradient_clipping": null,
+    "scheduler": "CosineAnnealingLR",
+    "batch_size": 16,
+    "max_epochs": 50,
+    "early_stopping_patience": 10,
+    "selection_metric": "validation_macro_f1",
+    "development_seed": 42,
+    "confirmatory_seeds_after_protocol_lock": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "test_policy": "locked_until_model_and_hyperparameters_are_selected_on_validation",
+    "allow_test_during_training": false,
+    "allow_parameter_updates_in_preflight": false,
+    "allow_tf32": false,
+    "notes": "Phase B starts from the verified phase-A best checkpoint: the backbone is still the official ImageNet-1K V1 initialization and the six-class head comes from seed-42 phase-A epoch 7. Only features.7 plus classifier.0 and classifier.3 are trainable. The fixed validation split selects checkpoints; the test split remains untouched."
+  },
+  "code_commit_before_run": "ec7da90d679303dd4e8842e1bc092b125b6e9eb6",
+  "script_sha256": "c231d681505b2b2f118cbe1092254acd4fb5df42d4cd87a45dd66869fb554518",
+  "helper_sha256": "93897554cfd3596fe58567f77a4cafcd7b05a291f51550d124eee0b72f1d0499",
+  "shared_helper_sha256": "b2ab6d4626cc5f81ccaa202b469207525ec5c92828479f4d49955f63831740cf",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "phase_a_checkpoint_sha256": "f8bf0239e30f480946fe4dd5bf9a30d858828ac1eb801a39374cdbbcd693e88c",
+  "phase_a_checkpoint_epoch": 31,
+  "phase_a_checkpoint_validation_macro_f1": 0.8165849980366109,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "train_class_counts": {
+    "antique object": 73,
+    "plant": 70,
+    "Chinese character": 66,
+    "geometric": 70,
+    "combined": 77,
+    "animal": 78
+  },
+  "first_batch_shape": [
+    16,
+    3,
+    224,
+    224
+  ],
+  "first_batch_label_shape": [
+    16
+  ],
+  "first_batch_indices": [
+    432,
+    392,
+    252,
+    129,
+    40,
+    505,
+    539,
+    83,
+    53,
+    110,
+    453,
+    557,
+    258,
+    403,
+    118,
+    228
+  ],
+  "class_score_shape": [
+    16,
+    6
+  ],
+  "all_finite": true,
+  "trainable_parameter_names": [
+    "features.7.0.layer_scale",
+    "features.7.0.block.0.weight",
+    "features.7.0.block.0.bias",
+    "features.7.0.block.2.weight",
+    "features.7.0.block.2.bias",
+    "features.7.0.block.3.weight",
+    "features.7.0.block.3.bias",
+    "features.7.0.block.5.weight",
+    "features.7.0.block.5.bias",
+    "features.7.1.layer_scale",
+    "features.7.1.block.0.weight",
+    "features.7.1.block.0.bias",
+    "features.7.1.block.2.weight",
+    "features.7.1.block.2.bias",
+    "features.7.1.block.3.weight",
+    "features.7.1.block.3.bias",
+    "features.7.1.block.5.weight",
+    "features.7.1.block.5.bias",
+    "features.7.2.layer_scale",
+    "features.7.2.block.0.weight",
+    "features.7.2.block.0.bias",
+    "features.7.2.block.2.weight",
+    "features.7.2.block.2.bias",
+    "features.7.2.block.3.weight",
+    "features.7.2.block.3.bias",
+    "features.7.2.block.5.weight",
+    "features.7.2.block.5.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ],
+  "trainable_parameter_count": 14295558,
+  "last_stage_parameter_count": 14289408,
+  "head_parameter_count": 6150,
+  "frozen_parameter_count": 13529184,
+  "frozen_module_range": "features.0 through features.6",
+  "trainable_module_range": "features.7 plus classifier.0 and classifier.3",
+  "intended_optimizer_groups": [
+    {
+      "name": "last_stage",
+      "parameter_count": 14289408,
+      "learning_rate": 1e-05
+    },
+    {
+      "name": "head",
+      "parameter_count": 6150,
+      "learning_rate": 0.0003
+    }
+  ],
+  "optimizer_created": false,
+  "backward_performed": false,
+  "optimizer_updates": 0,
+  "validation_metrics_computed": false,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "train_transform": "Compose(\n    ColorJitter(brightness=(0.9, 1.1), contrast=(0.9, 1.1), saturation=None, hue=None)\n    ResizePadWhite(size=224, fill=(255,255,255))\n    RandomAffine(degrees=[-5.0, 5.0], translate=(0.05, 0.05), scale=(0.95, 1.05), interpolation=bilinear, fill=(255, 255, 255))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+  "validation_transform": "Compose(\n    ResizePadWhite(size=224, fill=(255,255,255))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+}

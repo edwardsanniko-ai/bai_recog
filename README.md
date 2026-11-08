@@ -109,6 +109,11 @@ checkpoint、在每个阶段 B 前执行对应 seed 的无更新检查，并在�
 始终禁用。详见 `scripts/run_remaining_cnn_confirmation.py` 和
 `logs/0050_one_command_remaining_confirmation.md`。
 
+seed 43–46 确认训练已全部完成。阶段 B 验证 Macro-F1 为 87.33%±1.25%（均值±样本
+标准差），四个种子均优于各自阶段 A；所有最佳 checkpoint 均已独立复算。方案现已锁定，
+最终测试规则、checkpoint 哈希和一次性评估代码见 `configs/cnn_convnext_final_test.json`、
+`scripts/evaluate_cnn_final_test.py` 和 `logs/0051_cnn_confirmation_complete_and_test_lock.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.

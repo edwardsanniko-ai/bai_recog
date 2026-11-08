@@ -1,0 +1,193 @@
+{
+  "timestamp": "2026-11-08T05:38:48.007803-05:00",
+  "status": "phase_b_epoch_completed_resume_available",
+  "config_relative": "configs/cnn_convnext_tiny_last_stage.json",
+  "config_sha256": "9412fd146fec45cd7007d23c2f1ac2e4aec9acf7b46ad0e3198d84af9b3cb5e6",
+  "preflight_relative": "logs/cnn_convnext_last_stage_seed46_preflight_20261108_053601_029648.json",
+  "preflight_sha256": "52399825b1df69ea7138b1bdd8eb8e4c4a0531a7ce31b44431d74b608fb58d63",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "initialization_checkpoint_sha256": "a79e4b9be9f7a10623abac8493f5c7382da8e96ccf0c722c48762db6330ee779",
+  "script_sha256": "659003847a3f7e93de34cedac786ace918088f82778fce38b7c4710d48c511dd",
+  "last_stage_helper_sha256": "93897554cfd3596fe58567f77a4cafcd7b05a291f51550d124eee0b72f1d0499",
+  "shared_model_helper_sha256": "b2ab6d4626cc5f81ccaa202b469207525ec5c92828479f4d49955f63831740cf",
+  "shared_training_helper_sha256": "ec4752246d957f9f93910b6967f93e9243baf55652f77e6846becec1b4767d8e",
+  "code_commit_before_run": "ec7da90d679303dd4e8842e1bc092b125b6e9eb6",
+  "seed": 46,
+  "run_role": "confirmatory",
+  "phase_b_epoch": 9,
+  "max_epochs": 50,
+  "phase_a_initialization_best_epoch": 26,
+  "phase_a_initialization_validation_macro_f1": 0.8055817412435059,
+  "train_images": 434,
+  "validation_images": 93,
+  "train_batches": 28,
+  "validation_batches": 6,
+  "train_loss": 0.21245779941708262,
+  "validation_metrics": {
+    "accuracy": 0.8279569892473119,
+    "macro_precision": 0.8557734204793027,
+    "macro_recall": 0.8265406162464987,
+    "macro_f1": 0.8275589225589225,
+    "weighted_f1": 0.8260921038340394
+  },
+  "per_class": {
+    "geometric": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 15.0
+    },
+    "animal": {
+      "precision": 0.7,
+      "recall": 0.875,
+      "f1-score": 0.7777777777777778,
+      "support": 16.0
+    },
+    "antique object": {
+      "precision": 0.8235294117647058,
+      "recall": 0.875,
+      "f1-score": 0.8484848484848485,
+      "support": 16.0
+    },
+    "plant": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 15.0
+    },
+    "Chinese character": {
+      "precision": 1.0,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.88,
+      "support": 14.0
+    },
+    "combined": {
+      "precision": 0.7777777777777778,
+      "recall": 0.8235294117647058,
+      "f1-score": 0.8,
+      "support": 17.0
+    },
+    "accuracy": 0.8279569892473119,
+    "macro avg": {
+      "precision": 0.8557734204793027,
+      "recall": 0.8265406162464987,
+      "f1-score": 0.8275589225589225,
+      "support": 93.0
+    },
+    "weighted avg": {
+      "precision": 0.8505235786070702,
+      "recall": 0.8279569892473119,
+      "f1-score": 0.8260921038340394,
+      "support": 93.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      14,
+      0,
+      0,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      9,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      11,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      0,
+      14
+    ]
+  ],
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "last_stage_learning_rate": 9.381533400219319e-06,
+  "head_learning_rate": 0.00028144600200657956,
+  "epoch_optimizer_updates": 28,
+  "total_optimizer_updates": 252,
+  "trainable_parameter_count": 14295558,
+  "trainable_parameter_names": [
+    "features.7.0.layer_scale",
+    "features.7.0.block.0.weight",
+    "features.7.0.block.0.bias",
+    "features.7.0.block.2.weight",
+    "features.7.0.block.2.bias",
+    "features.7.0.block.3.weight",
+    "features.7.0.block.3.bias",
+    "features.7.0.block.5.weight",
+    "features.7.0.block.5.bias",
+    "features.7.1.layer_scale",
+    "features.7.1.block.0.weight",
+    "features.7.1.block.0.bias",
+    "features.7.1.block.2.weight",
+    "features.7.1.block.2.bias",
+    "features.7.1.block.3.weight",
+    "features.7.1.block.3.bias",
+    "features.7.1.block.5.weight",
+    "features.7.1.block.5.bias",
+    "features.7.2.layer_scale",
+    "features.7.2.block.0.weight",
+    "features.7.2.block.0.bias",
+    "features.7.2.block.2.weight",
+    "features.7.2.block.2.bias",
+    "features.7.2.block.3.weight",
+    "features.7.2.block.3.bias",
+    "features.7.2.block.5.weight",
+    "features.7.2.block.5.bias",
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ],
+  "last_stage_parameters_changed": true,
+  "head_parameters_changed": true,
+  "frozen_parameter_sha256": "8284e5eee7148107b0434a18d7022972ce078eeb37b6809a72f9411252972355",
+  "frozen_parameters_unchanged": true,
+  "best_phase_b_epoch_so_far": 7,
+  "best_epoch_zero_means_phase_a_initialization": true,
+  "best_validation_macro_f1_so_far": 0.8289886039886039,
+  "patience_counter": 2,
+  "prediction_relative": "results/cnn_convnext_last_stage_seed46_validation_epoch009.csv",
+  "prediction_sha256": "fcf4a8366e71e42c348b76cbe02b5ddf81a3872f6f7070addcd504e5db002e18",
+  "last_checkpoint_relative": "checkpoints/cnn_convnext_last_stage_seed46/last.pt",
+  "best_checkpoint_relative": "checkpoints/cnn_convnext_last_stage_seed46/best.pt",
+  "resume_supported": true,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128"
+}

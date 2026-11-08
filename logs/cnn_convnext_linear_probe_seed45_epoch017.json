@@ -1,0 +1,159 @@
+{
+  "timestamp": "2026-11-08T05:11:45.029847-05:00",
+  "status": "epoch_completed_resume_available",
+  "config_relative": "configs/cnn_convnext_tiny_linear_probe.json",
+  "config_sha256": "12cdc7dfe70e3c3ec95259870fa6de734365a0c0e04dcdb4572f39e379092eb0",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "script_sha256": "ec4752246d957f9f93910b6967f93e9243baf55652f77e6846becec1b4767d8e",
+  "helper_sha256": "b2ab6d4626cc5f81ccaa202b469207525ec5c92828479f4d49955f63831740cf",
+  "code_commit_before_run": "ec7da90d679303dd4e8842e1bc092b125b6e9eb6",
+  "seed": 45,
+  "run_role": "confirmatory",
+  "epoch": 17,
+  "max_epochs": 50,
+  "train_images": 434,
+  "validation_images": 93,
+  "train_batches": 28,
+  "validation_batches": 6,
+  "train_loss": 0.5066721282796376,
+  "validation_metrics": {
+    "accuracy": 0.7956989247311828,
+    "macro_precision": 0.8183669722949909,
+    "macro_recall": 0.7952089169000933,
+    "macro_f1": 0.7908026213706094,
+    "weighted_f1": 0.7903154072392035
+  },
+  "per_class": {
+    "geometric": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1-score": 0.8571428571428571,
+      "support": 15.0
+    },
+    "animal": {
+      "precision": 0.7368421052631579,
+      "recall": 0.875,
+      "f1-score": 0.8,
+      "support": 16.0
+    },
+    "antique object": {
+      "precision": 0.8125,
+      "recall": 0.8125,
+      "f1-score": 0.8125,
+      "support": 16.0
+    },
+    "plant": {
+      "precision": 1.0,
+      "recall": 0.5333333333333333,
+      "f1-score": 0.6956521739130435,
+      "support": 15.0
+    },
+    "Chinese character": {
+      "precision": 0.8461538461538461,
+      "recall": 0.7857142857142857,
+      "f1-score": 0.8148148148148148,
+      "support": 14.0
+    },
+    "combined": {
+      "precision": 0.7647058823529411,
+      "recall": 0.7647058823529411,
+      "f1-score": 0.7647058823529411,
+      "support": 17.0
+    },
+    "accuracy": 0.7956989247311828,
+    "macro avg": {
+      "precision": 0.8183669722949909,
+      "recall": 0.7952089169000933,
+      "f1-score": 0.7908026213706094,
+      "support": 93.0
+    },
+    "weighted avg": {
+      "precision": 0.8159744895738105,
+      "recall": 0.7956989247311828,
+      "f1-score": 0.7903154072392035,
+      "support": 93.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      13,
+      0,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      8,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      0,
+      11,
+      0
+    ],
+    [
+      2,
+      1,
+      1,
+      0,
+      0,
+      13
+    ]
+  ],
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "learning_rate": 0.00023037401924684944,
+  "epoch_optimizer_updates": 28,
+  "total_optimizer_updates": 476,
+  "trainable_parameter_count": 6150,
+  "trainable_parameter_names": [
+    "classifier.0.weight",
+    "classifier.0.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ],
+  "head_parameter_hash_before_epoch": "5c1ef1e1d34d301935525da16309cf2bf4bf51af897db43367d23030c82078bd",
+  "head_parameter_hash_after_epoch": "24b39ad2b8a4f2c472d621d12e15f81804174452f9224045dd02d66f2ea9afc1",
+  "head_parameters_changed": true,
+  "frozen_parameter_sha256": "3a3b5ffc9d05389d74004882e048759352d760789201f7a48a1fa1fd5785bd83",
+  "frozen_parameters_unchanged": true,
+  "best_epoch_so_far": 17,
+  "best_validation_macro_f1_so_far": 0.7908026213706094,
+  "patience_counter": 0,
+  "prediction_relative": "results/cnn_convnext_linear_probe_seed45_validation_epoch017.csv",
+  "prediction_sha256": "d25c1d88320b6dc67a77bad88a947fde07ac5665161ebd5a9ad1661f4dd2a2c6",
+  "last_checkpoint_relative": "checkpoints/cnn_convnext_linear_probe_seed45/last.pt",
+  "best_checkpoint_relative": "checkpoints/cnn_convnext_linear_probe_seed45/best.pt",
+  "resume_supported": true,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "sklearn_version": "1.9.1"
+}

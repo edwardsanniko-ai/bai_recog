@@ -1,0 +1,59 @@
+{
+  "experiment_name": "cnn_convnext_tiny_locked_two_phase_final_test",
+  "status": "locked_before_test_evaluation",
+  "model": "torchvision ConvNeXt-Tiny ImageNet-1K V1",
+  "training_protocol": "phase A frozen backbone linear probe, then phase B features.7 plus head fine-tuning",
+  "selection_split": "validation",
+  "final_evaluation_split": "test",
+  "test_count": 93,
+  "seeds": [43, 44, 45, 46],
+  "reporting": "per-seed metrics and mean plus sample standard deviation across the four locked seeds",
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_model_or_hyperparameter_selection": false,
+  "locked_checkpoints": [
+    {
+      "seed": 43,
+      "relative_path": "checkpoints/cnn_convnext_last_stage_seed43/best.pt",
+      "sha256": "be95691bc66ab9664caa946e6f935621981147551a3e9f8d0111a3bb02399e3c",
+      "best_phase_b_epoch": 20,
+      "validation_accuracy": 0.8817204301075269,
+      "validation_macro_f1": 0.8838163119169793
+    },
+    {
+      "seed": 44,
+      "relative_path": "checkpoints/cnn_convnext_last_stage_seed44/best.pt",
+      "sha256": "1efbc785c40e13a9d7934e1c0e483b6f321921f3c7ae2e76a7b77a51ad3ebd9d",
+      "best_phase_b_epoch": 20,
+      "validation_accuracy": 0.8817204301075269,
+      "validation_macro_f1": 0.8844451620661299
+    },
+    {
+      "seed": 45,
+      "relative_path": "checkpoints/cnn_convnext_last_stage_seed45/best.pt",
+      "sha256": "e060c020ce72645b961c9412f2b349215bebcaecfc4e7a2b1addc02c867a4ec4",
+      "best_phase_b_epoch": 14,
+      "validation_accuracy": 0.8602150537634409,
+      "validation_macro_f1": 0.8634607447510674
+    },
+    {
+      "seed": 46,
+      "relative_path": "checkpoints/cnn_convnext_last_stage_seed46/best.pt",
+      "sha256": "c10b32a1a911bbcbA0c412625f5fec95190ae246d355cf47b07ee429c7a5a30d",
+      "best_phase_b_epoch": 22,
+      "validation_accuracy": 0.8602150537634409,
+      "validation_macro_f1": 0.8615893665158372
+    }
+  ],
+  "validation_confirmation": {
+    "phase_a_macro_f1_mean": 0.793180981923429,
+    "phase_a_macro_f1_sample_std": 0.021956867776847,
+    "phase_b_macro_f1_mean": 0.8733278963125034,
+    "phase_b_macro_f1_sample_std": 0.01250005628590714,
+    "phase_b_minus_phase_a_mean": 0.0801469143890742,
+    "phase_b_minus_phase_a_sample_std": 0.0339151326437201,
+    "all_four_seeds_improved": true,
+    "summary": "logs/cnn_convnext_confirmation_training_summary_20261108_054523_473509.json"
+  },
+  "notes": "This file is committed before any trainable-CNN test evaluation. The final script evaluates each locked seed checkpoint once, without ensemble or tuning. Test results are descriptive for this fixed 93-image split."
+}
