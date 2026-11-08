@@ -37,6 +37,11 @@ seed 42 第 1 轮检查已完成：训练损失 1.7063，验证 Accuracy 51.61%�
 2026-11-07 已修复 CUDA map location 将 CPU/DataLoader RNG 状态错误搬到 GPU 导致的恢复异常；
 原 epoch 1 checkpoint 无需重训。修复和无训练验证见 `logs/0036_cnn_resume_rng_device_fix.md`。
 
+阶段 A 的 seed 42 开发运行现已完成：按 patience=10，正式停止于第 17 轮，最佳为第 7 轮，
+验证 Accuracy 79.57%、Macro-F1 79.42%，测试集未评估。一次在早停后误恢复产生的第 18 轮
+已保留为审计证据但排除出正式训练；恢复入口现会拒绝已早停 checkpoint。完整说明见
+`logs/0037_cnn_convnext_linear_probe_seed42_complete.md`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.

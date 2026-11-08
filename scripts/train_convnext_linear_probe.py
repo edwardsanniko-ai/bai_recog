@@ -235,6 +235,20 @@ def main() -> None:
         total_updates = checkpoint["total_optimizer_updates"]
         history = checkpoint["history"]
         restore_rng_state(checkpoint["rng_state"], generator)
+        if patience_counter >= config["early_stopping_patience"]:
+            print(f"Checkpoint already reached early stopping after epoch {start_epoch - 1}.")
+            print("No training or parameter update was performed.")
+            print("Best epoch:", best_epoch)
+            print("Best validation Macro-F1:", f"{best_f1:.6f}")
+            print("Test evaluated:", False)
+            return
+        if start_epoch > max_epochs:
+            print(f"Checkpoint already completed the configured {max_epochs} epochs.")
+            print("No training or parameter update was performed.")
+            print("Best epoch:", best_epoch)
+            print("Best validation Macro-F1:", f"{best_f1:.6f}")
+            print("Test evaluated:", False)
+            return
         print(f"Resumed after epoch {start_epoch - 1}; next epoch is {start_epoch}.")
     elif checkpoint_dir.exists():
         raise FileExistsError(f"Checkpoint directory already exists; use --resume with {last_checkpoint}")
