@@ -19,6 +19,12 @@
 且至少 3/4 个 seed 为正，详见 `configs/cnn_b1_multiseed_confirmation.json` 和
 `logs/0054_cnn_feature_screen_complete_and_b1_confirmation_lock.md`。
 
+B1 多种子确认现已完成：平均配对 Macro-F1 仅提升 `0.002171`，只有 2/4 个 seed
+为正，未通过预先锁定的成功条件。320 输入在四个 seed 中都修正了同一张 combined 图片，
+combined 类平均 F1 提高约 `0.0305`，但 Chinese-character 和 antique-object 类平均 F1
+分别下降约 `0.0276` 和 `0.0174`，总体收益不稳定。因此 B1 不替代 B0，也不评估测试集；
+详见 `logs/0055_cnn_b1_confirmation_failed.md`。
+
 ## 新阶段：可训练 CNN baseline
 
 2026-11-07 开始建立可训练的 ConvNeXt-Tiny CNN baseline。第一阶段只训练

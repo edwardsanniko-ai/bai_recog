@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-11-08T09:05:31.839030-05:00",
+  "status": "cnn_b1_multiseed_confirmation_complete_validation_only",
+  "protocol_relative": "configs/cnn_b1_multiseed_confirmation.json",
+  "protocol_sha256": "277f199582d65af22f21ce57fe34ddd305e12d1decee2471dc1acec04ac694e7",
+  "paired_baseline_summary_relative": "logs/cnn_convnext_confirmation_training_summary_20261108_054523_473509.json",
+  "paired_baseline_summary_sha256": "7d2241c05312a7fecc27b56fa09b3d8181b8d608b194b6abd1f8033d51b4f8c5",
+  "results": [
+    {
+      "seed": 43,
+      "B0_validation_macro_f1": 0.8838163119169793,
+      "B1_validation_macro_f1": 0.8833033585642692,
+      "paired_gain_B1_minus_B0": -0.000512953352710066,
+      "B1_stopped_epoch": 31,
+      "B1_best_epoch": 21,
+      "B1_best_checkpoint_relative": "checkpoints/cnn_feature_screen_B1_seed43/best.pt",
+      "B1_best_checkpoint_sha256": "de81a34d446891a4ee24d58590e262c59d0c6f2e91ae3bb55a5a43e24116aef7"
+    },
+    {
+      "seed": 44,
+      "B0_validation_macro_f1": 0.8844451620661299,
+      "B1_validation_macro_f1": 0.8631819766781815,
+      "paired_gain_B1_minus_B0": -0.021263185387948358,
+      "B1_stopped_epoch": 30,
+      "B1_best_epoch": 20,
+      "B1_best_checkpoint_relative": "checkpoints/cnn_feature_screen_B1_seed44/best.pt",
+      "B1_best_checkpoint_sha256": "2ebe3fecd4d0679ad05e347462bb03c63d474ac61868857104b3b2079cdc8874"
+    },
+    {
+      "seed": 45,
+      "B0_validation_macro_f1": 0.8634607447510674,
+      "B1_validation_macro_f1": 0.8724879212782438,
+      "paired_gain_B1_minus_B0": 0.00902717652717644,
+      "B1_stopped_epoch": 22,
+      "B1_best_epoch": 12,
+      "B1_best_checkpoint_relative": "checkpoints/cnn_feature_screen_B1_seed45/best.pt",
+      "B1_best_checkpoint_sha256": "f3ff15b86fc3479464ec53ec741ed64d9cc8a548400bec40e1316e971862758b"
+    },
+    {
+      "seed": 46,
+      "B0_validation_macro_f1": 0.8615893665158372,
+      "B1_validation_macro_f1": 0.8830232465194513,
+      "paired_gain_B1_minus_B0": 0.021433880003614125,
+      "B1_stopped_epoch": 31,
+      "B1_best_epoch": 21,
+      "B1_best_checkpoint_relative": "checkpoints/cnn_feature_screen_B1_seed46/best.pt",
+      "B1_best_checkpoint_sha256": "ea44893beb301e78d0b0422b88b42514d4a9a06b2c0a4b6756602eb13521d60b"
+    }
+  ],
+  "B1_validation_macro_f1_mean": 0.8754991257600364,
+  "B1_validation_macro_f1_sample_std": 0.009631510037384723,
+  "paired_gain_mean": 0.002171229447533035,
+  "paired_gain_sample_std": 0.018022489217559202,
+  "seeds_with_positive_gain": 2,
+  "locked_success_rule_passed": false,
+  "same_fixed_split_across_seeds": true,
+  "seeds_measure_training_randomness_not_independent_dataset_replication": true,
+  "test_dataset_instantiated": false,
+  "test_evaluated": false,
+  "post_test_disclosure": "The original B0 test was already viewed. Confirmation is validation-only, and no result on the same test split may be called a new blind test."
+}
