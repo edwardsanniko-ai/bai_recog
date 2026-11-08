@@ -34,23 +34,49 @@ def phase_a_compatible_config(config: dict) -> dict:
     }
 
 
-def load_last_stage_model(root: Path, config: dict, device: torch.device):
+def load_last_stage_model(root: Path, config: dict, device: torch.device, source_seed: int | None = None):
     # Construct the identical six-class architecture from official weights.
     model, weight_path = load_head_only_model(root, phase_a_compatible_config(config), device)
     initialization = config["initialization"]
-    checkpoint_path = root / initialization["head_checkpoint"]
+    if source_seed is None:
+        source_seed = int(initialization["source_seed"])
+    source_seed = int(source_seed)
+    development_seed = int(initialization["source_seed"])
+    if source_seed == development_seed:
+        checkpoint_path = root / initialization["head_checkpoint"]
+    else:
+        confirmation_path = root / "configs" / "cnn_convnext_multiseed_confirmation.json"
+        confirmation = json.loads(confirmation_path.read_text(encoding="utf-8"))
+        if source_seed not in list(map(int, confirmation["confirmatory_seeds"])):
+            raise ValueError(f"Seed {source_seed} is not in the locked confirmation protocol")
+        phase_a_config_path = root / confirmation["phase_a"]["config"]
+        if file_hash(phase_a_config_path) != confirmation["phase_a"]["config_sha256"]:
+            raise ValueError("Locked phase-A configuration SHA256 differs")
+        checkpoint_path = root / "checkpoints" / f"cnn_convnext_linear_probe_seed{source_seed}" / "best.pt"
     if not checkpoint_path.is_file():
         raise FileNotFoundError(f"Phase-A best checkpoint is missing: {checkpoint_path}")
-    if file_hash(checkpoint_path) != initialization["head_checkpoint_sha256"]:
+    if source_seed == development_seed and file_hash(checkpoint_path) != initialization["head_checkpoint_sha256"]:
         raise ValueError("Phase-A best checkpoint SHA256 differs from the phase-B protocol")
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
-    if (
-        checkpoint["seed"] != initialization["source_seed"]
-        or checkpoint["completed_epoch"] != initialization["source_best_epoch"]
-        or checkpoint["best_epoch"] != initialization["source_best_epoch"]
-        or checkpoint["best_validation_macro_f1"] != initialization["source_validation_macro_f1"]
-    ):
+    if checkpoint["seed"] != source_seed or checkpoint["completed_epoch"] != checkpoint["best_epoch"]:
         raise ValueError("Phase-A checkpoint identity or best metric differs")
+    if source_seed == development_seed:
+        if (
+            checkpoint["completed_epoch"] != initialization["source_best_epoch"]
+            or checkpoint["best_validation_macro_f1"] != initialization["source_validation_macro_f1"]
+        ):
+            raise ValueError("Development phase-A checkpoint differs from the locked source")
+    else:
+        phase_a_config_path = root / "configs" / "cnn_convnext_tiny_linear_probe.json"
+        manifest_path = root / config["split"]["manifest"]
+        if checkpoint.get("run_role") != "confirmatory":
+            raise ValueError("Confirmatory phase-A checkpoint has the wrong run role")
+        if checkpoint["config_sha256"] != file_hash(phase_a_config_path):
+            raise ValueError("Confirmatory phase-A checkpoint used a different locked config")
+        if checkpoint["manifest_sha256"] != file_hash(manifest_path):
+            raise ValueError("Confirmatory phase-A checkpoint used a different manifest")
+        if not checkpoint["history"] or checkpoint["history"][-1]["epoch"] != checkpoint["completed_epoch"]:
+            raise ValueError("Confirmatory phase-A best checkpoint history is inconsistent")
     model.load_state_dict(checkpoint["model_state_dict"], strict=True)
     model.requires_grad_(False)
     if len(model.features) != 8 or not isinstance(model.features[7], nn.Sequential):

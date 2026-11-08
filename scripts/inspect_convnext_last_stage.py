@@ -33,9 +33,14 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-root", type=Path, default=root.parent / "bai_data")
+    parser.add_argument("--seed", type=int, default=None)
     args = parser.parse_args()
     config = load_last_stage_config(root)
-    seed = int(config["development_seed"])
+    seed = int(config["development_seed"] if args.seed is None else args.seed)
+    allowed_seeds = {int(config["development_seed"]), *map(int, config["confirmatory_seeds_after_protocol_lock"])}
+    if seed not in allowed_seeds:
+        raise ValueError(f"Seed {seed} is outside the locked seed set: {sorted(allowed_seeds)}")
+    run_role = "development" if seed == int(config["development_seed"]) else "confirmatory"
     set_seed(seed)
     print("Verifying all 620 audited image hashes ...", flush=True)
     manifest = load_and_verify_manifest(root, args.data_root, config, verify_hashes=True)
@@ -53,7 +58,9 @@ def main() -> None:
     )
     images, labels, sample_indices = next(iter(loader))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model, weight_path, checkpoint_path, checkpoint = load_last_stage_model(root, config, device)
+    model, weight_path, checkpoint_path, checkpoint = load_last_stage_model(
+        root, config, device, source_seed=seed
+    )
     last_stage, head = phase_b_parameter_groups(model)
     names = phase_b_parameter_names(model)
     if any(not name.startswith(("features.7.", "classifier.0.", "classifier.3.")) for name in names):
@@ -82,6 +89,8 @@ def main() -> None:
     report = {
         "timestamp": now.isoformat(),
         "status": "phase_b_last_stage_preflight_passed_no_updates",
+        "source_seed": seed,
+        "run_role": run_role,
         "config_relative": f"configs/{CONFIG_NAME}",
         "config": config,
         "code_commit_before_run": git.stdout.strip() if git.returncode == 0 else None,
@@ -123,7 +132,10 @@ def main() -> None:
         "validation_transform": str(eval_transform),
     }
     run_id = now.strftime("%Y%m%d_%H%M%S_%f")
-    destination = root / "logs" / f"cnn_convnext_last_stage_preflight_{run_id}.json"
+    if run_role == "development":
+        destination = root / "logs" / f"cnn_convnext_last_stage_preflight_{run_id}.json"
+    else:
+        destination = root / "logs" / f"cnn_convnext_last_stage_seed{seed}_preflight_{run_id}.json"
     destination.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Source phase-A best epoch:", checkpoint["completed_epoch"])
     print("Source phase-A validation Macro-F1:", checkpoint["best_validation_macro_f1"])

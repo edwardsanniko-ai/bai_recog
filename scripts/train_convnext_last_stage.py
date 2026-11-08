@@ -100,7 +100,7 @@ def train_one_epoch(model, loader, criterion, optimizer, device, frozen_hash: st
 
 
 def checkpoint_payload(
-    config, seed, completed_epoch, model, optimizer, scheduler, best_f1, best_epoch,
+    config, seed, run_role, completed_epoch, model, optimizer, scheduler, best_f1, best_epoch,
     patience_counter, total_updates, history, generator, config_sha256,
     manifest_sha256, frozen_hash, code_commit, initialization_sha256,
 ):
@@ -109,6 +109,7 @@ def checkpoint_payload(
         "experiment_name": config["experiment_name"],
         "phase": config["phase"],
         "seed": seed,
+        "run_role": run_role,
         "max_epochs": config["max_epochs"],
         "completed_epoch": completed_epoch,
         "model_state_dict": model.state_dict(),
@@ -132,15 +133,23 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-root", type=Path, default=root.parent / "bai_data")
+    parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--resume", type=Path, default=None)
     parser.add_argument("--stop-after-epoch", type=int, default=None)
     args = parser.parse_args()
     config = load_last_stage_config(root)
-    seed = int(config["development_seed"])
+    seed = int(config["development_seed"] if args.seed is None else args.seed)
+    allowed_seeds = {int(config["development_seed"]), *map(int, config["confirmatory_seeds_after_protocol_lock"])}
+    if seed not in allowed_seeds:
+        raise ValueError(f"Seed {seed} is outside the locked seed set: {sorted(allowed_seeds)}")
+    run_role = "development" if seed == int(config["development_seed"]) else "confirmatory"
     max_epochs = int(config["max_epochs"])
     if args.stop_after_epoch is not None and not 1 <= args.stop_after_epoch <= max_epochs:
         raise ValueError("--stop-after-epoch must be within the configured epoch range")
-    preflight_paths = sorted((root / "logs").glob("cnn_convnext_last_stage_preflight_*.json"))
+    if run_role == "development":
+        preflight_paths = sorted((root / "logs").glob("cnn_convnext_last_stage_preflight_*.json"))
+    else:
+        preflight_paths = sorted((root / "logs").glob(f"cnn_convnext_last_stage_seed{seed}_preflight_*.json"))
     if len(preflight_paths) != 1:
         raise RuntimeError("Expected exactly one locked phase-B preflight report")
     preflight = json.loads(preflight_paths[0].read_text(encoding="utf-8"))
@@ -149,6 +158,7 @@ def main() -> None:
         or preflight["config"] != config
         or preflight["optimizer_updates"] != 0
         or preflight["test_evaluated"]
+        or int(preflight.get("source_seed", config["development_seed"])) != seed
     ):
         raise ValueError("Phase-B preflight report differs from the locked protocol")
     set_seed(seed)
@@ -181,7 +191,9 @@ def main() -> None:
         pin_memory=torch.cuda.is_available(),
     )
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    model, weight_path, initialization_path, _ = load_last_stage_model(root, config, device)
+    model, weight_path, initialization_path, initialization_checkpoint = load_last_stage_model(
+        root, config, device, source_seed=seed
+    )
     initialization_sha256 = file_hash(initialization_path)
     last_stage, head = phase_b_parameter_groups(model)
     names = phase_b_parameter_names(model)
@@ -198,7 +210,8 @@ def main() -> None:
     last_checkpoint = checkpoint_dir / "last.pt"
     best_checkpoint = checkpoint_dir / "best.pt"
     start_epoch = 1
-    best_f1 = float(config["initialization"]["source_validation_macro_f1"])
+    best_f1 = float(initialization_checkpoint["best_validation_macro_f1"])
+    phase_a_best_epoch = int(initialization_checkpoint["best_epoch"])
     best_epoch = 0
     patience_counter = 0
     total_updates = 0
@@ -216,7 +229,11 @@ def main() -> None:
             or checkpoint["initialization_checkpoint_sha256"] != initialization_sha256
         ):
             raise ValueError("Resume checkpoint protocol identity differs")
-        if checkpoint["seed"] != seed or checkpoint["max_epochs"] != max_epochs:
+        if (
+            checkpoint["seed"] != seed
+            or checkpoint.get("run_role", "development") != run_role
+            or checkpoint["max_epochs"] != max_epochs
+        ):
             raise ValueError("Resume checkpoint seed or schedule differs")
         model.load_state_dict(checkpoint["model_state_dict"], strict=True)
         optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
@@ -249,7 +266,7 @@ def main() -> None:
     frozen_hash = parameters_hash(frozen_named_parameters(model))
     if args.resume is None:
         initial_payload = checkpoint_payload(
-            config, seed, 0, model, optimizer, scheduler, best_f1, 0, 0, 0, [], generator,
+            config, seed, run_role, 0, model, optimizer, scheduler, best_f1, 0, 0, 0, [], generator,
             config_sha256, manifest_sha256, frozen_hash, code_commit, initialization_sha256,
         )
         torch.save(initial_payload, best_checkpoint)
@@ -285,7 +302,7 @@ def main() -> None:
         prediction_path = root / "results" / f"cnn_convnext_last_stage_seed{seed}_validation_epoch{epoch:03d}.csv"
         save_predictions(prediction_path, manifest["categories"], indices, truth, predictions, probabilities)
         payload = checkpoint_payload(
-            config, seed, epoch, model, optimizer, scheduler, best_f1, best_epoch,
+            config, seed, run_role, epoch, model, optimizer, scheduler, best_f1, best_epoch,
             patience_counter, total_updates, history, generator, config_sha256,
             manifest_sha256, frozen_hash, code_commit, initialization_sha256,
         )
@@ -309,9 +326,11 @@ def main() -> None:
             "shared_training_helper_sha256": file_hash(root / "scripts" / "train_convnext_linear_probe.py"),
             "code_commit_before_run": code_commit,
             "seed": seed,
+            "run_role": run_role,
             "phase_b_epoch": epoch,
             "max_epochs": max_epochs,
-            "phase_a_initialization_validation_macro_f1": config["initialization"]["source_validation_macro_f1"],
+            "phase_a_initialization_best_epoch": phase_a_best_epoch,
+            "phase_a_initialization_validation_macro_f1": initialization_checkpoint["best_validation_macro_f1"],
             "train_images": len(train_dataset),
             "validation_images": len(validation_dataset),
             "train_batches": len(train_loader),
