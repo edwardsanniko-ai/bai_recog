@@ -1,0 +1,78 @@
+{
+  "experiment_name": "cnn_convnext_stage_b_resolution_pooling_2x2_screen",
+  "status": "locked_before_feature_screen_training",
+  "research_phase": "post_locked_test_exploratory_development",
+  "model": "torchvision ConvNeXt-Tiny ImageNet-1K V1",
+  "source_phase": "B_last_stage_finetune",
+  "source_checkpoint": "checkpoints/cnn_convnext_linear_probe_seed42/best.pt",
+  "source_checkpoint_sha256": "2feb6d42281a0f3368dfc3fadd42eabcc7ce04538c72cfd90ff936547a05db3a",
+  "source_seed": 42,
+  "data": {
+    "manifest": "data/splits.json",
+    "train_count": 434,
+    "validation_count": 93,
+    "test_count": 93,
+    "train_split_allowed": true,
+    "validation_split_allowed": true,
+    "test_split_allowed": false
+  },
+  "factors": {
+    "image_size": [224, 320],
+    "pooling": ["global_average", "spatial_pyramid_1x1_plus_2x2"]
+  },
+  "variants": [
+    {"id": "B0", "image_size": 224, "pooling": "global_average", "action": "reuse_locked_historical_validation_control"},
+    {"id": "B1", "image_size": 320, "pooling": "global_average", "action": "train"},
+    {"id": "B2", "image_size": 224, "pooling": "spatial_pyramid_1x1_plus_2x2", "action": "train"},
+    {"id": "B3", "image_size": 320, "pooling": "spatial_pyramid_1x1_plus_2x2", "action": "train"}
+  ],
+  "historical_control": {
+    "variant": "B0",
+    "seed": 42,
+    "best_epoch": 14,
+    "validation_accuracy": 0.8709677419354839,
+    "validation_macro_f1": 0.8732394845298072,
+    "checkpoint": "checkpoints/cnn_convnext_last_stage_seed42/best.pt",
+    "checkpoint_sha256": "afcf0545740752202646f2b7edecbadcf31c9e6daa972920fc85e47e9b5acd7a"
+  },
+  "trainable_backbone_module": "features.7",
+  "trainable_head": true,
+  "optimizer": "AdamW",
+  "last_stage_learning_rate": 0.00001,
+  "head_learning_rate": 0.0003,
+  "weight_decay": 0.001,
+  "batch_size": 16,
+  "max_epochs": 50,
+  "early_stopping_patience": 10,
+  "scheduler": "CosineAnnealingLR",
+  "loss": "cross_entropy",
+  "label_smoothing": 0.0,
+  "selection": {
+    "primary_metric": "validation_macro_f1",
+    "minimum_absolute_gain_over_B0_for_confirmation": 0.005,
+    "near_tie_tolerance": 0.002,
+    "near_tie_preference_order": ["B0", "B1", "B2", "B3"],
+    "development_seed": 42,
+    "confirmation_required_before_claiming_improvement": true
+  },
+  "spatial_pyramid": {
+    "bins": [[1, 1], [2, 2]],
+    "feature_dimension": 3840,
+    "initialization": "copy the 768-D phase-A classifier into the global branch and initialize all four local branch blocks to zero",
+    "initial_logits_equal_global_average_at_same_resolution": true
+  },
+  "augmentation": {
+    "same_as_locked_stage_B": true,
+    "horizontal_flip": false,
+    "random_resized_crop": false
+  },
+  "prohibitions": {
+    "test_dataset_instantiation": true,
+    "test_evaluation": true,
+    "test_based_selection": true,
+    "class_weighting": true,
+    "focal_loss": true,
+    "full_backbone_finetuning": true
+  },
+  "disclosure": "The prior B0 final test has already been viewed. This screen is exploratory and may use only train and validation data. No future evaluation on the same 93 test images may be described as a new blind test."
+}
