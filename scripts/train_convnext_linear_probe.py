@@ -160,11 +160,16 @@ def main() -> None:
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-root", type=Path, default=root.parent / "bai_data")
+    parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--resume", type=Path, default=None)
     parser.add_argument("--stop-after-epoch", type=int, default=None)
     args = parser.parse_args()
     config = load_config(root)
-    seed = int(config["development_seed"])
+    seed = int(config["development_seed"] if args.seed is None else args.seed)
+    allowed_seeds = {int(config["development_seed"]), *map(int, config["confirmatory_seeds_after_protocol_lock"])}
+    if seed not in allowed_seeds:
+        raise ValueError(f"Seed {seed} is outside the locked seed set: {sorted(allowed_seeds)}")
+    run_role = "development" if seed == int(config["development_seed"]) else "confirmatory"
     max_epochs = int(config["max_epochs"])
     if args.stop_after_epoch is not None and not 1 <= args.stop_after_epoch <= max_epochs:
         raise ValueError("--stop-after-epoch must be within the configured epoch range")
@@ -291,6 +296,7 @@ def main() -> None:
             "format_version": 1,
             "experiment_name": config["experiment_name"],
             "seed": seed,
+            "run_role": run_role,
             "max_epochs": max_epochs,
             "completed_epoch": epoch,
             "model_state_dict": model.state_dict(),
@@ -322,6 +328,7 @@ def main() -> None:
             "helper_sha256": file_hash(root / "scripts" / "cnn_baseline_common.py"),
             "code_commit_before_run": code_commit,
             "seed": seed,
+            "run_role": run_role,
             "epoch": epoch,
             "max_epochs": max_epochs,
             "train_images": len(train_dataset),

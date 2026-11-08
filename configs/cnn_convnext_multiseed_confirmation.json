@@ -1,0 +1,42 @@
+{
+  "experiment_name": "cnn_convnext_tiny_two_phase_multiseed_confirmation",
+  "status": "ready_for_seed43_phase_a_epoch1",
+  "objective": "estimate training-randomness stability of the locked two-phase CNN protocol without using the test split",
+  "development_run": {
+    "seed": 42,
+    "role": "architecture_and_hyperparameter_development_not_an_independent_confirmatory_replication",
+    "phase_a_best_validation_macro_f1": 0.7941857298474946,
+    "phase_b_best_validation_macro_f1": 0.8732394845298072,
+    "phase_b_best_epoch": 14
+  },
+  "confirmatory_seeds": [43, 44, 45, 46],
+  "primary_stability_summary": "mean_and_sample_standard_deviation_across_seeds_43_to_46",
+  "secondary_descriptive_summary": "optionally_show_seed42_to_46_with_seed42_explicitly_labeled_as_development",
+  "replication_unit": "complete stochastic training pipeline per seed on the same fixed dataset split",
+  "not_independent_data_replication": true,
+  "fixed_split": {
+    "train": 434,
+    "validation": 93,
+    "test": 93,
+    "manifest": "data/splits.json",
+    "test_locked": true
+  },
+  "phase_a": {
+    "config": "configs/cnn_convnext_tiny_linear_probe.json",
+    "config_sha256": "12cdc7dfe70e3c3ec95259870fa6de734365a0c0e04dcdb4572f39e379092eb0",
+    "initialization": "official ImageNet-1K V1 backbone plus a newly seeded six-class head",
+    "checkpoint_selection": "validation_macro_f1",
+    "early_stopping_patience": 10
+  },
+  "phase_b": {
+    "config": "configs/cnn_convnext_tiny_last_stage.json",
+    "config_sha256": "9412fd146fec45cd7007d23c2f1ac2e4aec9acf7b46ad0e3198d84af9b3cb5e6",
+    "initialization": "the same seed's phase-A best checkpoint",
+    "trainable_modules": "features.7 plus classifier.0 and classifier.3",
+    "checkpoint_selection": "validation_macro_f1 including that seed's phase-A initialization as epoch 0",
+    "early_stopping_patience": 10
+  },
+  "seed42_in_primary_confirmatory_mean": false,
+  "test_evaluated": false,
+  "notes": "Seed 42 was inspected repeatedly while choosing the two-phase protocol, so it is a development result. Seeds 43-46 are the remaining locked confirmation runs. They quantify optimization and augmentation randomness on one fixed split; they do not provide independent sampling uncertainty for new datasets."
+}
