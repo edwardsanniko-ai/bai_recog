@@ -114,6 +114,12 @@ seed 43–46 确认训练已全部完成。阶段 B 验证 Macro-F1 为 87.33%±
 最终测试规则、checkpoint 哈希和一次性评估代码见 `configs/cnn_convnext_final_test.json`、
 `scripts/evaluate_cnn_final_test.py` 和 `logs/0051_cnn_confirmation_complete_and_test_lock.md`。
 
+锁定最终测试现已完成。seed 43–46 的测试 Accuracy 为 `71.77%±0.54%`，Macro-F1 为
+`72.05%±0.39%`（均值±样本标准差）；测试期间参数更新为 0，且不允许测试后调参。
+验证 Macro-F1 均值比测试均值高 15.28 个百分点，本结果按原样保留，不据此回头改变模型。
+完整结果、逐类观察和独立 CSV 复算见 `logs/0052_cnn_convnext_locked_final_test.md`；
+原始报告见 `logs/cnn_convnext_final_test_20261108_063602_024373.json`。
+
 This repository contains a new, separate experiment for classifying the six
 Bai pattern categories with **DINOv3 ConvNeXt-Tiny**, **SigLIP 2 Base**, **Qwen3-VL-Embedding-2B**, and **EUPE ConvNeXt-Tiny**, plus supervised ImageNet controls, under a fixed cosine 1NN protocol. The earlier Qwen3-VL
 reproduction remains outside this repository and is not used as a result here.
@@ -429,7 +435,8 @@ seed=42 控制此次打乱顺序；日志保存实际顺序和每批数量。
 每次实验保存：配置、随机种子、模型版本、代码提交号、环境版本、
 每轮训练与验证指标、最佳轮次和失败原因。模型权重与特征缓存留在本地，
 后续记录其 SHA256 和备份位置；GitHub 只接收代码和小型结果文件。
-单步教学权重已保存在本地 checkpoints/teaching/；尚无正式基线训练权重或识别成绩。
+单步教学权重和正式 baseline checkpoint 均只保存在本地，不上传 GitHub；正式 baseline 的
+小型结果 JSON、逐图 CSV 和核验记录保存在本仓库。
 
 只根据训练集和验证集调参。旧测试集成绩此前已看过，后续报告应披露这一点，
 不得将它称为从未使用过的全新盲测集。消融实验如实记录，不能预设结果一定下降。
