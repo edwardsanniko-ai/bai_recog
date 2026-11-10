@@ -1,0 +1,23 @@
+{
+  "experiment_name": "cnn_convnext_stage_b_label_smoothing_005_confirmation",
+  "status": "locked_before_confirmation",
+  "candidate_id": "L1",
+  "base_candidate": "B0",
+  "source_screen_config": "configs/cnn_label_smoothing_screen.json",
+  "label_smoothing": 0.05,
+  "confirmatory_seeds": [43, 44, 45, 46],
+  "selection": {
+    "primary_metric": "validation_macro_f1",
+    "minimum_mean_gain_over_same_seed_B0": 0.005,
+    "minimum_positive_seed_count": 3,
+    "confirmation_required_before_any_test_evaluation": true
+  },
+  "data": {
+    "manifest": "data/splits.json",
+    "train_count": 434,
+    "validation_count": 93,
+    "test_count": 93,
+    "test_split_allowed": false
+  },
+  "notes": "Only label_smoothing changes from the locked B0 stage-B protocol. Each confirmation seed starts from its own phase-A best checkpoint and uses the same phase-B trainable modules, optimizer, schedule, augmentations, and fixed train/validation split."
+}
