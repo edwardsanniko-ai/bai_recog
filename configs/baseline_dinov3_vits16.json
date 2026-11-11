@@ -1,0 +1,24 @@
+{
+  "experiment_name": "dinov3_vits16_frozen_transformer_candidate",
+  "backbone": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "requested_revision": "main",
+  "resolved_revision_source": "recorded from model.config._commit_hash after the first authenticated download",
+  "task": "six_class_whole_image_classification",
+  "num_classes": 6,
+  "architecture": "DINOv3 ViT-S/16",
+  "expected_model_type": "dinov3_vit",
+  "expected_image_size": 224,
+  "expected_patch_size": 16,
+  "expected_feature_dim": 384,
+  "feature": "final normalized CLS token exposed as pooler_output",
+  "split": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "backbone_frozen": true,
+  "allow_parameter_updates": false,
+  "selection_protocol": "per-sample L2 normalization, train-only 5-fold C selection, LinearSVC refit on 434 train images, one validation evaluation",
+  "test_split_allowed": false,
+  "notes": "This candidate uses the same DINOv3 pretraining family and LVD-1689M source as the existing DINOv3 ConvNeXt-Tiny candidate. The model revision is resolved and recorded after authenticated download instead of guessing a mutable main-branch commit. No classifier or backbone is trained during smoke testing or feature extraction."
+}
