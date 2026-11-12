@@ -25,6 +25,7 @@ def latest_smoke_report(root: Path, config: dict) -> tuple[Path, dict]:
         if (
             report.get("status") == "dinov3_vits16_single_image_smoke_passed_no_training"
             and report.get("model") == config["backbone"]
+            and report.get("resolved_revision") == config["requested_revision"]
             and report.get("all_parameters_frozen") is True
             and report.get("optimizer_updates") == 0
             and report.get("test_evaluated") is False
