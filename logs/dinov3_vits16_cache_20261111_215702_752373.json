@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-11T21:57:02.752373-05:00",
+  "status": "dinov3_vits16_features_cached_no_training_or_metrics",
+  "model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "resolved_revision": "114c1379950215c8b35dfcd4e90a5c251dde0d32",
+  "config_relative": "configs/baseline_dinov3_vits16.json",
+  "config_sha256": "241c0f093d8339637e7bf2742aa393c1e31f8f1b7878d0fb507cbd1de111012b",
+  "script_sha256": "e30f340c0353a914e3da595f0bb347f7fac1fca5f2a981ff7d470f3a7623b159",
+  "code_commit": "f3438081b984357d3059df731934df69fbc78baf",
+  "smoke_report_relative": "logs/dinov3_vits16_smoke_20261111_214357_719053.json",
+  "smoke_report_sha256": "deea742d9cbd3bcb14526f70f32f0cdd64dd52d969e756317f0365b6ee9bf10a",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "4610ad75edef83e75afdebf162d148dc628045ea6cbb83d67d4708c709c4f91d",
+  "cache_relative": "cache/dinov3_vits16_features_20261111_215702_752373.npz",
+  "cache_sha256": "ed7fd86789c740f6d079daa994d15f7a6a8eb0a74f42a1c8a84659c908226fc2",
+  "feature_source": "pooler_output_final_normalized_cls_token",
+  "feature_shape": [
+    620,
+    384
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "feature_normalization": "none; raw final normalized CLS token",
+  "allow_tf32": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.57.3"
+}

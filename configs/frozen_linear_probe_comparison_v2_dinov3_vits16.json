@@ -1,0 +1,41 @@
+{
+  "experiment_name": "frozen_backbone_linear_svm_validation_comparison_v2_with_dinov3_vits16",
+  "status": "locked_before_evaluation",
+  "research_question": "How does DINOv3 ViT-S/16 compare with the six previously cached native frozen representations under exactly the same downstream protocol?",
+  "models": [
+    {"id": "dinov3_convnext_tiny", "cache": "cache/dinov3_features_20261101_120305_275623.npz"},
+    {"id": "dinov3_vits16", "cache": "cache/dinov3_vits16_features_20261111_215702_752373.npz"},
+    {"id": "siglip2_base", "cache": "cache/siglip2_features_20261101_123511_699269.npz"},
+    {"id": "qwen3_vl_embedding_2b", "cache": "cache/qwen2b_features_20261101_133422_207770.npz"},
+    {"id": "eupe_convnext_tiny", "cache": "cache/eupe_features_20261101_140340_325624.npz"},
+    {"id": "imagenet_resnet50", "cache": "cache/control_resnet50_features_20261105_041406_640933.npz"},
+    {"id": "imagenet_convnext_tiny", "cache": "cache/control_convnext_tiny_features_20261105_041406_640933.npz"}
+  ],
+  "fixed_split": {"train": 434, "validation": 93, "test": 93, "manifest": "data/splits.json"},
+  "feature_processing": "per_sample_l2_normalization_only",
+  "classifier": "sklearn.svm.LinearSVC",
+  "classifier_settings": {
+    "penalty": "l2",
+    "loss": "squared_hinge",
+    "dual": "auto",
+    "class_weight": null,
+    "max_iter": 20000,
+    "tol": 0.0001
+  },
+  "C_grid": [0.0001, 0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "C_selection": {
+    "method": "StratifiedKFold on the 434 training samples only",
+    "folds": 5,
+    "shuffle": true,
+    "seed": 42,
+    "metric": "macro_f1",
+    "tie_break": "smallest_C"
+  },
+  "final_fit": "refit selected C on all 434 training samples",
+  "final_evaluation": "one evaluation on the fixed 93-image validation split",
+  "test_split_allowed": false,
+  "optimizer_updates_to_backbones": 0,
+  "selection_metric": "validation_macro_f1",
+  "change_from_v1": "Adds only dinov3_vits16; all feature processing, C grid, cross-validation, classifier settings, split, metric, and test restrictions remain unchanged.",
+  "notes": "This protocol compares frozen representation linear separability. It does not compare fine-tuning ability, end-to-end capacity, compute efficiency, or native zero-shot behavior. The test split is not evaluated."
+}

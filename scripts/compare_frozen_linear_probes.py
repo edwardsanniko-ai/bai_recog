@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 from datetime import datetime, timezone
 import json
@@ -68,7 +69,16 @@ def save_predictions(path: Path, categories, indices, truth, predictions, scores
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    config_path = root / "configs" / CONFIG_NAME
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--config", default=CONFIG_NAME,
+        help="Configuration filename inside configs/ (default preserves the original six-model comparison)",
+    )
+    args = parser.parse_args()
+    config_name = Path(args.config)
+    if config_name.name != args.config or config_name.suffix.lower() != ".json":
+        parser.error("--config must be one JSON filename inside configs/")
+    config_path = root / "configs" / config_name
     config = json.loads(config_path.read_text(encoding="utf-8"))
     if config["status"] != "locked_before_evaluation" or config["test_split_allowed"]:
         raise ValueError("Linear-probe protocol is not locked or test access is enabled")
@@ -162,7 +172,7 @@ def main() -> None:
     ranking = sorted(results, key=lambda row: (-row["validation_metrics"]["macro_f1"], row["model_id"]))
     report = {
         "timestamp": now.isoformat(), "status": "frozen_linear_probe_validation_comparison_complete",
-        "config_relative": f"configs/{CONFIG_NAME}", "config_sha256": file_hash(config_path),
+        "config_relative": f"configs/{config_name.name}", "config_sha256": file_hash(config_path),
         "manifest_sha256": manifest_sha256, "train_count": 434, "validation_count": 93,
         "results": results, "ranking_by_validation_macro_f1": [row["model_id"] for row in ranking],
         "selected_by_validation_macro_f1": ranking[0]["model_id"],
