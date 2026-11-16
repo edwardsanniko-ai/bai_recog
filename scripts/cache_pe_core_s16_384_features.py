@@ -36,16 +36,12 @@ def latest_smoke_report(root: Path, config: dict) -> tuple[Path, dict]:
 
 
 def weight_path(root: Path, config: dict, smoke: dict) -> Path:
-    snapshot = (
-        root / "hf_cache" / ("models--" + config["weights_repo"].replace("/", "--"))
-        / "snapshots" / smoke["resolved_revision"]
-    )
-    candidates = sorted(snapshot.glob("*.safetensors")) + sorted(snapshot.glob("*.pth"))
-    if len(candidates) != 1:
-        raise RuntimeError(f"无法唯一确定本地权重文件: {[path.name for path in candidates]}")
-    if file_hash(candidates[0]) != smoke["weights_sha256"]:
+    path = root / config["local_weights"]
+    if not path.is_file() or path.stat().st_size != config["weights_size_bytes"]:
+        raise RuntimeError("本地权重不存在或大小不符合锁定值。")
+    if file_hash(path) != config["weights_sha256"] or file_hash(path) != smoke["weights_sha256"]:
         raise RuntimeError("本地权重哈希与预检记录不一致。")
-    return candidates[0]
+    return path
 
 
 def save_cache(path: Path, arrays: dict[str, np.ndarray]) -> None:

@@ -7,7 +7,6 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
-import re
 import subprocess
 from zoneinfo import ZoneInfo
 
@@ -52,13 +51,18 @@ def audited_training_image(root: Path, data_root: Path) -> tuple[Path, Path, dic
     return manifest_path, image_path, record, manifest
 
 
-def find_snapshot(root: Path, repo_id: str) -> tuple[str, Path]:
-    snapshots = root / "hf_cache" / ("models--" + repo_id.replace("/", "--")) / "snapshots"
-    candidates = [path for path in snapshots.iterdir() if path.is_dir()] if snapshots.is_dir() else []
-    valid = [path for path in candidates if re.fullmatch(r"[0-9a-f]{40}", path.name)]
-    if len(valid) != 1:
-        raise RuntimeError(f"预期找到一个已下载的精确权重版本，实际为{len(valid)}个: {snapshots}")
-    return valid[0].name, valid[0]
+def verified_weights(root: Path, config: dict) -> Path:
+    path = root / config["local_weights"]
+    if not path.is_file():
+        raise FileNotFoundError(
+            "找不到已校验的PE权重。请先运行scripts/download_pe_core_s16_384.ps1。"
+        )
+    if path.stat().st_size != config["weights_size_bytes"]:
+        raise RuntimeError("PE权重文件大小不符合锁定值，请重新运行下载脚本断点续传。")
+    actual_hash = file_hash(path)
+    if actual_hash != config["weights_sha256"]:
+        raise RuntimeError(f"PE权重SHA256不符合官方值: {actual_hash}")
+    return path
 
 
 def validate_model(model: torch.nn.Module, config: dict) -> dict:
@@ -105,14 +109,15 @@ def main() -> None:
     print("Weights repo:", config["weights_repo"])
     print("Image:", image_path)
     print("Device:", device)
-    print("First run downloads the official timm-integrated checkpoint to local hf_cache.", flush=True)
+    weights = verified_weights(root, config)
+    print("Loading the pinned, SHA256-verified local checkpoint; no network access.", flush=True)
     model = timm.create_model(
-        config["model_name"], pretrained=True, cache_dir=root / "hf_cache"
+        config["model_name"], pretrained=False, checkpoint_path=str(weights)
     ).eval().to(device)
     model.requires_grad_(False)
     data_config = validate_model(model, config)
     transform = create_transform(**data_config, is_training=False)
-    revision, snapshot = find_snapshot(root, config["weights_repo"])
+    revision = config["requested_revision"]
     with Image.open(image_path) as source:
         image = source.convert("RGB")
     inputs = transform(image).unsqueeze(0)
@@ -139,9 +144,6 @@ def main() -> None:
     if device.type == "cuda":
         print(f"Allocated GPU GiB: {torch.cuda.memory_allocated(device) / 2**30:.3f}")
 
-    weight_candidates = sorted(snapshot.glob("*.safetensors")) + sorted(snapshot.glob("*.pth"))
-    if len(weight_candidates) != 1:
-        raise RuntimeError(f"无法唯一确定权重文件: {[path.name for path in weight_candidates]}")
     now = datetime.now(timezone.utc).astimezone(ZoneInfo("America/New_York"))
     git = subprocess.run(
         ["git", "-C", str(root), "rev-parse", "HEAD"], capture_output=True, text=True, check=False
@@ -154,7 +156,7 @@ def main() -> None:
         "weights_repo": config["weights_repo"],
         "requested_revision": config["requested_revision"],
         "resolved_revision": revision,
-        "weights_sha256": file_hash(weight_candidates[0]),
+        "weights_sha256": file_hash(weights),
         "config_relative": f"configs/{CONFIG_NAME}",
         "config_sha256": file_hash(config_path),
         "script_sha256": file_hash(Path(__file__)),

@@ -23,3 +23,9 @@
 ## 环境处理
 
 新增`timm==1.0.22`。首次导入时发现环境中的未来版`Pillow 12.3.0`无法加载`PIL._imaging` DLL，已回退到稳定版`Pillow 11.3.0`并验证`timm`、Pillow、torchvision可共同导入。没有修改图片、划分或已有特征缓存。
+
+## 下载故障与固定方案
+
+首次预检在Hugging Face权重下载前的HEAD请求阶段发生`SSL: UNEXPECTED_EOF_WHILE_READING`，重试5次后失败；模型没有加载，也没有产生实验结果。经公开镜像API核对，同一仓库为公开、非门控、Apache-2.0，精确提交为`255fa76e26fdf8daa47e0d607da46b7051879045`。`model.safetensors`大小为95,147,760 bytes，LFS SHA256为`b07ccd4489dcef7e1d2f3878a8232eb2457ba5b2d2086bd1512def4644cbfdda`。
+
+由于当前`huggingface_hub 0.36.2`不能接受镜像HEAD元数据，改用独立PowerShell脚本从镜像下载这一精确版本，支持断点续传，并在加载前强制核对文件大小和SHA256。预检与缓存脚本此后只离线加载已经校验的本地权重。
