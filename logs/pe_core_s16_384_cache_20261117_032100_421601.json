@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-11-17T03:21:00.421601-05:00",
+  "status": "pe_core_s16_384_features_cached_no_training_or_metrics",
+  "paper_model": "facebook/PE-Core-S16-384",
+  "timm_model": "vit_pe_core_small_patch16_384.fb",
+  "weights_repo": "timm/vit_pe_core_small_patch16_384.fb",
+  "resolved_revision": "255fa76e26fdf8daa47e0d607da46b7051879045",
+  "weights_sha256": "b07ccd4489dcef7e1d2f3878a8232eb2457ba5b2d2086bd1512def4644cbfdda",
+  "config_relative": "configs/baseline_pe_core_s16_384.json",
+  "config_sha256": "f23a6f8130b3c23a1faa472e659da22e7314fca5cea2ee427fa8f74c137d4579",
+  "script_sha256": "f58f3662fa287366b3358cf68e1a5b7bf212261451533c72b1ece7d94375ad52",
+  "code_commit": "3f4257cb54839f0bd15dac9a9c8f1ed2c0c90698",
+  "smoke_report_relative": "logs/pe_core_s16_384_smoke_20261116_013301_738365.json",
+  "smoke_report_sha256": "08f0c9f054e319da127a5cf6b6739d460834dca02741361f7d6bebf373f2eeee",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "cache_relative": "cache/pe_core_s16_384_features_20261117_032100_421601.npz",
+  "cache_sha256": "67d4c9e5ac0066e6c646680592c31273d4d27a5216fce2aa23b80c82e4f72715",
+  "feature_source": "official_final_attention_pooled_projected_image_embedding",
+  "feature_shape": [
+    620,
+    512
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 8,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "feature_normalization": "none during caching; locked comparison applies per-sample L2",
+  "allow_tf32": false,
+  "data_config": {
+    "input_size": [
+      3,
+      384,
+      384
+    ],
+    "interpolation": "bicubic",
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "crop_pct": 1.0,
+    "crop_mode": "center"
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "timm_version": "1.0.22",
+  "pillow_version": "11.3.0"
+}
