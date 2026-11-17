@@ -1,0 +1,56 @@
+{
+  "experiment_name": "locked_frozen_top4_linear_svc_final_test",
+  "status": "locked_before_test_evaluation",
+  "validation_report": "logs/frozen_linear_probe_comparison_20261117_035216_173739.json",
+  "validation_report_sha256": "3a9010c169704f91ce8d80427277d3deeb70ad8b5834990e9a9d0775782a2cf8",
+  "validation_config": "configs/frozen_linear_probe_comparison_v3_pe_core_s16_384.json",
+  "validation_config_sha256": "3ba6b523817746064861cdfca3998c8fa9405179c699fd278d7581b93b3f32f3",
+  "manifest": "data/splits.json",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "models": [
+    {
+      "id": "imagenet_convnext_tiny",
+      "C": 1.0,
+      "cache": "cache/control_convnext_tiny_features_20261105_041406_640933.npz",
+      "cache_sha256": "bf5f63fb34159d90a8fcf4d124648156554e80040a501d83edbc572a45918a9c"
+    },
+    {
+      "id": "pe_core_s16_384",
+      "C": 10.0,
+      "cache": "cache/pe_core_s16_384_features_20261117_032100_421601.npz",
+      "cache_sha256": "67d4c9e5ac0066e6c646680592c31273d4d27a5216fce2aa23b80c82e4f72715"
+    },
+    {
+      "id": "siglip2_base",
+      "C": 10.0,
+      "cache": "cache/siglip2_features_20261101_123511_699269.npz",
+      "cache_sha256": "942ddc77bdcafba9b55da88e1cf4c9ff130a2f9bf85eb3cab10065f320092e83"
+    },
+    {
+      "id": "qwen3_vl_embedding_2b",
+      "C": 10.0,
+      "cache": "cache/qwen2b_features_20261101_133422_207770.npz",
+      "cache_sha256": "e35acaf97dbc0e9c5e71a827156e44ef821a66954d0f60a5f8d4d14758aa8b28"
+    }
+  ],
+  "feature_processing": "per_sample_l2_normalization_float64",
+  "fit_split": "train",
+  "fit_count": 434,
+  "validation_used_for_refit": false,
+  "test_split": "test",
+  "test_count": 93,
+  "metrics": ["accuracy", "macro_precision", "macro_recall", "macro_f1"],
+  "zero_division": 0,
+  "report_per_class": true,
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "model_order": "fixed validation-ranked order, not reselected using test results",
+  "backbone_parameter_updates": 0,
+  "hyperparameter_search_during_final_test": false,
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "The same 93 test images were previously evaluated in the trainable ConvNeXt phase-B study and earlier reproduction work. This evaluation is not a fresh blind holdout; preserve this disclosure in reporting."
+}

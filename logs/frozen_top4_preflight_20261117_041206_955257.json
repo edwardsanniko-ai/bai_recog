@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-11-17T04:12:06.955257-05:00",
+  "lock_relative": "configs/frozen_top4_final_test.json",
+  "lock_sha256": "15691574178797e8494f410e21c6ea65ca11c4e09ca8a96e90ec2398dbc40d52",
+  "script_sha256": "d5d78748090f4c9732126f23093703b57bdf2934d95248d57bc6bd83ad545855",
+  "classifier_helper_sha256": "1ceb978c0cde23563e510ef0ae7e7be0bdf644300cbe9c3073c54da79993a5b5",
+  "code_commit": "b1fd8913b04030e8ab828229fcd94ca72056e831",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "fit_count": 434,
+  "fit_split": "train",
+  "validation_used_for_refit": false,
+  "metric_averaging": "Accuracy overall; Precision, Recall and F1 macro over all six classes",
+  "backbone_parameter_updates": 0,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "The same 93 test images were previously evaluated in the trainable ConvNeXt phase-B study and earlier reproduction work. This evaluation is not a fresh blind holdout; preserve this disclosure in reporting.",
+  "status": "preflight_passed_validation_reproduced_no_test_predictions",
+  "models": [
+    "imagenet_convnext_tiny",
+    "pe_core_s16_384",
+    "siglip2_base",
+    "qwen3_vl_embedding_2b"
+  ],
+  "fixed_C": [
+    1.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "validation_predictions_reproduced": true,
+  "test_evaluated": false
+}
