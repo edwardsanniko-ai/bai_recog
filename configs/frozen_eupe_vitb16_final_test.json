@@ -1,0 +1,42 @@
+{
+  "experiment_name": "locked_frozen_eupe_vitb16_final_test",
+  "status": "locked_before_test_evaluation",
+  "validation_report": "logs/frozen_linear_probe_comparison_20261122_051527_256344.json",
+  "validation_report_sha256": "fe79832f5f06fcf0878f65d71601fa138c52b04c99dd39fc105492f714b3815e",
+  "validation_config": "configs/frozen_linear_probe_comparison_v7_eupe_vitb16.json",
+  "validation_config_sha256": "7345a359ddd7b2099a32c7fdc4bddab1f4b95616ce8fad0671e8977b21424728",
+  "manifest": "data/splits.json",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "models": [
+    {
+      "id": "eupe_vitb16",
+      "C": 10.0,
+      "cache": "cache/eupe_vitb16_features_20261122_181451_978408.npz",
+      "cache_sha256": "5e7a284e82e22aca7568d242250eafe353fb7661a0d868acbc6616704c8ec452"
+    }
+  ],
+  "feature_processing": "per_sample_l2_normalization_float64",
+  "fit_split": "train",
+  "fit_count": 434,
+  "validation_used_for_refit": false,
+  "test_split": "test",
+  "test_count": 93,
+  "metrics": [
+    "accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1"
+  ],
+  "zero_division": 0,
+  "report_per_class": true,
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "backbone_parameter_updates": 0,
+  "hyperparameter_search_during_final_test": false,
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "Evaluated on the exact same 93 test images and identical train-only LinearSVC protocol as frozen_top4_final_test.json."
+}

@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-11-22T18:14:51.978408+08:00",
+  "status": "eupe_vitb16_features_cached_no_training_or_metrics",
+  "paper_model": "facebook/EUPE-ViT-B",
+  "resolved_revision": "ade64ea48af0362c41950f763ba612fca723691e",
+  "config_relative": "configs/baseline_eupe_vitb16.json",
+  "config_sha256": "789b7822e055edc4693dab90ecdfab8607d815e56d05a9e5c98ca7153077f744",
+  "script_sha256": "f8f68f9fd572633996d6c26729c58e272f41409781ca96736f59bd5cca98e0dd",
+  "smoke_report_relative": "logs/eupe_vitb16_smoke_20261122_181427_510860.json",
+  "smoke_report_sha256": "e56eb59905d576225aca33dac66dccf67c1209ddc7e8639892facae2d552761c",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "fcdb6b9e1c467962bb0a50b983d0fb4cec56674f32fc51d3359001677abc6922",
+  "code_commit": "751488a788c3889834c1bf65c472ac20de5af6a1",
+  "cache_relative": "cache/eupe_vitb16_features_20261122_181451_978408.npz",
+  "cache_sha256": "5e7a284e82e22aca7568d242250eafe353fb7661a0d868acbc6616704c8ec452",
+  "feature_source": "official_eupe_vitb16_x_norm_clstoken",
+  "feature_shape": [
+    620,
+    768
+  ],
+  "label_shape": [
+    620
+  ],
+  "dtype": "float32",
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "all_parameters_frozen": true,
+  "excluded_distillation_projector_keys": [
+    "projectors.heads.dinov3radio_vitg16.cls.layers.0.weight",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.1.bias",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.1.weight",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.3.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.0.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.1.bias",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.1.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.3.weight"
+  ],
+  "optimizer_updates": 0,
+  "test_evaluated": false,
+  "classification_performed": false,
+  "allow_tf32": false,
+  "torch_version": "2.8.0+cu128",
+  "torchvision_version": "0.23.0+cu128",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_allocated_gpu_gib": 0.483,
+  "elapsed_seconds": 18.814
+}

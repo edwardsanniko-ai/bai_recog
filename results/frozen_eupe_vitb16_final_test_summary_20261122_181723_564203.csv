@@ -1,0 +1,2 @@
+model,Accuracy,Precision_macro,Recall_macro,F1_macro,correct,total
+eupe_vitb16,0.8494623655913979,0.860218253968254,0.8505310457516341,0.8522288758603964,79,93
