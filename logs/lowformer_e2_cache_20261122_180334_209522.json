@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-11-22T18:03:34.209522+08:00",
+  "status": "lowformer_e2_features_cached_no_training_or_metrics",
+  "paper_model": "timm/lowformer_e2.in1k",
+  "timm_model": "lowformer_e2.in1k",
+  "weights_repo": "timm/lowformer_e2.in1k",
+  "resolved_revision": "d644e7ce602e9ade864480c0c440feadb36c29d9",
+  "weights_sha256": "46c0e8678a750a40e2108e90f8e11ec1e163155ceb084d8ce5822b9d3c8341b7",
+  "excluded_classifier_keys": [
+    "classifier.bias",
+    "classifier.weight"
+  ],
+  "config_relative": "configs/baseline_lowformer_e2.json",
+  "config_sha256": "8c6c64d3adde42d2f6689070050c6c08546c3fc46189ad82ee499ba0c5a69a45",
+  "script_sha256": "12f313eed9021a2cfaefc89cd4b3320b084b5492f2c53de88d2a747d99128f73",
+  "code_commit": "5502d8da75985c865efda03c13dd495d9049a84b",
+  "smoke_report_relative": "logs/lowformer_e2_smoke_20261122_180310_530841.json",
+  "smoke_report_sha256": "7e7f998a94f47b0010acb846116e80d86a288cd643923a156feeba81559f1e1a",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "cache_relative": "cache/lowformer_e2_features_20261122_180334_209522.npz",
+  "cache_sha256": "9d6f4d2a11eb7f779d6037e1c72ca74553fb7e32d8a2100d9744fe2eb7d7a003",
+  "feature_source": "official_timm_num_classes_0_pooled_pre_logits",
+  "feature_shape": [
+    620,
+    1600
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "extraction_seconds": 16.63,
+  "peak_gpu_gib": 0.3116,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "feature_normalization": "none during caching; locked comparison applies per-sample L2",
+  "allow_tf32": false,
+  "data_config": {
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "interpolation": "bicubic",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "crop_pct": 0.95,
+    "crop_mode": "center"
+  },
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "timm_version": "1.0.31",
+  "pillow_version": "11.3.0"
+}

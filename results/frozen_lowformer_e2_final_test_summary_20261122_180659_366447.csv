@@ -1,0 +1,2 @@
+model,Accuracy,Precision_macro,Recall_macro,F1_macro,correct,total
+lowformer_e2,0.7419354838709677,0.7611280038331122,0.7440359477124184,0.7463314457140932,69,93
