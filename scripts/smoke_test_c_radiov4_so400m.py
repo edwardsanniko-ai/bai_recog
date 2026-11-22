@@ -73,7 +73,8 @@ def verified_snapshot(root: Path, config: dict) -> tuple[Path, Path]:
 
 def sync_local_dynamic_modules(snapshot_dir: Path) -> None:
     """Copy all local .py files into transformers' module cache for offline nested imports."""
-    module_dir = Path(HF_MODULES_CACHE) / "transformers_modules" / snapshot_dir.name
+    mod_name = f"_{snapshot_dir.name}" if snapshot_dir.name[0].isdigit() else snapshot_dir.name
+    module_dir = Path(HF_MODULES_CACHE) / "transformers_modules" / mod_name
     module_dir.mkdir(parents=True, exist_ok=True)
     init_file = module_dir / "__init__.py"
     if not init_file.exists():

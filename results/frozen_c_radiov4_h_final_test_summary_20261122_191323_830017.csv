@@ -1,0 +1,2 @@
+model,Accuracy,Precision_macro,Recall_macro,F1_macro,correct,total
+c_radiov4_h,0.8279569892473119,0.8307859666992794,0.8310049019607844,0.8251995530012772,77,93
