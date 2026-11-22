@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-11-22T16:38:46.012538+08:00",
+  "status": "c_radiov4_so400m_features_cached_no_training_or_metrics",
+  "paper_model": "nvidia/C-RADIOv4-SO400M",
+  "model_repo": "nvidia/C-RADIOv4-SO400M",
+  "resolved_revision": "c0457f5dc26ca145f954cd4fc5bb6114e5705ad8",
+  "weights_sha256": "23e0c117de49d4ce909150fe6658d470829e6639647c7a5b035ce82e0d5b763c",
+  "config_relative": "configs/baseline_c_radiov4_so400m.json",
+  "config_sha256": "061d4bb8a046cccc8f724d826faf89d443f2ee526b8656194e9bc38793807c3b",
+  "script_sha256": "ef73bc4914b39dddf2d682bb1910e87a39a33bf7d2f4e60a77988513c2d6fda8",
+  "code_commit": "3ef207f4ba748e7f0e0ee76c2b4022606811e200",
+  "smoke_report_relative": "logs/c_radiov4_so400m_smoke_20261122_163546_238709.json",
+  "smoke_report_sha256": "772de15f80c8b2a6cb6554bc84abd90d0d7e3939afb17a22c0db8b0f4a9e45ec",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "cache_relative": "cache/c_radiov4_so400m_features_20261122_163846_012538.npz",
+  "cache_sha256": "691166c5369e492d4251e9f97db6e6daebbf2d8fc77e6b97c12792dc8221b330",
+  "feature_source": "official_c_radiov4_summary_output",
+  "feature_shape": [
+    620,
+    2304
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 8,
+  "extraction_seconds": 148.41,
+  "peak_gpu_gib": 2.1259,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "feature_normalization": "none during caching; locked comparison applies per-sample L2",
+  "allow_tf32": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.57.3",
+  "einops_version": "0.8.2",
+  "pillow_version": "11.3.0"
+}
