@@ -1,0 +1,2 @@
+model,Accuracy,Precision_macro,Recall_macro,F1_macro,correct,total
+openvision2_vitl14,0.7849462365591398,0.7965491752256458,0.7897875816993465,0.7907069946999935,73,93

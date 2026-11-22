@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-11-22T18:44:33.636246+08:00",
+  "status": "openvision2_vitl14_features_cached_no_training_or_metrics",
+  "paper_model": "UCSC-VLAA/openvision2-vit-large-patch14-224-vision-only",
+  "model_repo": "UCSC-VLAA/openvision2-vit-large-patch14-224-vision-only",
+  "resolved_revision": "14fe0b85f4e68b19b6e46405cdac58284cddabe0",
+  "weights_sha256": "d32a0a88e2adbb921a290e932423a60ddc26e5e3278b30b609fc5a8d5da74718",
+  "config_relative": "configs/baseline_openvision2_vitl14.json",
+  "config_sha256": "947803528cd8b471753ac2819acddcac7d66bec53547583f774fb887ff1d82a7",
+  "script_sha256": "0ff3b404192025e2f45c1826d8859ec1a45922f2010626828d1ddb4f9f8dc326",
+  "code_commit": "553f59755f6e108c4eeb8c3329ed21a6cb8580a0",
+  "smoke_report_relative": "logs/openvision2_vitl14_smoke_20261122_184349_589274.json",
+  "smoke_report_sha256": "f9b47c815784be9521cccfc94f08012c69a54dcfd9f3243d67427b36eccfde9c",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "cache_relative": "cache/openvision2_vitl14_features_20261122_184433_636246.npz",
+  "cache_sha256": "499ab73dc92356f2f28d1da701da9d128887b23cb3debd5d668f7c4ccb2d7c20",
+  "feature_source": "official_openvision2_pooled_output",
+  "feature_shape": [
+    620,
+    1024
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "extraction_seconds": 25.3,
+  "peak_gpu_gib": 1.3392,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "allow_tf32": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "pillow_version": "11.3.0"
+}

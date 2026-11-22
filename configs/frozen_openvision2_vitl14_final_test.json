@@ -1,0 +1,42 @@
+{
+  "experiment_name": "locked_frozen_openvision2_vitl14_final_test",
+  "status": "locked_before_test_evaluation",
+  "validation_report": "logs/frozen_linear_probe_comparison_20261122_054518_740868.json",
+  "validation_report_sha256": "1aadf80e7cfaf6edc0f4a09d39e0b5d5c6f8f7ad4d939e51c3795c05735893d7",
+  "validation_config": "configs/frozen_linear_probe_comparison_v9_openvision2_vitl14.json",
+  "validation_config_sha256": "2e7d5f3a5d79f47996f8e3c0ed47357bf0a3e64127543a7dba0b77eb071be58d",
+  "manifest": "data/splits.json",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "models": [
+    {
+      "id": "openvision2_vitl14",
+      "C": 10.0,
+      "cache": "cache/openvision2_vitl14_features_20261122_184433_636246.npz",
+      "cache_sha256": "499ab73dc92356f2f28d1da701da9d128887b23cb3debd5d668f7c4ccb2d7c20"
+    }
+  ],
+  "feature_processing": "per_sample_l2_normalization_float64",
+  "fit_split": "train",
+  "fit_count": 434,
+  "validation_used_for_refit": false,
+  "test_split": "test",
+  "test_count": 93,
+  "metrics": [
+    "accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1"
+  ],
+  "zero_division": 0,
+  "report_per_class": true,
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "backbone_parameter_updates": 0,
+  "hyperparameter_search_during_final_test": false,
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "Evaluated on the exact same 93 test images and identical train-only LinearSVC protocol as frozen_top4_final_test.json."
+}

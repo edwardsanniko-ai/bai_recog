@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-22T18:43:49.589274+08:00",
+  "status": "openvision2_vitl14_single_image_smoke_passed_no_training",
+  "paper_model": "UCSC-VLAA/openvision2-vit-large-patch14-224-vision-only",
+  "model_repo": "UCSC-VLAA/openvision2-vit-large-patch14-224-vision-only",
+  "requested_revision": "14fe0b85f4e68b19b6e46405cdac58284cddabe0",
+  "resolved_revision": "14fe0b85f4e68b19b6e46405cdac58284cddabe0",
+  "weights_sha256": "d32a0a88e2adbb921a290e932423a60ddc26e5e3278b30b609fc5a8d5da74718",
+  "config_relative": "configs/baseline_openvision2_vitl14.json",
+  "config_sha256": "947803528cd8b471753ac2819acddcac7d66bec53547583f774fb887ff1d82a7",
+  "script_sha256": "8d2c183fb5cbf27994cd50811ce3014cdbe2cc518553ea401f4cc36d96511415",
+  "code_commit": "553f59755f6e108c4eeb8c3329ed21a6cb8580a0",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sample_index": 237,
+  "image_relative": "antique-object patterns/博古纹29.png",
+  "image_sha256": "e44349b9440fc2c536b395934c30482206331ef32008021dcb5032a5d3e1227d",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "feature_source": "official_openvision2_pooled_output",
+  "feature_shape": [
+    1,
+    1024
+  ],
+  "feature_dtype": "float32",
+  "all_finite": true,
+  "all_parameters_frozen": true,
+  "parameter_count": 304226304,
+  "load_seconds": 13.0012,
+  "single_image_infer_seconds": 0.2419,
+  "peak_gpu_gib": 1.1543,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "allow_tf32": false,
+  "torch_version": "2.8.0+cu128",
+  "pillow_version": "11.3.0"
+}
