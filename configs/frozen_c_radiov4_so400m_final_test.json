@@ -1,0 +1,37 @@
+{
+  "experiment_name": "locked_frozen_c_radiov4_so400m_final_test",
+  "status": "locked_before_test_evaluation",
+  "validation_report": "logs/frozen_linear_probe_comparison_20261122_033927_519765.json",
+  "validation_report_sha256": "222d2b00719683fafc8bce36cb52e040fc55af7749d2ae82caf26d80fe0a9aee",
+  "validation_config": "configs/frozen_linear_probe_comparison_v4_c_radiov4_so400m.json",
+  "validation_config_sha256": "cb31db3404c27c6738cda219528570a0f8d1b62e16d72fccb2c83e4bc54a0388",
+  "manifest": "data/splits.json",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "models": [
+    {
+      "id": "c_radiov4_so400m",
+      "C": 10.0,
+      "cache": "cache/c_radiov4_so400m_features_20261122_163846_012538.npz",
+      "cache_sha256": "691166c5369e492d4251e9f97db6e6daebbf2d8fc77e6b97c12792dc8221b330"
+    }
+  ],
+  "feature_processing": "per_sample_l2_normalization_float64",
+  "fit_split": "train",
+  "fit_count": 434,
+  "validation_used_for_refit": false,
+  "test_split": "test",
+  "test_count": 93,
+  "metrics": ["accuracy", "macro_precision", "macro_recall", "macro_f1"],
+  "zero_division": 0,
+  "report_per_class": true,
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "backbone_parameter_updates": 0,
+  "hyperparameter_search_during_final_test": false,
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "Evaluated on the exact same 93 test images and identical train-only LinearSVC protocol as frozen_top4_final_test.json, after observing the top-4 test results. Preserve this historical test exposure disclosure in reporting."
+}
