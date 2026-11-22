@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-11-22T17:35:41.572725+08:00",
+  "status": "eupe_vits16_features_cached_no_training_or_metrics",
+  "paper_model": "facebook/EUPE-ViT-S",
+  "resolved_revision": "b741b808d19487475c225a7e672e4842f32cd402",
+  "config_relative": "configs/baseline_eupe_vits16.json",
+  "config_sha256": "3f1203bbf6169d890ba1be4e24172d9494eda71c87fe7e5d0ba268006120f060",
+  "script_sha256": "7b736975de8a2d70a762303e96af766fe72183283cf00eafd274ca2c64beca3c",
+  "helper_sha256": "9ca3a43eec639e9a1546635e83c17ad3d6625a6fc202492b9001015fa056480e",
+  "smoke_report_relative": "logs/eupe_vits16_smoke_20261122_173523_542074.json",
+  "smoke_report_sha256": "86de360ad7d4acc0cde7057d5c2d30548c6052ee61abd682d9434aa32cd5756b",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "weights_sha256": "1e2c5adf0ccad08c3a63195381afca29631372a2f173b4315fb9306f31598083",
+  "code_commit": "0a5efabe6ea03feea5c5e77b62720949555dbe2d",
+  "cache_relative": "cache/eupe_vits16_features_20261122_173541_572725.npz",
+  "cache_sha256": "a1f8ba1045ce465cd797e9540aa373c59ccc7998a55beeb068afd6b69e2d2c78",
+  "feature_source": "official_eupe_vits16_x_norm_clstoken",
+  "feature_shape": [
+    620,
+    384
+  ],
+  "label_shape": [
+    620
+  ],
+  "dtype": "float32",
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 16,
+  "all_parameters_frozen": true,
+  "all_backbone_weights_loaded": true,
+  "excluded_distillation_projector_keys": [
+    "projectors.heads.dinov3radio_vitg16.cls.layers.0.weight",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.1.bias",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.1.weight",
+    "projectors.heads.dinov3radio_vitg16.cls.layers.3.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.0.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.1.bias",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.1.weight",
+    "projectors.heads.dinov3radio_vitg16.patch.layers.3.weight"
+  ],
+  "optimizer_updates": 0,
+  "test_evaluated": false,
+  "classification_performed": false,
+  "feature_normalization": "none; raw official x_norm_clstoken",
+  "preprocessing": "official README: ToImage, bilinear Resize((256,256), antialias=True), ToDtype(float32, scale=True), ImageNet Normalize",
+  "allow_tf32": false,
+  "torch_version": "2.8.0+cu128",
+  "torchvision_version": "0.23.0+cu128",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_allocated_gpu_gib": 0.1723,
+  "elapsed_seconds": 11.779
+}
