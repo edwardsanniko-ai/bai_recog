@@ -1,0 +1,2 @@
+model,Accuracy,Precision_macro,Recall_macro,F1_macro,correct,total
+siglip_hd,0.8709677419354839,0.8896103896103896,0.8721405228758169,0.8687831516022683,81,93

@@ -1,0 +1,42 @@
+{
+  "experiment_name": "locked_frozen_siglip_hd_final_test",
+  "status": "locked_before_test_evaluation",
+  "validation_report": "logs/frozen_linear_probe_comparison_20261122_053348_647942.json",
+  "validation_report_sha256": "f53bd980f4a8217bd6fddc932a30a5c348e2a02bb10b6e737d6a0b7d29ea0446",
+  "validation_config": "configs/frozen_linear_probe_comparison_v8_siglip_hd.json",
+  "validation_config_sha256": "d433929bb8e212f32c0f36ae987e2a9726397877dc0a703913ade85627224445",
+  "manifest": "data/splits.json",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "sklearn_version": "1.9.1",
+  "models": [
+    {
+      "id": "siglip_hd",
+      "C": 1.0,
+      "cache": "cache/siglip_hd_features_20261122_183305_382110.npz",
+      "cache_sha256": "a7c5b980fc115694d1b2f26703eb1971c5707e1cd1bed13822818684ef4fb632"
+    }
+  ],
+  "feature_processing": "per_sample_l2_normalization_float64",
+  "fit_split": "train",
+  "fit_count": 434,
+  "validation_used_for_refit": false,
+  "test_split": "test",
+  "test_count": 93,
+  "metrics": [
+    "accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1"
+  ],
+  "zero_division": 0,
+  "report_per_class": true,
+  "confusion_matrix_rows": "true",
+  "confusion_matrix_columns": "predicted",
+  "backbone_parameter_updates": 0,
+  "hyperparameter_search_during_final_test": false,
+  "ensemble": false,
+  "test_time_augmentation": false,
+  "post_test_tuning_allowed": false,
+  "historical_test_exposure": true,
+  "historical_test_exposure_note": "Evaluated on the exact same 93 test images and identical train-only LinearSVC protocol as frozen_top4_final_test.json."
+}

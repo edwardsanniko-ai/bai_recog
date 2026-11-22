@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-11-22T18:33:05.382110+08:00",
+  "status": "siglip_hd_features_cached_no_training_or_metrics",
+  "paper_model": "LiheYoung/SigLIP-HD",
+  "model_repo": "LiheYoung/SigLIP-HD",
+  "resolved_revision": "637fabaf87874ed877fe6237faee6466b75b277e",
+  "weights_sha256": "462bdcaf5018115f10176894d25a577960a097375139713344713c8eff36d54a",
+  "config_relative": "configs/baseline_siglip_hd.json",
+  "config_sha256": "e5037f72d9e499b59f085d98c6bdda509512b037fa06125bd8cf26cf54cfb907",
+  "script_sha256": "d89d98b98643324cfa93714050d885ea4f46fb2021687fb8eb7ecdbdab821e89",
+  "code_commit": "1f5eb326aa993b56956ce80d123eacc807795923",
+  "smoke_report_relative": "logs/siglip_hd_smoke_20261122_183025_906526.json",
+  "smoke_report_sha256": "43a9e1a47b0a24629b7102b14176dd4bbe1f071cc920885dddbe118b92379cf2",
+  "manifest_sha256": "c88f5d1ed93293e5a69d13ea68581d551e68e47b3a52357187cfbb08b8dda04d",
+  "cache_relative": "cache/siglip_hd_features_20261122_183305_382110.npz",
+  "cache_sha256": "a7c5b980fc115694d1b2f26703eb1971c5707e1cd1bed13822818684ef4fb632",
+  "feature_source": "official_siglip_vision_model_pooler_output",
+  "feature_shape": [
+    620,
+    1152
+  ],
+  "feature_dtype": "float32",
+  "label_shape": [
+    620
+  ],
+  "all_finite": true,
+  "readback_identical": true,
+  "split_counts": {
+    "train": 434,
+    "validation": 93,
+    "test": 93
+  },
+  "extraction_batch_size": 8,
+  "extraction_seconds": 140.15,
+  "peak_gpu_gib": 2.0328,
+  "all_parameters_frozen": true,
+  "optimizer_updates": 0,
+  "classification_performed": false,
+  "test_evaluated": false,
+  "allow_tf32": false,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.57.3",
+  "pillow_version": "11.3.0"
+}
